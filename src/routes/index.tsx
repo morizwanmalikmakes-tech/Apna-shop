@@ -6,8 +6,8 @@ import { ClayParticles } from "@/components/clay-particles";
 import { Counter } from "@/components/counter";
 import { products } from "@/lib/products";
 import { site, waLink } from "@/lib/site";
-// import hero from "@/assets/new-hero.jpeg";
-// import craftsmanship from "@/assets/craftsmanship.jpg";
+import hero from "@/assets/new-hero.jpeg";
+import craftsmanship from "@/assets/craftsmanship.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
