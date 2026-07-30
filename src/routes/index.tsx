@@ -152,7 +152,7 @@ function HomePage() {
       <section className="bg-secondary text-secondary-foreground">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
           <div className="relative overflow-hidden rounded-3xl shadow-warm">
-            <img src={craftsmanship} alt="Potter shaping a kulhad on the wheel" loading="lazy" width={1200} height={900} className="h-full w-full object-cover" />
+            <img src="/images/craftsmanship.jpg" alt="Potter shaping a kulhad on the wheel" loading="lazy" width={1200} height={900} className="h-full w-full object-cover" />
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">The Craft</p>
