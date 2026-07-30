@@ -6,8 +6,8 @@ import { ClayParticles } from "@/components/clay-particles";
 import { Counter } from "@/components/counter";
 import { products } from "@/lib/products";
 import { site, waLink } from "@/lib/site";
-import hero from "@/assets/new-hero.jpeg";
-import craftsmanship from "@/assets/craftsmanship.jpg";
+// import hero from "@/assets/new-hero.jpeg";
+// import craftsmanship from "@/assets/craftsmanship.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -92,7 +92,7 @@ function HomePage() {
 
             <div className="mt-6 overflow-hidden rounded-3xl shadow-warm">
               <img
-                src="/src/assets/second-kulhad-image.png"
+                src="/images/home-kulhads.png"
                 alt="Handcrafted clay kulhads ready for use"
                 width={1600}
                 height={1000}
