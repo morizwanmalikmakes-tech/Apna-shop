@@ -16,9 +16,9 @@ export const Route = createFileRoute("/")({
       { name: "description", content: site.description },
       { property: "og:title", content: `${site.name} — ${site.tagline}` },
       { property: "og:description", content: site.description },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://www.kulhad.shop/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://www.kulhad.shop/" }],
   }),
   component: HomePage,
 });

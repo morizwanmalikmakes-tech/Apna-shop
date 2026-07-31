@@ -9,9 +9,9 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Kulhad Factory crafts food-safe, eco-friendly clay kulhads in Khurja, India — supplying cafés, dhabas, hotels and exporters nationwide." },
       { property: "og:title", content: "About Kulhad Factory" },
       { property: "og:description", content: "Our story, craftsmanship and commitment to natural clay." },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://www.kulhad.shop/about" },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://www.kulhad.shop/about" }],
   }),
   component: AboutPage,
 });

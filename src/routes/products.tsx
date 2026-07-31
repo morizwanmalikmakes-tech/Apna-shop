@@ -9,7 +9,10 @@ const ADMIN_API = "http://localhost:3000";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
+    links: [{ rel: "canonical", href: "https://www.kulhad.shop/products" }],
     meta: [
+      { property: "og:title", content: "Products - Clay Kulhads by Kulhad Factory" },
+      { property: "og:url", content: "https://www.kulhad.shop/products" },
       { title: "Products — Clay Kulhads by Kulhad Factory" },
       {
         name: "description",

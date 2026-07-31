@@ -11,9 +11,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Get in touch with Kulhad Factory for orders, wholesale enquiries and support. WhatsApp, phone, email and directions." },
       { property: "og:title", content: "Contact Kulhad Factory" },
       { property: "og:description", content: "Reach us by WhatsApp, phone or email." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://www.kulhad.shop/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://www.kulhad.shop/contact" }],
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({

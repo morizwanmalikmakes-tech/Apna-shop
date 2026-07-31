@@ -19,9 +19,9 @@ export const Route = createFileRoute("/faq")({
       { name: "description", content: "Answers to common questions about our clay kulhads, wholesale orders, shipping and care." },
       { property: "og:title", content: "FAQ — Kulhad Factory" },
       { property: "og:description", content: "Everything you need to know about our clay kulhads." },
-      { property: "og:url", content: "/faq" },
+      { property: "og:url", content: "https://www.kulhad.shop/faq" },
     ],
-    links: [{ rel: "canonical", href: "/faq" }],
+    links: [{ rel: "canonical", href: "https://www.kulhad.shop/faq" }],
     scripts: [{
       type: "application/ld+json",
       children: JSON.stringify({

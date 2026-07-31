@@ -39,9 +39,9 @@ export const Route = createFileRoute("/gallery")({
       { name: "description", content: "A visual tour of our clay, craft and kulhads — from the wheel to the kiln to your cup." },
       { property: "og:title", content: "Gallery — Kulhad Factory" },
       { property: "og:description", content: "Photos of our clay kulhads, craft and workshop." },
-      { property: "og:url", content: "/gallery" },
+      { property: "og:url", content: "https://www.kulhad.shop/gallery" },
     ],
-    links: [{ rel: "canonical", href: "/gallery" }],
+    links: [{ rel: "canonical", href: "https://www.kulhad.shop/gallery" }],
   }),
   component: GalleryPage,
 });

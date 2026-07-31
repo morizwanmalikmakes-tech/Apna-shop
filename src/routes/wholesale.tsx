@@ -10,9 +10,9 @@ export const Route = createFileRoute("/wholesale")({
       { name: "description", content: "Wholesale kulhads for cafés, dhabas, hotels, weddings and exporters. Factory-direct pricing, custom sizes, nationwide delivery." },
       { property: "og:title", content: "Wholesale — Kulhad Factory" },
       { property: "og:description", content: "Bulk clay kulhad orders with factory-direct pricing." },
-      { property: "og:url", content: "/wholesale" },
+      { property: "og:url", content: "https://www.kulhad.shop/wholesale" },
     ],
-    links: [{ rel: "canonical", href: "/wholesale" }],
+    links: [{ rel: "canonical", href: "https://www.kulhad.shop/wholesale" }],
   }),
   component: WholesalePage,
 });
