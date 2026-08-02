@@ -2,7 +2,10 @@ import * as React from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/site-layout";
 import { ProductCard } from "@/components/product-card";
+import { defaultProducts, type Product } from "@/lib/products";
 import { products as localProducts } from "@/lib/products";
+
+const ADMIN_API = "http://localhost:3000";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -17,41 +20,12 @@ export const Route = createFileRoute("/products")({
           "Browse handcrafted clay kulhads from 60ml tea cups to 300ml lassi glasses.",
       },
     ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ItemList",
-          name: "Clay Kulhads",
-          itemListElement: localProducts.map((p, i) => ({
-            "@type": "ListItem",
-            position: i + 1,
-            item: {
-              "@type": "Product",
-              name: p.name,
-              description: p.description,
-              image: `https://www.kulhad.shop${p.image}`,
-              sku: p.slug,
-              brand: { "@type": "Brand", name: "Kulhad Factory" },
-              offers: {
-                "@type": "Offer",
-                price: p.price.replace(/[^\d.]/g, ""),
-                priceCurrency: "INR",
-                availability: "https://schema.org/InStock",
-                url: "https://www.kulhad.shop/products",
-              },
-            },
-          })),
-        }),
-      },
-    ],
   }),
   component: ProductsPage,
 });
 
 function ProductsPage() {
-  const products = localProducts;
+const products = localProducts;
   return (
     <SiteLayout>
       <PageHero
