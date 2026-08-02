@@ -22,7 +22,7 @@ export const Route = createFileRoute("/contact")({
         name: site.name,
         telephone: site.phone,
         email: site.email,
-        address: { "@type": "PostalAddress", addressLocality: "Khurja", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
+        address: { "@type": "PostalAddress", addressLocality: "Moradabad", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
       }),
     }],
   }),

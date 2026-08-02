@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: site.name,
           description: site.description,
-          address: { "@type": "PostalAddress", addressLocality: "Khurja", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
+          address: { "@type": "PostalAddress", addressLocality: "Moradabad", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
           email: site.email,
           telephone: site.phone,
         }),

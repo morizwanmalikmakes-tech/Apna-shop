@@ -6,7 +6,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Us — Kulhad Factory" },
-      { name: "description", content: "Kulhad Factory crafts food-safe, eco-friendly clay kulhads in Khurja, India — supplying cafés, dhabas, hotels and exporters nationwide." },
+      { name: "description", content: "Kulhad Factory crafts food-safe, eco-friendly clay kulhads in Moradabad, India — supplying cafés, dhabas, hotels and exporters nationwide." },
       { property: "og:title", content: "About Kulhad Factory" },
       { property: "og:description", content: "Our story, craftsmanship and commitment to natural clay." },
       { property: "og:url", content: "https://www.kulhad.shop/about" },
@@ -36,7 +36,7 @@ function AboutPage() {
           {[
             ["Craft", "Handmade in small batches by skilled potters."],
             ["Purity", "100% natural clay — no glaze, no lead, no plastic."],
-            ["Scale", "25,000+ pieces monthly with consistent quality."],
+            ["Scale", "7 Lakh+ pieces monthly with consistent quality."],
           ].map(([t, b]) => (
             <div key={t}>
               <h3 className="font-display text-2xl font-bold">{t}</h3>
