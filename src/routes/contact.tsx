@@ -65,6 +65,7 @@ Message: ${message || "-"}`;
 
   return (
     <SiteLayout>
+      <h1 className="sr-only">Contact Kulhad Factory — Clay Kulhad Manufacturer in Moradabad</h1>
 
       <section className="mx-auto w-full max-w-7xl min-w-0 overflow-hidden px-4 py-6 sm:px-6 lg:px-8">
         <div className="space-y-4">
