@@ -1,11 +1,11 @@
-import k60 from "@/assets/tea-60-new.png";
-import k70 from "@/assets/tea-70-new.png";
-import k80 from "@/assets/tea-80-new.png";
-import k90 from "@/assets/tea-90-new.png";
-import k100 from "@/assets/tea-100-new.png";
-import k200 from "@/assets/kulhad-200-new.png";
-import k250 from "@/assets/new-k250.png";
-import k300 from "@/assets/new-k300.png";
+import k60 from "@/assets/tea-60-new.webp";
+import k70 from "@/assets/tea-70-new.webp";
+import k80 from "@/assets/tea-80-new.webp";
+import k90 from "@/assets/tea-90-new.webp";
+import k100 from "@/assets/tea-100-new.webp";
+import k200 from "@/assets/kulhad-200-new.webp";
+import k250 from "@/assets/new-k250.webp";
+import k300 from "@/assets/new-k300.webp";
 
 export type Product = {
   slug: string;

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/site-layout";
-import craftsmanship from "@/assets/craftsmanship.jpg";
+import craftsmanship from "@/assets/craftsmanship.webp";
 
 export const Route = createFileRoute("/about")({
   head: () => ({

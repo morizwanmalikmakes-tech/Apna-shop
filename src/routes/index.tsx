@@ -6,8 +6,8 @@ import { ClayParticles } from "@/components/clay-particles";
 import { Counter } from "@/components/counter";
 import { products } from "@/lib/products";
 import { site, waLink } from "@/lib/site";
-import hero from "@/assets/new-hero.jpeg";
-import craftsmanship from "@/assets/craftsmanship.jpg";
+import hero from "@/assets/new-hero.webp";
+import craftsmanship from "@/assets/craftsmanship.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -92,7 +92,7 @@ function HomePage() {
 
             <div className="mt-6 overflow-hidden rounded-3xl shadow-warm">
               <img
-                src="/images/home-kulhads.png"
+                src="/images/home-kulhads.webp"
                 alt="Handcrafted clay kulhads ready for use"
                 width={1600}
                 height={1000}
@@ -152,7 +152,7 @@ function HomePage() {
       <section className="bg-secondary text-secondary-foreground">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
           <div className="relative overflow-hidden rounded-3xl shadow-warm">
-            <img src="/images/craftsmanship.jpg" alt="Potter shaping a kulhad on the wheel" loading="lazy" width={1200} height={900} className="h-full w-full object-cover" />
+            <img src="/images/craftsmanship.webp" alt="Potter shaping a kulhad on the wheel" loading="lazy" width={1200} height={900} className="h-full w-full object-cover" />
           </div>
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">The Craft</p>

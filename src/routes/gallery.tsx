@@ -1,23 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/site-layout";
 
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
+import g1 from "@/assets/gallery-1.webp";
+import g2 from "@/assets/gallery-2.webp";
+import g3 from "@/assets/gallery-3.webp";
+import g4 from "@/assets/gallery-4.webp";
+import g5 from "@/assets/gallery-5.webp";
+import g6 from "@/assets/gallery-6.webp";
 
-import newGallery1 from "@/assets/gallery-new-1.png";
-import newGallery2 from "@/assets/gallery-new-2.png";
-import newGallery3 from "@/assets/gallery-new-3.png";
-import newGallery4 from "@/assets/gallery-new-4.png";
+import newGallery1 from "@/assets/gallery-new-1.webp";
+import newGallery2 from "@/assets/gallery-new-2.webp";
+import newGallery3 from "@/assets/gallery-new-3.webp";
+import newGallery4 from "@/assets/gallery-new-4.webp";
 
-import newGallery5 from "@/assets/gallery-new-5.png";
-import newGallery6 from "@/assets/gallery-new-6.png";
+import newGallery5 from "@/assets/gallery-new-5.webp";
+import newGallery6 from "@/assets/gallery-new-6.webp";
 
-import craftsmanship from "@/assets/craftsmanship.jpg";
-import hero from "@/assets/hero-kulhad.jpg";
+import craftsmanship from "@/assets/craftsmanship.webp";
+import hero from "@/assets/hero-kulhad.webp";
 
 const items = [
   { src: g1, alt: "Kulhad Factory workshop and production floor", span: "md:col-span-2 md:row-span-2" },
