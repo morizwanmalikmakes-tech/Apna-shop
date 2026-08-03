@@ -1,0 +1,50 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { SiteLayout, PageHero } from "@/components/site-layout";
+import craftsmanship from "@/assets/craftsmanship.jpg";
+
+export const Route = createFileRoute("/about")({
+  head: () => ({
+    meta: [
+      { title: "About Us — Kulhad Factory" },
+      { name: "description", content: "Kulhad Factory crafts food-safe, eco-friendly clay kulhads in Khurja, India — supplying cafés, dhabas, hotels and exporters nationwide." },
+      { property: "og:title", content: "About Kulhad Factory" },
+      { property: "og:description", content: "Our story, craftsmanship and commitment to natural clay." },
+      { property: "og:url", content: "/about" },
+    ],
+    links: [{ rel: "canonical", href: "/about" }],
+  }),
+  component: AboutPage,
+});
+
+function AboutPage() {
+  return (
+    <SiteLayout>
+      <PageHero eyebrow="Our Story" title="Crafted in Khurja. Loved everywhere." subtitle="A family of potters bringing chai back to its roots — one earthen cup at a time." />
+      <section className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
+        <div className="overflow-hidden rounded-3xl shadow-warm">
+          <img src={craftsmanship} alt="Master potter shaping clay on a wheel" loading="lazy" width={1200} height={900} className="h-full w-full object-cover" />
+        </div>
+        <div className="space-y-5 text-muted-foreground">
+          <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">A legacy of clay</h2>
+          <p>Kulhad Factory was born out of a simple belief: the taste of chai deserves the honesty of clay. Our workshop sits in Khurja — a town that has fired ceramics for over 600 years — surrounded by generations of master potters who taught us that patience is a raw material too.</p>
+          <p>Every cup is thrown by hand, sun-dried under Uttar Pradesh skies, and kiln-fired at over 1000°C for a lead-free, glaze-free finish that's completely food-safe. No shortcuts. No chemicals. Just earth, fire, water and time.</p>
+          <p>Today we supply chaiwalas, cafés, five-star hotels, wedding planners, and exporters across India and abroad. We're proud that a plastic cup gets replaced with a cup you can return to the soil.</p>
+        </div>
+      </section>
+      <section className="bg-secondary text-secondary-foreground">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:grid-cols-3 sm:px-6 lg:px-8">
+          {[
+            ["Craft", "Handmade in small batches by skilled potters."],
+            ["Purity", "100% natural clay — no glaze, no lead, no plastic."],
+            ["Scale", "25,000+ pieces monthly with consistent quality."],
+          ].map(([t, b]) => (
+            <div key={t}>
+              <h3 className="font-display text-2xl font-bold">{t}</h3>
+              <p className="mt-2 text-secondary-foreground/80">{b}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </SiteLayout>
+  );
+}
