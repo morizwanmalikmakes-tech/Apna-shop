@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "premium handmade kulhads for tea" },
       { property: "og:description", content: "premium handmade kulhads for tea" },
       { name: "twitter:description", content: "premium handmade kulhads for tea" },
-      { property: "og:image", content: "https://www.kulhad.shop/og-image.webp" },
-      { name: "twitter:image", content: "https://www.kulhad.shop/og-image.webp" },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
