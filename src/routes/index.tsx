@@ -12,9 +12,9 @@ import craftsmanship from "@/assets/craftsmanship.webp";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: `${site.name} — ${site.tagline}` },
+      { title: site.seoTitle },
       { name: "description", content: site.description },
-      { property: "og:title", content: `${site.name} — ${site.tagline}` },
+      { property: "og:title", content: site.seoTitle },
       { property: "og:description", content: site.description },
       { property: "og:url", content: "https://www.kulhad.shop/" },
     ],
