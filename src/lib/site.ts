@@ -1,9 +1,9 @@
 export const site = {
   name: "Kulhad Factory",
   tagline: "Bringing Tradition to Every Sip",
-  seoTitle: "Kulhad Factory | Premium Clay Kulhad Manufacturer in India",
+  seoTitle: "Buy Clay Kulhads Online | Wholesale & Bulk Orders",
   description:
-    "Buy premium handmade clay kulhads for tea, coffee and lassi. Wholesale and retail supplier across India.",
+    "Buy handmade clay kulhads online from our Moradabad factory. 60ml-300ml tea, coffee and lassi kulhads with bulk pricing and India-wide delivery.",
   phone: "+91 99978 37697",
   whatsapp: "919997837697", // digits only, no +
   email: "morizwanmalikmakes@gmail.com",
