@@ -77,8 +77,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "premium handmade kulhads for tea" },
       { property: "og:description", content: "premium handmade kulhads for tea" },
       { name: "twitter:description", content: "premium handmade kulhads for tea" },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c8ae4518-61ad-4e00-a119-14902f93ea86/id-preview-141e1246--955d5f35-f2ba-41a9-a1d8-025212cd43d5.lovable.app-1784353327063.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c8ae4518-61ad-4e00-a119-14902f93ea86/id-preview-141e1246--955d5f35-f2ba-41a9-a1d8-025212cd43d5.lovable.app-1784353327063.png" },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
