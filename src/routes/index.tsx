@@ -34,9 +34,11 @@ const features = [
 ];
 
 const testimonials = [
-  { name: "Rohit Sharma", role: "Café owner, Moradabad", quote: "Kulhad Factory ki chai ka anubhav hi alag hai — mitti ke swaad ke liye grahak baar-baar wapas aate hain." },
+  { name: "Rohit Sharma", role: "Café owner, Moradabad", quote: "Kulhad Factory ke kulhad ki quality aur finishing bahut acchi hai — hamare customers ko pasand aate hain, isliye hum baar-baar order karte hain." },
   { name: "Priya Verma", role: "Wedding planner, Bijnor", quote: "Shaadi ke liye humne 3000 pieces order kiye. Perfect finishing, time par delivery aur transit me bilkul zero breakage." },
   { name: "Anil Gupta", role: "Exporter, Amroha", quote: "Har mahine ek jaisi quality milti hai. Kulhad Factory ab hamara bharosemand kulhad supplier ban chuka hai." },
+  { name: "Harpreet Singh", role: "Restaurant owner, Lucknow", quote: "5000 kulhad ka order time par mila. Packing mazboot thi, quality consistent thi aur har piece ka finish bahut accha tha. Agla order bhi Kulhad Factory se hi karenge." },
+  { name: "Mohammed Danish", role: "Tea café owner, Bareilly", quote: "Humein kulhad ki quality, reasonable pricing aur delivery support bahut pasand aaya. Customers ko bhi mitti ke kulhad ka experience accha laga, isliye ab hum regular order karte hain." },
 ];
 
 function HomePage() {
