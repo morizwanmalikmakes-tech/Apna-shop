@@ -94,7 +94,7 @@ Message: ${message || "-"}`;
             <a href={waLink("Hi Kulhad Factory, I'd like to place an order.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-1.5 rounded-full bg-[#25D366] px-3 py-3 text-xs font-semibold text-white hover:brightness-110">
               <MessageCircle className="h-4 w-4" /> WhatsApp
             </a>
-            <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="inline-flex items-center justify-center gap-1.5 rounded-full bg-primary px-3 py-3 text-xs font-semibold text-primary-foreground hover:brightness-110">
+            <a href={`tel:${site.phone2.replace(/\s/g, "")}`} className="inline-flex items-center justify-center gap-1.5 rounded-full bg-primary px-3 py-3 text-xs font-semibold text-primary-foreground hover:brightness-110">
               <Phone className="h-4 w-4" /> Call
             </a>
             <a href={`mailto:${site.email}`} className="inline-flex items-center justify-center gap-1.5 rounded-full border border-border bg-card px-3 py-3 text-xs font-semibold text-foreground hover:bg-muted">
