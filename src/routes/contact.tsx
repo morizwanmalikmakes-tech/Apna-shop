@@ -72,6 +72,7 @@ Message: ${message || "-"}`;
           {[
             { icon: MapPin, label: "Visit", value: site.address },
             { icon: Phone, label: "Call", value: site.phone, href: `tel:${site.phone.replace(/\s/g, "")}` },
+            { icon: Phone, label: "Call", value: site.phone2, href: `tel:${site.phone2.replace(/\s/g, "")}` },
             { icon: Mail, label: "Email", value: site.email, href: `mailto:${site.email}` },
           ].map((c) => (
             <div key={c.label} className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 shadow-soft">

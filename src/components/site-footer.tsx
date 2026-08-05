@@ -52,6 +52,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3 text-sm text-secondary-foreground/85">
             <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" /><span>{site.address}</span></li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 shrink-0" /><a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-primary">{site.phone}</a></li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 shrink-0" /><a href={`tel:${site.phone2.replace(/\s/g, "")}`} className="hover:text-primary">{site.phone2}</a></li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 shrink-0" /><a href={`mailto:${site.email}`} className="hover:text-primary">{site.email}</a></li>
           </ul>
         </div>

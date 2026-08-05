@@ -5,8 +5,9 @@ export const site = {
   description:
     "Buy handmade clay kulhads online from our Moradabad factory. 60ml-300ml tea, coffee and lassi kulhads with bulk pricing and India-wide delivery.",
   phone: "+91 99978 37697",
+  phone2: "+91 87913 55306",
   whatsapp: "919997837697", // digits only, no +
-  email: "morizwanmalikmakes@gmail.com",
+  email: "kulhadshop@gmail.com",
   address: "Moradabad, Uttar Pradesh 244501",
   socials: {
     instagram: "#",
