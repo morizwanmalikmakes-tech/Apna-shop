@@ -34,9 +34,9 @@ const features = [
 ];
 
 const testimonials = [
-  { name: "Rohit Sharma", role: "Café owner, Delhi", quote: "Kulhad Factory ki chai ka anubhav hi alag hai — mitti ke swaad ke liye grahak baar-baar wapas aate hain." },
-  { name: "Priya Verma", role: "Wedding planner", quote: "Shaadi ke liye humne 3000 pieces order kiye. Perfect finishing, time par delivery aur transit me bilkul zero breakage." },
-  { name: "Anil Gupta", role: "Exporter, Mumbai", quote: "Har mahine ek jaisi quality milti hai. KGN ab hamara bharosemand kulhad supplier ban chuka hai." },
+  { name: "Rohit Sharma", role: "Café owner, Moradabad", quote: "Kulhad Factory ki chai ka anubhav hi alag hai — mitti ke swaad ke liye grahak baar-baar wapas aate hain." },
+  { name: "Priya Verma", role: "Wedding planner, Bijnor", quote: "Shaadi ke liye humne 3000 pieces order kiye. Perfect finishing, time par delivery aur transit me bilkul zero breakage." },
+  { name: "Anil Gupta", role: "Exporter, Amroha", quote: "Har mahine ek jaisi quality milti hai. Kulhad Factory ab hamara bharosemand kulhad supplier ban chuka hai." },
 ];
 
 function HomePage() {
