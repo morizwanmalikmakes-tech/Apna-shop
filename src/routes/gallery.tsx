@@ -49,7 +49,11 @@ export const Route = createFileRoute("/gallery")({
 function GalleryPage() {
   return (
     <SiteLayout>
-      <PageHero eyebrow="Gallery" title="Mitti, Aag aur in dono ke beech ki har kahani." />
+      <PageHero
+        eyebrow="Gallery"
+        title="Har Kulhad Mein Mitti Ki Khushboo, Har Order Mein Bharosa"
+        subtitle="Moradabad mein haath se bane food-safe kulhads—café, restaurant, shaadi aur wholesale orders ke liye quality, packing aur timely delivery ke saath. Dekhiye kuch pyari si tasveerein—hamare kulhad banne ka asli safar."
+      />
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid auto-rows-[220px] grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
           {items.map((it, i) => (
