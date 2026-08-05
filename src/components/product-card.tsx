@@ -34,7 +34,7 @@ export function ProductCard({ product }: { product: Product }) {
         <p className="text-sm text-muted-foreground">{product.description}</p>
 {product.price && (
   <div className="text-lg font-bold text-primary">
-    {product.price}
+    {product.price} per piece
   </div>
 )}
         <div className="mt-1 flex items-center gap-2">
