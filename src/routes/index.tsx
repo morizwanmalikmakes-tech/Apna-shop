@@ -8,6 +8,7 @@ import { products } from "@/lib/products";
 import { site, waLink } from "@/lib/site";
 import hero from "@/assets/new-hero.webp";
 import craftsmanship from "@/assets/craftsmanship.webp";
+import secondKulhad from "@/assets/second-kulhad-image.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -71,7 +72,7 @@ function HomePage() {
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-4">
               {[
                 { n: 8, s: "+", l: "Sizes" },
-                { n: 7, s: "Lakh+", l: "Monthly pcs" },
+                { n: 7, s: " lakh+", l: "Monthly pcs" },
                 { n: 100, s: "%", l: "Natural clay" },
               ].map((c) => (
                 <div key={c.l} className="rounded-xl border border-border bg-card px-3 py-3 text-center shadow-soft">
@@ -92,7 +93,7 @@ function HomePage() {
 
             <div className="mt-6 overflow-hidden rounded-3xl shadow-warm">
               <img
-                src="/images/home-kulhads.webp"
+                src={secondKulhad}
                 alt="Handcrafted clay kulhads ready for use"
                 width={1600}
                 height={1000}
