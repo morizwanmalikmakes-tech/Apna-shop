@@ -52,7 +52,7 @@ export function SiteHeader() {
       <div
         className={cn(
           "overflow-hidden border-t border-border/60 bg-background lg:hidden",
-          open ? "max-h-96" : "max-h-0",
+          open ? "max-h-[32rem]" : "max-h-0",
           "transition-[max-height] duration-300 ease-out",
         )}
       >
@@ -69,6 +69,22 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <Link
+            to="/privacy"
+            onClick={() => setOpen(false)}
+            className="rounded-md px-3 py-3 text-sm font-medium text-foreground/80 hover:bg-muted"
+            activeProps={{ className: "text-primary" }}
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            to="/terms"
+            onClick={() => setOpen(false)}
+            className="rounded-md px-3 py-3 text-sm font-medium text-foreground/80 hover:bg-muted"
+            activeProps={{ className: "text-primary" }}
+          >
+            Terms & Conditions
+          </Link>
         </nav>
       </div>
     </header>

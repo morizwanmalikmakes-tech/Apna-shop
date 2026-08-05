@@ -44,6 +44,16 @@ export function SiteFooter() {
                 <Link to={n.to} className="text-secondary-foreground/85 transition hover:text-primary">{n.label}</Link>
               </li>
             ))}
+            <li>
+              <Link to="/privacy" className="text-secondary-foreground/85 transition hover:text-primary">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms" className="text-secondary-foreground/85 transition hover:text-primary">
+                Terms & Conditions
+              </Link>
+            </li>
           </ul>
         </div>
 
