@@ -35,10 +35,10 @@ const items = [
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery — Kulhad Factory" },
-      { name: "description", content: "A visual tour of our clay, craft and kulhads — from the wheel to the kiln to your cup." },
-      { property: "og:title", content: "Gallery — Kulhad Factory" },
-      { property: "og:description", content: "Photos of our clay kulhads, craft and workshop." },
+      { title: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad" },
+      { name: "description", content: "Dekho kaise hamare kulhad bante hain — Moradabad ki mitti se lekar bhatti tak. Factory ki tasveerein, banane ka tarika aur tayyar kulhad." },
+      { property: "og:title", content: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad" },
+      { property: "og:description", content: "Moradabad factory mein haath se bane mitti ke kulhad — production se lekar tayyar kulhad tak ki tasveerein." },
       { property: "og:url", content: "https://www.kulhad.shop/gallery" },
     ],
     links: [{ rel: "canonical", href: "https://www.kulhad.shop/gallery" }],
