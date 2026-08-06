@@ -57,7 +57,7 @@ function HomePage() {
               <span className="h-1.5 w-1.5 rounded-full bg-primary" /> {site.name}
             </span>
             <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
-              Pure Clay Kulhads <span className="text-primary">for Every Occasion</span>
+              Pure Clay Kulhad Manufacturer <span className="text-primary">&amp; Wholesale Supplier in Moradabad</span>
             </h1>
             <p className="mt-5 max-w-lg text-base text-muted-foreground sm:text-lg">
               Paryavaran ke liye behtar, food-safe, haath se banaye gaye mitti ke kulhad — chai, coffee, lassi aur beverages ke liye. Har sip mein parampara ka swaad.
