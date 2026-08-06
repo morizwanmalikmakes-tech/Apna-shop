@@ -31,3 +31,7 @@ dist-ssr
 *.sln
 *.sw?
 src-backup-before-seo/
+
+# local backups
+*.before-*
+*.backup
