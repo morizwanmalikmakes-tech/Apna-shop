@@ -173,8 +173,9 @@ function HomePage() {
       {/* TESTIMONIALS */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">Loved by chai lovers</p>
-          <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">What our customers say</h2>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">TRUSTED BY KULHAD BUYERS</p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">Hamare Customers Ka Bharosa</h2>
+          <p className="mt-4 text-sm text-muted-foreground sm:text-base">Quality, strong packing aur timely delivery ke baare mein hamare customers kya kehte hain, dekhiye.</p>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
