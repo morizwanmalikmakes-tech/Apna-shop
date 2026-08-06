@@ -32,6 +32,12 @@ export function ProductCard({ product }: { product: Product }) {
           </span>
         </div>
         <p className="text-sm text-muted-foreground">{product.description}</p>
+        <a
+          href={`/products/${product.slug}`}
+          className="text-sm font-semibold text-primary hover:underline"
+        >
+          View product details →
+        </a>
 {product.price && (
   <div className="text-lg font-bold text-primary">
     {product.price} per piece
