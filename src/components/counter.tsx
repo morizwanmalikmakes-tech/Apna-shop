@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 
 export function Counter({ to, suffix = "", duration = 1600 }: { to: number; suffix?: string; duration?: number }) {
-  const [n, setN] = useState(0);
+  const [n, setN] = useState(to); // SSR: Google ko real value dikhti hai
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    setN(0); // Browser mein animation 0 se shuru hoti hai
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting && !started.current) {

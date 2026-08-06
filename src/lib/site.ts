@@ -10,10 +10,7 @@ export const site = {
   email: "kulhadshop@gmail.com",
   address: "Moradabad, Uttar Pradesh 244501",
   socials: {
-    instagram: "#",
-    facebook: "#",
-    youtube: "#",
-    whatsapp: "#",
+    instagram: "https://www.instagram.com/kulhad_moradabad_wale?igsh=MTFveGQ0MWFtODJ6dw==",
   },
 };
 

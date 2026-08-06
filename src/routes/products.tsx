@@ -10,6 +10,9 @@ export const Route = createFileRoute("/products")({
     meta: [
       { property: "og:title", content: "Products - Clay Kulhads by Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/products" },
+      { property: "og:locale", content: "en_IN" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:title", content: "Products - Clay Kulhads by Kulhad Factory" },
       { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
       { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },

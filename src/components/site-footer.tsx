@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Instagram, Facebook, Youtube, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { nav, site } from "@/lib/site";
 
 export function SiteFooter() {
@@ -29,10 +29,7 @@ export function SiteFooter() {
             {site.tagline}. Handcrafted clay kulhads made from 100% natural earth — food-safe, eco-friendly, made in India.
           </p>
           <div className="mt-5 flex items-center gap-3">
-            <a href={site.socials.instagram} aria-label="Instagram" className="grid h-9 w-9 place-items-center rounded-full bg-secondary-foreground/10 transition hover:bg-primary"><Instagram className="h-4 w-4" /></a>
-            <a href={site.socials.facebook} aria-label="Facebook" className="grid h-9 w-9 place-items-center rounded-full bg-secondary-foreground/10 transition hover:bg-primary"><Facebook className="h-4 w-4" /></a>
-            <a href={site.socials.youtube} aria-label="YouTube" className="grid h-9 w-9 place-items-center rounded-full bg-secondary-foreground/10 transition hover:bg-primary"><Youtube className="h-4 w-4" /></a>
-            <a href={site.socials.whatsapp} aria-label="WhatsApp" className="grid h-9 w-9 place-items-center rounded-full bg-secondary-foreground/10 transition hover:bg-[#25D366]"><MessageCircle className="h-4 w-4" /></a>
+            <a href={site.socials.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full bg-secondary-foreground/10 transition hover:bg-primary"><Instagram className="h-4 w-4" /></a>
           </div>
         </div>
 
