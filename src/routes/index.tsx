@@ -18,6 +18,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: site.seoTitle },
       { property: "og:description", content: site.description },
       { property: "og:url", content: "https://www.kulhad.shop/" },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [{ rel: "canonical", href: "https://www.kulhad.shop/" }],
   }),
