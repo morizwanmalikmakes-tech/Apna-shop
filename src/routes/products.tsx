@@ -5,8 +5,15 @@ import { ProductCard } from "@/components/product-card";
 import { products as localProducts } from "@/lib/products";
 
 export const Route = createFileRoute("/products")({
-  head: () => ({
-    links: [{ rel: "canonical", href: "https://www.kulhad.shop/products" }],
+  head: ({ params }) => {
+    const isProductDetail = Boolean(
+      (params as { slug?: string }).slug,
+    );
+
+    return {
+    links: isProductDetail
+      ? []
+      : [{ rel: "canonical", href: "https://www.kulhad.shop/products" }],
     meta: [
       { property: "og:title", content: "Products - Clay Kulhads by Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/products" },
@@ -23,7 +30,7 @@ export const Route = createFileRoute("/products")({
           "Browse handcrafted clay kulhads from 60ml tea cups to 300ml lassi glasses.",
       },
     ],
-    scripts: [
+    scripts: isProductDetail ? [] : [
       {
         type: "application/ld+json",
         children: JSON.stringify({
@@ -52,7 +59,8 @@ export const Route = createFileRoute("/products")({
         }),
       },
     ],
-  }),
+    };
+  },
   component: ProductsPage,
 });
 
