@@ -1,5 +1,5 @@
 import * as React from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Outlet, useRouterState } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/site-layout";
 import { ProductCard } from "@/components/product-card";
 import { products as localProducts } from "@/lib/products";
@@ -65,6 +65,15 @@ export const Route = createFileRoute("/products")({
 });
 
 function ProductsPage() {
+  const isProductDetail = useRouterState({
+    select: (state) =>
+      state.matches.some((match) => match.routeId === "/products/$slug"),
+  });
+
+  if (isProductDetail) {
+    return <Outlet />;
+  }
+
   const products = localProducts;
   return (
     <SiteLayout>
