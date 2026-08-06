@@ -20,6 +20,10 @@ export const Route = createFileRoute("/faq")({
       { property: "og:title", content: "FAQ — Kulhad Factory" },
       { property: "og:description", content: "Everything you need to know about our clay kulhads." },
       { property: "og:url", content: "https://www.kulhad.shop/faq" },
+      { name: "twitter:title", content: "FAQ — Kulhad Factory" },
+      { name: "twitter:description", content: "Everything you need to know about our clay kulhads." },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [{ rel: "canonical", href: "https://www.kulhad.shop/faq" }],
     scripts: [{

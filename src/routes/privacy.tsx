@@ -23,6 +23,9 @@ export const Route = createFileRoute("/privacy")({
         property: "og:url",
         content: "https://www.kulhad.shop/privacy",
       },
+        { name: "twitter:title", content: "Privacy Policy — Kulhad Factory" },
+        { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+        { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [
       {

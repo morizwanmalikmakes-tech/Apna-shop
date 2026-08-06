@@ -12,6 +12,10 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact Kulhad Factory" },
       { property: "og:description", content: "Reach us by WhatsApp, phone or email." },
       { property: "og:url", content: "https://www.kulhad.shop/contact" },
+      { name: "twitter:title", content: "Contact Kulhad Factory" },
+      { name: "twitter:description", content: "Reach us by WhatsApp, phone or email." },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [{ rel: "canonical", href: "https://www.kulhad.shop/contact" }],
     scripts: [{

@@ -23,6 +23,9 @@ export const Route = createFileRoute("/terms")({
         property: "og:url",
         content: "https://www.kulhad.shop/terms",
       },
+        { name: "twitter:title", content: "Terms & Conditions — Kulhad Factory" },
+        { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+        { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [
       {
