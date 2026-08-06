@@ -34,6 +34,20 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
+          <Link
+            to="/privacy"
+            className="rounded-full px-4 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-muted hover:text-foreground"
+            activeProps={{ className: "bg-secondary/10 text-secondary" }}
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            to="/terms"
+            className="rounded-full px-4 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-muted hover:text-foreground"
+            activeProps={{ className: "bg-secondary/10 text-secondary" }}
+          >
+            Terms & Conditions
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2 justify-self-end">
