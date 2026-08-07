@@ -239,6 +239,14 @@ Message: ${message || "-"}`;
       </section>
 
       <section className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div className="mb-4 rounded-2xl border border-border bg-card p-5 shadow-soft">
+          <h2 className="font-display text-xl font-bold text-foreground">
+            Factory map location
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Business address: Moradabad, Uttar Pradesh 244501. Factory map location: Kasampur, Uttar Pradesh 246745.
+          </p>
+        </div>
         <div className="overflow-hidden rounded-3xl border border-border shadow-soft">
           <iframe
             title="Kulhad Factory location"
