@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site-layout";
 import { products } from "@/lib/products";
 import { site, waLink } from "@/lib/site";
@@ -6,6 +6,11 @@ import { site, waLink } from "@/lib/site";
 const BASE_URL = "https://www.kulhad.shop";
 
 export const Route = createFileRoute("/products/$slug")({
+  loader: ({ params }) => {
+    const product = products.find((item) => item.slug === params.slug);
+    if (!product) throw notFound();
+    return product;
+  },
   head: ({ params }) => {
     const product = products.find((item) => item.slug === params.slug);
 
