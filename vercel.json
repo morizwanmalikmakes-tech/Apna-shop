@@ -1,6 +1,11 @@
 {
   "redirects": [
     { "source": "/privacy-policy", "destination": "/privacy", "permanent": true },
-    { "source": "/terms-and-conditions", "destination": "/terms", "permanent": true }
+    { "source": "/terms-and-conditions", "destination": "/terms", "permanent": true },
+    { "source": "/pages/contact", "destination": "/contact", "permanent": true },
+    { "source": "/pages/privacy-policy", "destination": "/privacy", "permanent": true },
+    { "source": "/pages/terms-of-service", "destination": "/terms", "permanent": true },
+    { "source": "/pages/shipping-policy", "destination": "/terms", "permanent": true },
+    { "source": "/pages/refund-policy", "destination": "/terms", "permanent": true }
   ]
 }
