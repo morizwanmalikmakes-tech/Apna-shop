@@ -242,7 +242,7 @@ Message: ${message || "-"}`;
         <div className="overflow-hidden rounded-3xl border border-border shadow-soft">
           <iframe
             title="Kulhad Factory location"
-            src="https://www.google.com/maps?q=Kasampur,+Uttar+Pradesh+246745&output=embed"
+            src="https://www.google.com/maps?q=29.076938,78.638668&z=17&output=embed"
             width="100%"
             height="420"
             style={{ border: 0 }}

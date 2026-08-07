@@ -3,19 +3,6 @@ import { Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { nav, site, waLink } from "@/lib/site";
 
 export function SiteFooter() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "ok" | "err">("idle");
-
-  const onSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      setStatus("err");
-      return;
-    }
-    setStatus("ok");
-    setEmail("");
-  };
-
   return (
     <footer className="mt-24 border-t border-border/60 bg-secondary text-secondary-foreground">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
