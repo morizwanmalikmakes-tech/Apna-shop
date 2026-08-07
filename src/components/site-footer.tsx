@@ -1,7 +1,6 @@
-import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, Phone, MapPin } from "lucide-react";
-import { nav, site } from "@/lib/site";
+import { nav, site, waLink } from "@/lib/site";
 
 export function SiteFooter() {
   const [email, setEmail] = useState("");
@@ -65,24 +64,20 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-secondary-foreground/70">Newsletter</h4>
-          <p className="mt-4 text-sm text-secondary-foreground/85">Offers, new sizes and wholesale updates — straight to your inbox.</p>
-          <form onSubmit={onSubscribe} className="mt-3 flex overflow-hidden rounded-full bg-secondary-foreground/10 p-1">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => { setEmail(e.target.value); setStatus("idle"); }}
-              placeholder="Your email"
-              className="min-w-0 flex-1 bg-transparent px-4 py-2 text-sm text-secondary-foreground placeholder:text-secondary-foreground/50 outline-none"
-              required
-              maxLength={255}
-            />
-            <button type="submit" className="shrink-0 rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:brightness-110">
-              Subscribe
-            </button>
-          </form>
-          {status === "ok" && <p className="mt-2 text-xs text-accent">Thanks — you're on the list.</p>}
-          {status === "err" && <p className="mt-2 text-xs text-destructive-foreground/90">Enter a valid email.</p>}
+          <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-secondary-foreground/70">
+            WhatsApp Updates
+          </h4>
+          <p className="mt-4 text-sm text-secondary-foreground/85">
+            Product updates, new sizes aur wholesale offers ke liye WhatsApp par message karein.
+          </p>
+          <a
+            href={waLink("Hi Kulhad Factory, please send me product and wholesale updates.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+          >
+            Get updates on WhatsApp
+          </a>
         </div>
       </div>
       <div className="border-t border-secondary-foreground/10">
