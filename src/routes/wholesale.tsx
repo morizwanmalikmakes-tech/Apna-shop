@@ -8,16 +8,27 @@ export const Route = createFileRoute("/wholesale")({
   head: () => ({
     meta: [
       { title: "Wholesale Clay Kulhads — Bulk Orders | Kulhad Factory" },
-      { name: "description", content: "Wholesale kulhads for cafés, dhabas, hotels, weddings and exporters. Factory-direct pricing, custom sizes, nationwide delivery." },
+      {
+        name: "description",
+        content:
+          "Wholesale kulhads for cafés, dhabas, hotels, weddings and exporters. Factory-direct pricing, custom sizes, nationwide delivery.",
+      },
       { property: "og:title", content: "Wholesale Clay Kulhads — Bulk Orders | Kulhad Factory" },
-      { property: "og:description", content: "Wholesale kulhads for cafés, dhabas, hotels, weddings and exporters. Factory-direct pricing, custom sizes, nationwide delivery." },
+      {
+        property: "og:description",
+        content:
+          "Wholesale kulhads for cafés, dhabas, hotels, weddings and exporters. Factory-direct pricing, custom sizes, nationwide delivery.",
+      },
       { property: "og:url", content: "https://www.kulhad.shop/wholesale" },
       { property: "og:locale", content: "en_IN" },
       { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
       { property: "og:image:width", content: "1600" },
       { property: "og:image:height", content: "995" },
       { name: "twitter:title", content: "Wholesale Clay Kulhads — Bulk Orders | Kulhad Factory" },
-      { name: "twitter:description", content: "Wholesale kulhads for cafés, dhabas, hotels, weddings and exporters." },
+      {
+        name: "twitter:description",
+        content: "Wholesale kulhads for cafés, dhabas, hotels, weddings and exporters.",
+      },
       { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [{ rel: "canonical", href: "https://www.kulhad.shop/wholesale" }],
@@ -36,7 +47,8 @@ const perks = [
 
 function WholesaleForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const field = "rounded-lg border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary";
+  const field =
+    "rounded-lg border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary";
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -49,7 +61,8 @@ function WholesaleForm() {
     const notes = get("notes");
 
     const errs: Record<string, string> = {};
-    if (!name || name.length < 2 || name.length > 100) errs.name = "Valid name daalo (2–100 characters).";
+    if (!name || name.length < 2 || name.length > 100)
+      errs.name = "Valid name daalo (2–100 characters).";
     if (!business || business.length < 2) errs.business = "Business naam daalo.";
     if (!qty || qty.length < 3) errs.qty = "Size aur quantity batao (e.g. 80ml × 2000).";
     if (!city || city.length < 2) errs.city = "City / state daalo.";
@@ -80,11 +93,17 @@ function WholesaleForm() {
         {errors.city && <p className="text-xs text-destructive">{errors.city}</p>}
       </div>
       <textarea name="notes" rows={3} placeholder="Any special requirements?" className={field} />
-      <button type="submit" className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110">
+      <button
+        type="submit"
+        className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110"
+      >
         Send on WhatsApp
       </button>
       <p className="text-xs text-muted-foreground">
-        Or call <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="font-semibold text-primary">{site.phone}</a>
+        Or call{" "}
+        <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="font-semibold text-primary">
+          {site.phone}
+        </a>
       </p>
     </form>
   );
@@ -101,7 +120,9 @@ function WholesalePage() {
 
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 lg:px-8">
         <div>
-          <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">Why buy wholesale with us</h2>
+          <h2 className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+            Why buy wholesale with us
+          </h2>
           <ul className="mt-8 space-y-4">
             {perks.map((p) => (
               <li key={p} className="flex items-start gap-3 text-foreground/85">
@@ -114,7 +135,9 @@ function WholesalePage() {
 
         <div className="rounded-3xl border border-border bg-card p-8 shadow-soft">
           <h3 className="font-display text-2xl font-bold text-foreground">Request a quote</h3>
-          <p className="mt-2 text-sm text-muted-foreground">Tell us what you need and we'll get back to you within one working day.</p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Tell us what you need and we'll get back to you within one working day.
+          </p>
           <WholesaleForm />
         </div>
       </section>

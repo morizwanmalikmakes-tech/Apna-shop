@@ -23,7 +23,10 @@ function NotFoundComponent() {
           The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="mt-6">
-          <Link to="/" className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:brightness-110">
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:brightness-110"
+          >
             Back to home
           </Link>
         </div>
@@ -42,14 +45,28 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight text-foreground">This page didn't load</h1>
-        <p className="mt-2 text-sm text-muted-foreground">Something went wrong. Try refreshing or head home.</p>
+        <h1 className="text-xl font-semibold tracking-tight text-foreground">
+          This page didn't load
+        </h1>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Something went wrong. Try refreshing or head home.
+        </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
-            onClick={() => { router.invalidate(); reset(); }}
+            onClick={() => {
+              router.invalidate();
+              reset();
+            }}
             className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground hover:brightness-110"
-          >Try again</button>
-          <a href="/" className="rounded-full border border-input bg-background px-5 py-2 text-sm font-semibold text-foreground hover:bg-muted">Go home</a>
+          >
+            Try again
+          </button>
+          <a
+            href="/"
+            className="rounded-full border border-input bg-background px-5 py-2 text-sm font-semibold text-foreground hover:bg-muted"
+          >
+            Go home
+          </a>
         </div>
       </div>
     </div>
@@ -72,7 +89,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#8B5A2B" },
-      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      {
+        name: "robots",
+        content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -112,9 +132,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           },
           openingHours: "Mo-Sa 09:00-18:00",
           priceRange: "₹₹",
-          sameAs: [
-            "https://www.instagram.com/kulhad_moradabad_wale",
-          ],
+          sameAs: ["https://www.instagram.com/kulhad_moradabad_wale"],
         }),
       },
     ],
@@ -128,8 +146,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en-IN">
-      <head><HeadContent /></head>
-      <body>{children}<Scripts /></body>
+      <head>
+        <HeadContent />
+      </head>
+      <body>
+        {children}
+        <Scripts />
+      </body>
     </html>
   );
 }

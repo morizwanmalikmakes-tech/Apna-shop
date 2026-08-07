@@ -1,5 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Leaf, Sparkles, ShieldCheck, Package, Truck, Award, ArrowRight, Quote, Star } from "lucide-react";
+import {
+  Leaf,
+  Sparkles,
+  ShieldCheck,
+  Package,
+  Truck,
+  Award,
+  ArrowRight,
+  Quote,
+  Star,
+} from "lucide-react";
 import { SiteLayout } from "@/components/site-layout";
 import { ProductCard } from "@/components/product-card";
 import { ClayParticles } from "@/components/clay-particles";
@@ -30,20 +40,69 @@ export const Route = createFileRoute("/")({
 });
 
 const features = [
-  { icon: Leaf, title: "100% Natural Clay", body: "Nadi ke kinare ki mitti se liya gaya, haath se banaya aur dhoop mein sukhaya gaya." },
-  { icon: Sparkles, title: "Eco-Friendly", body: "Puri tarah biodegradable — har baar bina plastic ke ek behtar sip." },
-  { icon: ShieldCheck, title: "Food Safe", body: "Na glaze, na lead. Aapke drink ke liye sirf shuddh bhuni hui mitti." },
-  { icon: Package, title: "Bulk Orders", body: "Cafés, hotels, shaadiyon aur exporters ke liye bharosemand bulk orders." },
-  { icon: Truck, title: "Fast Delivery", body: "Desh bhar mein dispatch, dhyan se pack kiye gaye tootne se bachane wale crates ke saath." },
-  { icon: Award, title: "Premium Quality", body: "Ek jaisi motai, barabar pakai aur bhatti mein test ki hui majbooti." },
+  {
+    icon: Leaf,
+    title: "100% Natural Clay",
+    body: "Nadi ke kinare ki mitti se liya gaya, haath se banaya aur dhoop mein sukhaya gaya.",
+  },
+  {
+    icon: Sparkles,
+    title: "Eco-Friendly",
+    body: "Puri tarah biodegradable — har baar bina plastic ke ek behtar sip.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Food Safe",
+    body: "Na glaze, na lead. Aapke drink ke liye sirf shuddh bhuni hui mitti.",
+  },
+  {
+    icon: Package,
+    title: "Bulk Orders",
+    body: "Cafés, hotels, shaadiyon aur exporters ke liye bharosemand bulk orders.",
+  },
+  {
+    icon: Truck,
+    title: "Fast Delivery",
+    body: "Desh bhar mein dispatch, dhyan se pack kiye gaye tootne se bachane wale crates ke saath.",
+  },
+  {
+    icon: Award,
+    title: "Premium Quality",
+    body: "Ek jaisi motai, barabar pakai aur bhatti mein test ki hui majbooti.",
+  },
 ];
 
 const testimonials = [
-  { name: "Rohit Sharma", role: "Café owner, Moradabad", quote: "Kulhad Factory ke kulhad ki quality aur finishing bahut acchi hai — hamare customers ko pasand aate hain, isliye hum baar-baar order karte hain." },
-  { name: "Priya Verma", role: "Wedding planner, Bijnor", quote: "Shaadi ke liye humne 3000 pieces order kiye. Perfect finishing, time par delivery aur transit me bilkul zero breakage." },
-  { name: "Anil Gupta", role: "Exporter, Amroha", quote: "Har mahine ek jaisi quality milti hai. Kulhad Factory ab hamara bharosemand kulhad supplier ban chuka hai." },
-  { name: "Harpreet Singh", role: "Restaurant owner, Lucknow", quote: "5000 kulhad ka order time par mila. Packing mazboot thi, quality consistent thi aur har piece ka finish bahut accha tha. Agla order bhi Kulhad Factory se hi karenge." },
-  { name: "Mohammed Danish", role: "Tea café owner, Bareilly", quote: "Humein kulhad ki quality, reasonable pricing aur delivery support bahut pasand aaya. Customers ko bhi mitti ke kulhad ka experience accha laga, isliye ab hum regular order karte hain." },
+  {
+    name: "Rohit Sharma",
+    role: "Café owner, Moradabad",
+    quote:
+      "Kulhad Factory ke kulhad ki quality aur finishing bahut acchi hai — hamare customers ko pasand aate hain, isliye hum baar-baar order karte hain.",
+  },
+  {
+    name: "Priya Verma",
+    role: "Wedding planner, Bijnor",
+    quote:
+      "Shaadi ke liye humne 3000 pieces order kiye. Perfect finishing, time par delivery aur transit me bilkul zero breakage.",
+  },
+  {
+    name: "Anil Gupta",
+    role: "Exporter, Amroha",
+    quote:
+      "Har mahine ek jaisi quality milti hai. Kulhad Factory ab hamara bharosemand kulhad supplier ban chuka hai.",
+  },
+  {
+    name: "Harpreet Singh",
+    role: "Restaurant owner, Lucknow",
+    quote:
+      "5000 kulhad ka order time par mila. Packing mazboot thi, quality consistent thi aur har piece ka finish bahut accha tha. Agla order bhi Kulhad Factory se hi karenge.",
+  },
+  {
+    name: "Mohammed Danish",
+    role: "Tea café owner, Bareilly",
+    quote:
+      "Humein kulhad ki quality, reasonable pricing aur delivery support bahut pasand aaya. Customers ko bhi mitti ke kulhad ka experience accha laga, isliye ab hum regular order karte hain.",
+  },
 ];
 
 function HomePage() {
@@ -60,19 +119,32 @@ function HomePage() {
               <span className="h-1.5 w-1.5 rounded-full bg-primary" /> {site.name}
             </span>
             <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
-              Pure Clay Kulhad Manufacturer <span className="text-primary">&amp; Wholesale Supplier in Moradabad</span>
+              Pure Clay Kulhad Manufacturer{" "}
+              <span className="text-primary">&amp; Wholesale Supplier in Moradabad</span>
             </h1>
             <p className="mt-5 max-w-lg text-base text-muted-foreground sm:text-lg">
-              Paryavaran ke liye behtar, food-safe, haath se banaye gaye mitti ke kulhad — chai, coffee, lassi aur beverages ke liye. Har sip mein parampara ka swaad.
+              Paryavaran ke liye behtar, food-safe, haath se banaye gaye mitti ke kulhad — chai,
+              coffee, lassi aur beverages ke liye. Har sip mein parampara ka swaad.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link to="/products" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition hover:scale-105 hover:brightness-110">
+              <Link
+                to="/products"
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition hover:scale-105 hover:brightness-110"
+              >
                 Shop Now <ArrowRight className="h-4 w-4" />
               </Link>
-              <a href={waLink("Hi Kulhad Factory, I'd like to place an order.")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 hover:brightness-110">
+              <a
+                href={waLink("Hi Kulhad Factory, I'd like to place an order.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white transition hover:scale-105 hover:brightness-110"
+              >
                 WhatsApp Order
               </a>
-              <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-muted">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-muted"
+              >
                 Contact Us
               </Link>
             </div>
@@ -82,11 +154,16 @@ function HomePage() {
                 { n: 7, s: " lakh+", l: "Monthly pcs" },
                 { n: 100, s: "%", l: "Natural clay" },
               ].map((c) => (
-                <div key={c.l} className="rounded-xl border border-border bg-card px-3 py-3 text-center shadow-soft">
+                <div
+                  key={c.l}
+                  className="rounded-xl border border-border bg-card px-3 py-3 text-center shadow-soft"
+                >
                   <dt className="font-display text-2xl font-bold text-primary">
                     <Counter to={c.n} suffix={c.s} />
                   </dt>
-                  <dd className="text-[11px] uppercase tracking-wider text-muted-foreground">{c.l}</dd>
+                  <dd className="text-[11px] uppercase tracking-wider text-muted-foreground">
+                    {c.l}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -94,7 +171,13 @@ function HomePage() {
 
           <div className="animate-fade-in relative" style={{ animationDelay: "150ms" }}>
             <div className="relative overflow-hidden rounded-3xl shadow-warm">
-              <img src={hero} alt="Steaming masala chai in handcrafted clay kulhads" width={1600} height={1000} className="h-full w-full object-cover" />
+              <img
+                src={hero}
+                alt="Steaming masala chai in handcrafted clay kulhads"
+                width={1600}
+                height={1000}
+                className="h-full w-full object-cover"
+              />
               <div className="absolute inset-0 bg-gradient-to-tr from-clay-dark/50 via-transparent to-transparent" />
             </div>
 
@@ -114,8 +197,16 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <svg aria-hidden viewBox="0 0 1440 80" preserveAspectRatio="none" className="block h-12 w-full text-cream sm:h-16">
-          <path fill="currentColor" d="M0 40 C240 80 480 0 720 30 C960 60 1200 20 1440 50 L1440 80 L0 80 Z" />
+        <svg
+          aria-hidden
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          className="block h-12 w-full text-cream sm:h-16"
+        >
+          <path
+            fill="currentColor"
+            d="M0 40 C240 80 480 0 720 30 C960 60 1200 20 1440 50 L1440 80 L0 80 Z"
+          />
         </svg>
       </section>
 
@@ -123,12 +214,20 @@ function HomePage() {
       <section className="border-y border-border/60 bg-cream/50">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">Why Kulhad Factory</p>
-            <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">Earth in every sip.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">
+              Why Kulhad Factory
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">
+              Earth in every sip.
+            </h2>
           </div>
           <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((f, i) => (
-              <li key={f.title} className="hover-lift animate-fade-up rounded-2xl border border-border bg-card p-6 shadow-soft" style={{ animationDelay: `${i * 60}ms` }}>
+              <li
+                key={f.title}
+                className="hover-lift animate-fade-up rounded-2xl border border-border bg-card p-6 shadow-soft"
+                style={{ animationDelay: `${i * 60}ms` }}
+              >
                 <div className="grid h-11 w-11 place-items-center rounded-xl bg-primary/10 text-primary">
                   <f.icon className="h-5 w-5" />
                 </div>
@@ -144,15 +243,24 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">Bestsellers</p>
-            <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">Kulhads made to pour.</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">
+              Bestsellers
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">
+              Kulhads made to pour.
+            </h2>
           </div>
-          <Link to="/products" className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">
+          <Link
+            to="/products"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+          >
             View all sizes <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {products.slice(0, 4).map((p) => <ProductCard key={p.slug} product={p} />)}
+          {products.slice(0, 4).map((p) => (
+            <ProductCard key={p.slug} product={p} />
+          ))}
         </div>
       </section>
 
@@ -160,15 +268,32 @@ function HomePage() {
       <section className="bg-secondary text-secondary-foreground">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
           <div className="relative overflow-hidden rounded-3xl shadow-warm">
-            <img src="/images/craftsmanship.webp" alt="Potter shaping a kulhad on the wheel" loading="lazy" width={1200} height={900} className="h-full w-full object-cover" />
+            <img
+              src="/images/craftsmanship.webp"
+              alt="Potter shaping a kulhad on the wheel"
+              loading="lazy"
+              width={1200}
+              height={900}
+              className="h-full w-full object-cover"
+            />
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">The Craft</p>
-            <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">Made by hands. Fired by fire. Loved by chai.</h2>
-            <p className="mt-4 text-secondary-foreground/80">
-              Har Kulhad Factory ka kulhad Moradabad ke kushal kumharo ke haathon se banta hai — Bharat ke mitti ke bartano ke dil se. Mitti taiyaar karne se lekar bhatti mein pakane tak, hum poore hunar par nazar rakhte hain, taaki aapko food-safe, majboot aur khushboo se bhare kulhad milen.
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">
+              The Craft
             </p>
-            <Link to="/about" className="mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110">
+            <h2 className="mt-3 font-display text-3xl font-bold sm:text-4xl">
+              Made by hands. Fired by fire. Loved by chai.
+            </h2>
+            <p className="mt-4 text-secondary-foreground/80">
+              Har Kulhad Factory ka kulhad Moradabad ke kushal kumharo ke haathon se banta hai —
+              Bharat ke mitti ke bartano ke dil se. Mitti taiyaar karne se lekar bhatti mein pakane
+              tak, hum poore hunar par nazar rakhte hain, taaki aapko food-safe, majboot aur
+              khushboo se bhare kulhad milen.
+            </p>
+            <Link
+              to="/about"
+              className="mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110"
+            >
               Our story
             </Link>
           </div>
@@ -178,13 +303,24 @@ function HomePage() {
       {/* TESTIMONIALS */}
       <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">TRUSTED BY KULHAD BUYERS</p>
-          <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">Hamare Customers Ka Bharosa</h2>
-          <p className="mt-4 text-sm text-muted-foreground sm:text-base">Quality, strong packing aur timely delivery ke baare mein hamare customers kya kehte hain, dekhiye.</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary">
+            TRUSTED BY KULHAD BUYERS
+          </p>
+          <h2 className="mt-3 font-display text-3xl font-bold text-foreground sm:text-4xl">
+            Hamare Customers Ka Bharosa
+          </h2>
+          <p className="mt-4 text-sm text-muted-foreground sm:text-base">
+            Quality, strong packing aur timely delivery ke baare mein hamare customers kya kehte
+            hain, dekhiye.
+          </p>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
-            <figure key={t.name} className="hover-lift animate-fade-up rounded-2xl border border-border bg-card p-6 shadow-soft" style={{ animationDelay: `${i * 120}ms` }}>
+            <figure
+              key={t.name}
+              className="hover-lift animate-fade-up rounded-2xl border border-border bg-card p-6 shadow-soft"
+              style={{ animationDelay: `${i * 120}ms` }}
+            >
               <div className="flex items-center gap-1 text-primary">
                 {Array.from({ length: 5 }).map((_, j) => (
                   <Star key={j} className="h-4 w-4 fill-current" />
@@ -209,12 +345,25 @@ function HomePage() {
             <div>
               <h3 className="font-display text-3xl font-bold sm:text-4xl">Buying in bulk?</h3>
               <p className="mt-3 max-w-lg text-primary-foreground/85">
-                Factory-direct pricing for cafés, dhabas, hotels, wedding planners and exporters. Custom sizes and packaging available.
+                Factory-direct pricing for cafés, dhabas, hotels, wedding planners and exporters.
+                Custom sizes and packaging available.
               </p>
             </div>
             <div className="flex flex-wrap gap-3 md:justify-end">
-              <Link to="/wholesale" className="rounded-full bg-background px-6 py-3 text-sm font-semibold text-foreground hover:bg-cream">Wholesale enquiry</Link>
-              <a href={waLink("Hi, I'd like a wholesale quote.")} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white hover:brightness-110">WhatsApp us</a>
+              <Link
+                to="/wholesale"
+                className="rounded-full bg-background px-6 py-3 text-sm font-semibold text-foreground hover:bg-cream"
+              >
+                Wholesale enquiry
+              </Link>
+              <a
+                href={waLink("Hi, I'd like a wholesale quote.")}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-[#25D366] px-6 py-3 text-sm font-semibold text-white hover:brightness-110"
+              >
+                WhatsApp us
+              </a>
             </div>
           </div>
         </div>

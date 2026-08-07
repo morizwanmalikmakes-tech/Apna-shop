@@ -26,7 +26,9 @@ export function ProductCard({ product }: { product: Product }) {
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-baseline justify-between gap-2">
-          <h3 className="min-w-0 truncate font-display text-lg font-bold text-foreground">{product.name}</h3>
+          <h3 className="min-w-0 truncate font-display text-lg font-bold text-foreground">
+            {product.name}
+          </h3>
           <span className="shrink-0 rounded-full bg-muted px-2.5 py-0.5 text-xs font-semibold text-secondary">
             {product.capacity}
           </span>
@@ -38,13 +40,13 @@ export function ProductCard({ product }: { product: Product }) {
         >
           View product details →
         </a>
-{product.price && (
-  <div className="text-lg font-bold text-primary">
-    {product.price} per piece
-  </div>
-)}
+        {product.price && (
+          <div className="text-lg font-bold text-primary">{product.price} per piece</div>
+        )}
         <div className="mt-1 flex items-center gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Qty</span>
+          <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            Qty
+          </span>
           <div className="flex items-center overflow-hidden rounded-full border border-border">
             <button
               type="button"

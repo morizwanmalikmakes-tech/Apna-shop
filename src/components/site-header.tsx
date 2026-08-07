@@ -11,7 +11,9 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-3">
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-gradient-to-br from-clay to-clay-dark text-primary-foreground font-display text-lg font-bold shadow-soft">K</span>
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-gradient-to-br from-clay to-clay-dark text-primary-foreground font-display text-lg font-bold shadow-soft">
+            K
+          </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">
               {site.name}

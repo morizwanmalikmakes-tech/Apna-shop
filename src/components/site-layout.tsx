@@ -39,7 +39,10 @@ export function PageHero({
           {title}
         </h1>
         {subtitle && (
-          <p className="animate-fade-up mx-auto mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg" style={{ animationDelay: "80ms" }}>
+          <p
+            className="animate-fade-up mx-auto mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg"
+            style={{ animationDelay: "80ms" }}
+          >
             {subtitle}
           </p>
         )}

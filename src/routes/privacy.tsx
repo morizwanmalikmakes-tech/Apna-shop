@@ -16,16 +16,15 @@ export const Route = createFileRoute("/privacy")({
       },
       {
         property: "og:description",
-        content:
-          "How Kulhad Factory handles information shared through enquiries and orders.",
+        content: "How Kulhad Factory handles information shared through enquiries and orders.",
       },
       {
         property: "og:url",
         content: "https://www.kulhad.shop/privacy",
       },
-        { name: "twitter:title", content: "Privacy Policy — Kulhad Factory" },
-        { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
-        { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:title", content: "Privacy Policy — Kulhad Factory" },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [
       {
@@ -53,10 +52,9 @@ function PrivacyPage() {
               1. Hum kaunsi information lete hain?
             </h2>
             <p className="mt-3">
-              Jab aap humse WhatsApp, phone, email ya website ke contact form
-              ke madhyam se sampark karte hain, to hum aapka naam, phone number,
-              email address, city, order details aur aapke dwara bheji gayi
-              anya information prapt kar sakte hain.
+              Jab aap humse WhatsApp, phone, email ya website ke contact form ke madhyam se sampark
+              karte hain, to hum aapka naam, phone number, email address, city, order details aur
+              aapke dwara bheji gayi anya information prapt kar sakte hain.
             </p>
           </section>
 
@@ -65,10 +63,9 @@ function PrivacyPage() {
               2. Information ka istemal kaise hota hai?
             </h2>
             <p className="mt-3">
-              Hum is information ka istemal aapki enquiry ka jawab dene,
-              product availability aur pricing batane, order process karne,
-              delivery se judi baat karne aur customer support dene ke liye
-              karte hain.
+              Hum is information ka istemal aapki enquiry ka jawab dene, product availability aur
+              pricing batane, order process karne, delivery se judi baat karne aur customer support
+              dene ke liye karte hain.
             </p>
           </section>
 
@@ -77,10 +74,9 @@ function PrivacyPage() {
               3. Kya hum information share karte hain?
             </h2>
             <p className="mt-3">
-              Hum aapki personal information ko bechte nahi hain. Order ya
-              delivery poori karne ke liye zaroorat padne par information
-              trusted service providers ya delivery partners ke saath share
-              ki ja sakti hai.
+              Hum aapki personal information ko bechte nahi hain. Order ya delivery poori karne ke
+              liye zaroorat padne par information trusted service providers ya delivery partners ke
+              saath share ki ja sakti hai.
             </p>
           </section>
 
@@ -89,9 +85,8 @@ function PrivacyPage() {
               4. WhatsApp aur third-party services
             </h2>
             <p className="mt-3">
-              Website ke WhatsApp, phone aur email buttons aapko external
-              services par le ja sakte hain. Un services ki privacy policies
-              unke apne rules ke anusaar hoti hain.
+              Website ke WhatsApp, phone aur email buttons aapko external services par le ja sakte
+              hain. Un services ki privacy policies unke apne rules ke anusaar hoti hain.
             </p>
           </section>
 
@@ -100,28 +95,22 @@ function PrivacyPage() {
               5. Information ki security
             </h2>
             <p className="mt-3">
-              Hum customer information ko zaroorat ke hisaab se handle karte
-              hain aur unauthorized access se bachane ke liye reasonable
-              precautions rakhte hain. Internet par data transfer ko
-              completely risk-free guarantee nahi kiya ja sakta.
+              Hum customer information ko zaroorat ke hisaab se handle karte hain aur unauthorized
+              access se bachane ke liye reasonable precautions rakhte hain. Internet par data
+              transfer ko completely risk-free guarantee nahi kiya ja sakta.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-foreground">
-              6. Aapke rights
-            </h2>
+            <h2 className="font-display text-2xl font-bold text-foreground">6. Aapke rights</h2>
             <p className="mt-3">
-              Agar aap apni information ko update, correct ya delete karwana
-              chahte hain, to humein email ya phone par contact karein. Hum
-              reasonable request par madad karenge.
+              Agar aap apni information ko update, correct ya delete karwana chahte hain, to humein
+              email ya phone par contact karein. Hum reasonable request par madad karenge.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-foreground">
-              7. Contact
-            </h2>
+            <h2 className="font-display text-2xl font-bold text-foreground">7. Contact</h2>
             <p className="mt-3">
               Privacy se judi kisi bhi enquiry ke liye{" "}
               <a
@@ -134,9 +123,7 @@ function PrivacyPage() {
             </p>
           </section>
 
-          <p className="border-t border-border pt-6 text-sm">
-            Last updated: August 2026
-          </p>
+          <p className="border-t border-border pt-6 text-sm">Last updated: August 2026</p>
         </div>
       </main>
     </SiteLayout>

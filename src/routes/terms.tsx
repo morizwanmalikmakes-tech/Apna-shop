@@ -7,8 +7,7 @@ export const Route = createFileRoute("/terms")({
       { title: "Terms & Conditions — Kulhad Factory" },
       {
         name: "description",
-        content:
-          "Read the Terms and Conditions for purchasing clay kulhads from Kulhad Factory.",
+        content: "Read the Terms and Conditions for purchasing clay kulhads from Kulhad Factory.",
       },
       {
         property: "og:title",
@@ -16,16 +15,15 @@ export const Route = createFileRoute("/terms")({
       },
       {
         property: "og:description",
-        content:
-          "Terms for enquiries, orders, pricing, delivery and products from Kulhad Factory.",
+        content: "Terms for enquiries, orders, pricing, delivery and products from Kulhad Factory.",
       },
       {
         property: "og:url",
         content: "https://www.kulhad.shop/terms",
       },
-        { name: "twitter:title", content: "Terms & Conditions — Kulhad Factory" },
-        { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
-        { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:title", content: "Terms & Conditions — Kulhad Factory" },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
     links: [
       {
@@ -53,9 +51,9 @@ function TermsPage() {
               1. Product information
             </h2>
             <p className="mt-3">
-              Mitti ke kulhad haath se banaye jaate hain. Isliye size, shape,
-              colour aur finish me halka natural difference ho sakta hai. Ye
-              handmade product ki normal quality variation hai.
+              Mitti ke kulhad haath se banaye jaate hain. Isliye size, shape, colour aur finish me
+              halka natural difference ho sakta hai. Ye handmade product ki normal quality variation
+              hai.
             </p>
           </section>
 
@@ -64,9 +62,8 @@ function TermsPage() {
               2. Pricing aur quotation
             </h2>
             <p className="mt-3">
-              Website par dikhayi gayi pricing indicative ho sakti hai. Final
-              price quantity, size, packing, GST, delivery location aur order
-              requirements ke hisaab se confirm ki jayegi.
+              Website par dikhayi gayi pricing indicative ho sakti hai. Final price quantity, size,
+              packing, GST, delivery location aur order requirements ke hisaab se confirm ki jayegi.
             </p>
           </section>
 
@@ -75,10 +72,9 @@ function TermsPage() {
               3. Order confirmation
             </h2>
             <p className="mt-3">
-              WhatsApp, phone ya email par enquiry bhejna order confirmation
-              nahi hota. Order tab confirm mana jayega jab product availability,
-              final price, payment terms aur delivery details dono taraf se
-              confirm ho jayen.
+              WhatsApp, phone ya email par enquiry bhejna order confirmation nahi hota. Order tab
+              confirm mana jayega jab product availability, final price, payment terms aur delivery
+              details dono taraf se confirm ho jayen.
             </p>
           </section>
 
@@ -87,20 +83,17 @@ function TermsPage() {
               4. Minimum order quantity
             </h2>
             <p className="mt-3">
-              Retail, wholesale, custom branding aur export orders ke liye
-              minimum quantity alag ho sakti hai. Final minimum quantity
-              quotation ke samay confirm ki jayegi.
+              Retail, wholesale, custom branding aur export orders ke liye minimum quantity alag ho
+              sakti hai. Final minimum quantity quotation ke samay confirm ki jayegi.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-foreground">
-              5. Delivery
-            </h2>
+            <h2 className="font-display text-2xl font-bold text-foreground">5. Delivery</h2>
             <p className="mt-3">
-              Delivery time product availability, order quantity, packing,
-              transport aur delivery location par depend karta hai. Diya gaya
-              delivery estimate expected time hota hai, guaranteed date nahi.
+              Delivery time product availability, order quantity, packing, transport aur delivery
+              location par depend karta hai. Diya gaya delivery estimate expected time hota hai,
+              guaranteed date nahi.
             </p>
           </section>
 
@@ -109,10 +102,9 @@ function TermsPage() {
               6. Breakage aur replacement
             </h2>
             <p className="mt-3">
-              Kulhad fragile earthenware products hain. Packing ke bawajood
-              transport ke dauran breakage ho sakti hai. Breakage, shortage ya
-              damage ki information delivery ke turant baad photos aur
-              unboxing proof ke saath share karein. Replacement ya adjustment
+              Kulhad fragile earthenware products hain. Packing ke bawajood transport ke dauran
+              breakage ho sakti hai. Breakage, shortage ya damage ki information delivery ke turant
+              baad photos aur unboxing proof ke saath share karein. Replacement ya adjustment
               case-by-case review ke baad decide kiya jayega.
             </p>
           </section>
@@ -122,17 +114,14 @@ function TermsPage() {
               7. Cancellation aur refund
             </h2>
             <p className="mt-3">
-              Order cancel karne ya refund request ke rules order confirm hone
-              se pehle customer ko bataye jayenge. Custom, branded, dispatched
-              ya production me ja chuke orders par cancellation restrictions
-              ho sakti hain.
+              Order cancel karne ya refund request ke rules order confirm hone se pehle customer ko
+              bataye jayenge. Custom, branded, dispatched ya production me ja chuke orders par
+              cancellation restrictions ho sakti hain.
             </p>
           </section>
 
           <section>
-            <h2 className="font-display text-2xl font-bold text-foreground">
-              8. Contact
-            </h2>
+            <h2 className="font-display text-2xl font-bold text-foreground">8. Contact</h2>
             <p className="mt-3">
               Order ya terms se judi enquiry ke liye{" "}
               <a
@@ -154,9 +143,7 @@ function TermsPage() {
             </p>
           </section>
 
-          <p className="border-t border-border pt-6 text-sm">
-            Last updated: August 2026
-          </p>
+          <p className="border-t border-border pt-6 text-sm">Last updated: August 2026</p>
         </div>
       </main>
     </SiteLayout>

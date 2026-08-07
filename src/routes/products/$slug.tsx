@@ -48,16 +48,22 @@ export const Route = createFileRoute("/products/$slug")({
       ],
       links: [{ rel: "canonical", href: productUrl }],
       scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context":"https://schema.org","@type":"BreadcrumbList",
-          itemListElement:[
-            {"@type":"ListItem",position:1,name:"Home",item:"https://www.kulhad.shop/"},
-            {"@type":"ListItem",position:2,name:"Products",item:"https://www.kulhad.shop/products"}
-          ]
-        }),
-      },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.kulhad.shop/" },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Products",
+                item: "https://www.kulhad.shop/products",
+              },
+            ],
+          }),
+        },
 
         {
           type: "application/ld+json",
@@ -100,12 +106,8 @@ function ProductDetailPage() {
     return (
       <SiteLayout>
         <section className="mx-auto max-w-3xl px-4 py-24 text-center sm:px-6 lg:px-8">
-          <h1 className="font-display text-3xl font-bold text-foreground">
-            Product not found
-          </h1>
-          <p className="mt-3 text-muted-foreground">
-            Ye product available nahi hai.
-          </p>
+          <h1 className="font-display text-3xl font-bold text-foreground">Product not found</h1>
+          <p className="mt-3 text-muted-foreground">Ye product available nahi hai.</p>
           <Link
             to="/products"
             className="mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground"
@@ -123,10 +125,7 @@ function ProductDetailPage() {
   return (
     <SiteLayout>
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <Link
-          to="/products"
-          className="text-sm font-semibold text-primary hover:underline"
-        >
+        <Link to="/products" className="text-sm font-semibold text-primary hover:underline">
           ← Back to all products
         </Link>
 
@@ -148,23 +147,17 @@ function ProductDetailPage() {
             <h1 className="mt-3 font-display text-4xl font-bold text-foreground sm:text-5xl">
               {product.name}
             </h1>
-            <p className="mt-5 text-lg text-muted-foreground">
-              {product.description}
-            </p>
+            <p className="mt-5 text-lg text-muted-foreground">{product.description}</p>
 
             <dl className="mt-8 grid grid-cols-2 gap-4">
               <div className="rounded-2xl border border-border bg-card p-4">
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">
-                  Capacity
-                </dt>
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Capacity</dt>
                 <dd className="mt-1 font-display text-xl font-bold text-primary">
                   {product.capacity}
                 </dd>
               </div>
               <div className="rounded-2xl border border-border bg-card p-4">
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">
-                  Price
-                </dt>
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Price</dt>
                 <dd className="mt-1 font-display text-xl font-bold text-primary">
                   {product.price}
                 </dd>

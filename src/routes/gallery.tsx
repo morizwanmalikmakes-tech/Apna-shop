@@ -20,7 +20,11 @@ import craftsmanship from "@/assets/craftsmanship.webp";
 import hero from "@/assets/hero-kulhad.webp";
 
 const items = [
-  { src: g1, alt: "Kulhad Factory workshop and production floor", span: "md:col-span-2 md:row-span-2" },
+  {
+    src: g1,
+    alt: "Kulhad Factory workshop and production floor",
+    span: "md:col-span-2 md:row-span-2",
+  },
   { src: g2, alt: "Handcrafted clay kulhads ready for production" },
   { src: g3, alt: "Rows of handmade clay kulhads" },
   { src: g4, alt: "Large collection of handcrafted clay kulhads" },
@@ -28,23 +32,41 @@ const items = [
   { src: newGallery2, alt: "Kulhad production line" },
   { src: newGallery3, alt: "Handcrafted kulhads ready for sale" },
   { src: newGallery4, alt: "Kulhad Factory products" },
-{ src: newGallery5, alt: "Handcrafted clay kulhad in hand" },
-{ src: newGallery6, alt: "Decorative clay kulhads collection" },
+  { src: newGallery5, alt: "Handcrafted clay kulhad in hand" },
+  { src: newGallery6, alt: "Decorative clay kulhads collection" },
 ];
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
       { title: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad" },
-      { name: "description", content: "Dekho kaise hamare kulhad bante hain — Moradabad ki mitti se lekar bhatti tak. Factory ki tasveerein, banane ka tarika aur tayyar kulhad." },
-      { property: "og:title", content: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad" },
-      { property: "og:description", content: "Moradabad factory mein haath se bane mitti ke kulhad — production se lekar tayyar kulhad tak ki tasveerein." },
+      {
+        name: "description",
+        content:
+          "Dekho kaise hamare kulhad bante hain — Moradabad ki mitti se lekar bhatti tak. Factory ki tasveerein, banane ka tarika aur tayyar kulhad.",
+      },
+      {
+        property: "og:title",
+        content: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad",
+      },
+      {
+        property: "og:description",
+        content:
+          "Moradabad factory mein haath se bane mitti ke kulhad — production se lekar tayyar kulhad tak ki tasveerein.",
+      },
       { property: "og:url", content: "https://www.kulhad.shop/gallery" },
       { property: "og:locale", content: "en_IN" },
       { property: "og:image:width", content: "1600" },
       { property: "og:image:height", content: "995" },
-      { name: "twitter:title", content: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad" },
-      { name: "twitter:description", content: "Moradabad factory mein haath se bane mitti ke kulhad — production se lekar tayyar kulhad tak ki tasveerein." },
+      {
+        name: "twitter:title",
+        content: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Moradabad factory mein haath se bane mitti ke kulhad — production se lekar tayyar kulhad tak ki tasveerein.",
+      },
       { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
       { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
     ],
@@ -64,8 +86,17 @@ function GalleryPage() {
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid auto-rows-[220px] grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
           {items.map((it, i) => (
-            <figure key={i} className={`hover-lift animate-fade-up group relative overflow-hidden rounded-2xl shadow-soft ${it.span ?? ""}`} style={{ animationDelay: `${i * 60}ms` }}>
-              <img src={it.src} alt={it.alt} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <figure
+              key={i}
+              className={`hover-lift animate-fade-up group relative overflow-hidden rounded-2xl shadow-soft ${it.span ?? ""}`}
+              style={{ animationDelay: `${i * 60}ms` }}
+            >
+              <img
+                src={it.src}
+                alt={it.alt}
+                loading="lazy"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-espresso/70 to-transparent p-3 text-xs font-medium text-cream opacity-0 transition group-hover:opacity-100">
                 {it.alt}
               </figcaption>
