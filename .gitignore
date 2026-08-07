@@ -1,37 +1,39 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
+!.vscode/extensions.json
+# Editor directories and files
+# Logs
+# Wrangler / Cloudflare
+# local backups
+*.backup
+*.before-*
+*.before-fix
+*.local
+*.log
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw?
+*.zip
+*backup*
+.DS_Store
+.dev.vars
+.env*
+.idea
+.nitro
+.output
+.tanstack/**
+.vinxi
+.vscode/*
+.wrangler/
 dist
 dist-ssr
-.output
-.vinxi
-.tanstack/**
-.nitro
-*.local
-
-# Wrangler / Cloudflare
-.wrangler/
-.dev.vars
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+lerna-debug.log*
+logs
+node_modules
+npm-debug.log*
+pnpm-debug.log*
+src-backup-*
 src-backup-before-seo/
-
-# local backups
-*.before-*
-*.backup
+yarn-debug.log*
+yarn-error.log*
