@@ -12,7 +12,7 @@ export function SiteHeader() {
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-3">
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-gradient-to-br from-clay to-clay-dark text-primary-foreground font-display text-lg font-bold shadow-soft">
-            K
+            <img src="/kulhad-logo.webp" alt="Kulhad Factory logo" className="h-8 w-8 object-contain" />
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">
