@@ -100,14 +100,14 @@ Message: ${message || "-"}`;
 
   return (
     <SiteLayout>
-      <h1 className="sr-only">Contact Kulhad Factory — Clay Kulhad Manufacturer in Moradabad</h1>
+      <PageHero
+        eyebrow="Contact"
+        title="Aao, Baat Karein"
+        subtitle="Bulk order, wholesale enquiry ya kisi bhi jankari ke liye humse sampark karein."
+      />
 
       <section className="mx-auto w-full max-w-7xl min-w-0 overflow-hidden px-4 py-6 sm:px-6 lg:px-8">
         <div className="space-y-4">
-          <div className="pb-2">
-            <h2 className="font-display text-2xl font-bold text-foreground">Aao, Baat Karein</h2>
-            <p className="mt-1 text-sm text-muted-foreground">Bulk order, wholesale enquiry ya kisi bhi jankari ke liye humse sampark karein.</p>
-          </div>
           {[
             { icon: MapPin, label: "Visit", value: site.address },
             {
