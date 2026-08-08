@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Minimum order quantity kya hai ?",
-    a: "Retail: koi minimum order nahi hai. Wholesale: har size ke liye 500 pieces se shuru hota hai. Custom sizes ke liye 2000+ pieces ki zarurat hoti hai.",
+    a: "Retail orders 10 pieces se shuru hote hain. Wholesale: har size ke liye 500 pieces se shuru hota hai. Custom sizes ke liye 2000+ pieces ki zarurat hoti hai.",
   },
   {
     q: "Kya aap poore Bharat me delivery karte hain ?",
