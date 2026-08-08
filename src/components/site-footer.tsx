@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-full bg-primary font-display text-lg font-bold text-primary-foreground">
-              K
+              <img src="/kulhad-logo.webp" alt="Kulhad Factory logo" className="h-8 w-8 object-contain" />
             </span>
             <span className="font-display text-xl font-bold">{site.name}</span>
           </div>
