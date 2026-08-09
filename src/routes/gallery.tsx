@@ -94,7 +94,8 @@ function GalleryPage() {
               <img
                 src={it.src}
                 alt={it.alt}
-                loading="lazy"
+                loading="eager"
+                 decoding="async"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-espresso/70 to-transparent p-3 text-xs font-medium text-cream opacity-0 transition group-hover:opacity-100">
