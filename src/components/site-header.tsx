@@ -9,7 +9,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
-      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] lg:grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-3">
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-gradient-to-br from-clay to-clay-dark text-primary-foreground font-display text-lg font-bold shadow-soft">
             <img src="/kulhad-logo.webp" alt="Kulhad Factory logo" className="h-8 w-8 object-contain" />

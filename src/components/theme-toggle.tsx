@@ -24,9 +24,9 @@ export function ThemeToggle() {
       type="button"
       aria-label="Toggle dark mode"
       onClick={toggle}
-      className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border bg-card text-foreground transition hover:bg-muted"
+      className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border bg-card text-foreground transition hover:bg-muted lg:h-8 lg:w-8"
     >
-      {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+      {dark ? <Sun className="h-4 w-4 lg:h-3.5 lg:w-3.5" /> : <Moon className="h-4 w-4 lg:h-3.5 lg:w-3.5" />}
     </button>
   );
 }
