@@ -8,7 +8,7 @@ export const site = {
   phone2: "+91 87913 55306",
   whatsapp: "919997837697", // digits only, no +
   email: "kulhadshop@gmail.com",
-  address: "Moradabad, Uttar Pradesh 244501",
+  address: "Kanth Road, Moradabad, Uttar Pradesh 244501",
   socials: {
     instagram: "https://www.instagram.com/kulhad_moradabad_wale?igsh=MTFveGQ0MWFtODJ6dw==",
   },
