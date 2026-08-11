@@ -25,7 +25,7 @@ export const products: Product[] = [
     price: "₹ 1.10",
     category: "Tea",
     image: k60,
-    description: "Perfect cutting-chai size for a rich, traditional experience.",
+    description: "Perfect cutting-chai size clay cup for a rich, traditional experience. Food-safe, unglazed earthen kulhad — ideal for tea stalls, tapris and cafés.",
   },
 
   {
@@ -35,7 +35,7 @@ export const products: Product[] = [
     price: "₹ 1.20",
     category: "Tea",
     image: k70,
-    description: "Petite cutting-chai size, perfect for tapris and cafés.",
+    description: "Petite cutting-chai clay cup, perfect for tapris and cafés. Handmade, food-safe earthenware with natural mitti aroma.",
   },
 
   {
@@ -45,7 +45,7 @@ export const products: Product[] = [
     price: "₹ 1.30",
     category: "Tea",
     image: k80,
-    description: "Everyday chai kulhad with a comfortable rim.",
+    description: "Everyday chai kulhad with a comfortable rim. 80ml clay cup for tea shops and homes — unglazed, lead-free and eco-friendly.",
   },
 
   {
@@ -55,7 +55,7 @@ export const products: Product[] = [
     price: "₹ 1.40",
     category: "Tea",
     image: k90,
-    description: "Generous chai pour with a rustic hand-thrown finish.",
+    description: "Generous chai pour with a rustic hand-thrown finish. 90ml clay kulhad for cafés, restaurants and chai lovers.",
   },
 
   {
@@ -65,7 +65,7 @@ export const products: Product[] = [
     price: "₹ 1.50",
     category: "Tea",
     image: k100,
-    description: "A perfect everyday size for a rich, natural tea experience.",
+    description: "A perfect everyday size for a rich, natural tea experience. 100ml clay cup — kiln-fired at 1000°C for strength.",
   },
 
   {
@@ -75,7 +75,7 @@ export const products: Product[] = [
     price: "₹ 2.20",
     category: "Beverage",
     image: k200,
-    description: "Versatile size for coffee, kadha and hot beverages.",
+    description: "Versatile clay cup for coffee, kadha and hot beverages. 200ml kulhad — food-safe and biodegradable.",
   },
 
   {
@@ -85,7 +85,7 @@ export const products: Product[] = [
     price: "₹ 2.40",
     category: "Lassi",
     image: k250,
-    description: "Traditional lassi glass, keeps the drink naturally chilled.",
+    description: "Traditional lassi glass that keeps the drink naturally chilled. 250ml clay kulhad for sweet shops and dhabas.",
   },
 
   {
@@ -95,6 +95,6 @@ export const products: Product[] = [
     price: "₹ 2.80",
     category: "Lassi",
     image: k300,
-    description: "Full-size lassi kulhad for dhabas and restaurants.",
+    description: "Full-size lassi kulhad for dhabas and restaurants. 300ml earthen glass — strong, food-safe and eco-friendly.",
   },
 ];
