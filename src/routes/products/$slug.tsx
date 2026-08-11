@@ -30,7 +30,7 @@ export const Route = createFileRoute("/products/$slug")({
         { title: `${product.name} | Kulhad Factory` },
         {
           name: "description",
-          content: `${product.name} handmade clay kulhad from Kulhad Factory, Moradabad. Factory-direct pricing and India-wide delivery.`,
+          content: `${product.name} — ${product.description} Price ${product.price} per piece (wholesale), MOQ ${product.moq}. Factory-direct clay kulhad from Kulhad Factory, Moradabad.`,
         },
         { property: "og:type", content: "product" },
         { property: "og:title", content: `${product.name} | Kulhad Factory` },
@@ -61,7 +61,26 @@ export const Route = createFileRoute("/products/$slug")({
                 name: "Products",
                 item: "https://www.kulhad.shop/products",
               },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: product.name,
+                item: productUrl,
+              },
             ],
+          }),
+        },
+
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: product.faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
           }),
         },
 
@@ -162,7 +181,43 @@ function ProductDetailPage() {
                   {product.price}
                 </dd>
               </div>
+              <div className="rounded-2xl border border-border bg-card p-4">
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">MOQ</dt>
+                <dd className="mt-1 font-display text-lg font-bold text-primary">
+                  {product.moq}
+                </dd>
+              </div>
+              <div className="rounded-2xl border border-border bg-card p-4">
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Packing</dt>
+                <dd className="mt-1 text-sm font-medium text-foreground">
+                  {product.packing}
+                </dd>
+              </div>
             </dl>
+
+            <div className="mt-8">
+              <h2 className="font-display text-xl font-bold text-foreground">Product Details</h2>
+              <ul className="mt-3 space-y-2">
+                {product.details.map((d, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <span className="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    {d}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-8">
+              <h2 className="font-display text-xl font-bold text-foreground">Frequently Asked Questions</h2>
+              <div className="mt-3 space-y-4">
+                {product.faqs.map((f, i) => (
+                  <div key={i} className="rounded-2xl border border-border bg-card p-4">
+                    <p className="text-sm font-semibold text-foreground">{f.q}</p>
+                    <p className="mt-1 text-sm text-muted-foreground">{f.a}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a

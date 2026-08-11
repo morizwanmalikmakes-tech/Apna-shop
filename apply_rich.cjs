@@ -1,4 +1,9 @@
-import k60 from "@/assets/tea-60-new.webp";
+const fs = require("fs");
+
+const productsFile = "src/lib/products.ts";
+const slugFile = "src/routes/products/$slug.tsx";
+
+const productsContent = `import k60 from "@/assets/tea-60-new.webp";
 import k70 from "@/assets/tea-70-new.webp";
 import k80 from "@/assets/tea-80-new.webp";
 import k90 from "@/assets/tea-90-new.webp";
@@ -206,3 +211,181 @@ export const products: Product[] = [
     ],
   },
 ];
+`;
+
+let s = fs.readFileSync(slugFile, "utf8");
+let changed = false;
+
+const oldMeta =
+  '        { title: `${product.name} | Kulhad Factory` },\n' +
+  '        {\n' +
+  '          name: "description",\n' +
+  '          content: `${product.name} handmade clay kulhad from Kulhad Factory, Moradabad. Factory-direct pricing and India-wide delivery.`,\n' +
+  '        },';
+const newMeta =
+  '        { title: `${product.name} | Kulhad Factory` },\n' +
+  '        {\n' +
+  '          name: "description",\n' +
+  '          content: `${product.name} — ${product.description} Price ${product.price} per piece (wholesale), MOQ ${product.moq}. Factory-direct clay kulhad from Kulhad Factory, Moradabad.`,\n' +
+  '        },';
+if (s.includes(oldMeta)) {
+  s = s.replace(oldMeta, newMeta);
+  changed = true;
+  console.log("OK: meta description enriched");
+} else {
+  console.log("SKIP: meta description pattern not found");
+}
+
+const oldScripts =
+  '        {\n' +
+  '          type: "application/ld+json",\n' +
+  '          children: JSON.stringify({\n' +
+  '            "@context": "https://schema.org",\n' +
+  '            "@type": "BreadcrumbList",\n' +
+  '            itemListElement: [\n' +
+  '              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.kulhad.shop/" },\n' +
+  '              {\n' +
+  '                "@type": "ListItem",\n' +
+  '                position: 2,\n' +
+  '                name: "Products",\n' +
+  '                item: "https://www.kulhad.shop/products",\n' +
+  '              },\n' +
+  '            ],\n' +
+  '          }),\n' +
+  '        },\n' +
+  '\n' +
+  '        {\n' +
+  '          type: "application/ld+json",';
+const newScripts =
+  '        {\n' +
+  '          type: "application/ld+json",\n' +
+  '          children: JSON.stringify({\n' +
+  '            "@context": "https://schema.org",\n' +
+  '            "@type": "BreadcrumbList",\n' +
+  '            itemListElement: [\n' +
+  '              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.kulhad.shop/" },\n' +
+  '              {\n' +
+  '                "@type": "ListItem",\n' +
+  '                position: 2,\n' +
+  '                name: "Products",\n' +
+  '                item: "https://www.kulhad.shop/products",\n' +
+  '              },\n' +
+  '              {\n' +
+  '                "@type": "ListItem",\n' +
+  '                position: 3,\n' +
+  '                name: product.name,\n' +
+  '                item: productUrl,\n' +
+  '              },\n' +
+  '            ],\n' +
+  '          }),\n' +
+  '        },\n' +
+  '\n' +
+  '        {\n' +
+  '          type: "application/ld+json",\n' +
+  '          children: JSON.stringify({\n' +
+  '            "@context": "https://schema.org",\n' +
+  '            "@type": "FAQPage",\n' +
+  '            mainEntity: product.faqs.map((f) => ({\n' +
+  '              "@type": "Question",\n' +
+  '              name: f.q,\n' +
+  '              acceptedAnswer: { "@type": "Answer", text: f.a },\n' +
+  '            })),\n' +
+  '          }),\n' +
+  '        },\n' +
+  '\n' +
+  '        {\n' +
+  '          type: "application/ld+json",';
+if (s.includes(oldScripts)) {
+  s = s.replace(oldScripts, newScripts);
+  changed = true;
+  console.log("OK: FAQPage schema + breadcrumb pos3 added");
+} else {
+  console.log("SKIP: scripts pattern not found");
+}
+
+const oldBody =
+  '            <dl className="mt-8 grid grid-cols-2 gap-4">\n' +
+  '              <div className="rounded-2xl border border-border bg-card p-4">\n' +
+  '                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Capacity</dt>\n' +
+  '                <dd className="mt-1 font-display text-xl font-bold text-primary">\n' +
+  '                  {product.capacity}\n' +
+  '                </dd>\n' +
+  '              </div>\n' +
+  '              <div className="rounded-2xl border border-border bg-card p-4">\n' +
+  '                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Price</dt>\n' +
+  '                <dd className="mt-1 font-display text-xl font-bold text-primary">\n' +
+  '                  {product.price}\n' +
+  '                </dd>\n' +
+  '              </div>\n' +
+  '            </dl>\n' +
+  '\n' +
+  '            <div className="mt-8 flex flex-wrap gap-3">';
+const newBody =
+  '            <dl className="mt-8 grid grid-cols-2 gap-4">\n' +
+  '              <div className="rounded-2xl border border-border bg-card p-4">\n' +
+  '                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Capacity</dt>\n' +
+  '                <dd className="mt-1 font-display text-xl font-bold text-primary">\n' +
+  '                  {product.capacity}\n' +
+  '                </dd>\n' +
+  '              </div>\n' +
+  '              <div className="rounded-2xl border border-border bg-card p-4">\n' +
+  '                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Price</dt>\n' +
+  '                <dd className="mt-1 font-display text-xl font-bold text-primary">\n' +
+  '                  {product.price}\n' +
+  '                </dd>\n' +
+  '              </div>\n' +
+  '              <div className="rounded-2xl border border-border bg-card p-4">\n' +
+  '                <dt className="text-xs uppercase tracking-wider text-muted-foreground">MOQ</dt>\n' +
+  '                <dd className="mt-1 font-display text-lg font-bold text-primary">\n' +
+  '                  {product.moq}\n' +
+  '                </dd>\n' +
+  '              </div>\n' +
+  '              <div className="rounded-2xl border border-border bg-card p-4">\n' +
+  '                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Packing</dt>\n' +
+  '                <dd className="mt-1 text-sm font-medium text-foreground">\n' +
+  '                  {product.packing}\n' +
+  '                </dd>\n' +
+  '              </div>\n' +
+  '            </dl>\n' +
+  '\n' +
+  '            <div className="mt-8">\n' +
+  '              <h2 className="font-display text-xl font-bold text-foreground">Product Details</h2>\n' +
+  '              <ul className="mt-3 space-y-2">\n' +
+  '                {product.details.map((d, i) => (\n' +
+  '                  <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">\n' +
+  '                    <span className="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />\n' +
+  '                    {d}\n' +
+  '                  </li>\n' +
+  '                ))}\n' +
+  '              </ul>\n' +
+  '            </div>\n' +
+  '\n' +
+  '            <div className="mt-8">\n' +
+  '              <h2 className="font-display text-xl font-bold text-foreground">Frequently Asked Questions</h2>\n' +
+  '              <div className="mt-3 space-y-4">\n' +
+  '                {product.faqs.map((f, i) => (\n' +
+  '                  <div key={i} className="rounded-2xl border border-border bg-card p-4">\n' +
+  '                    <p className="text-sm font-semibold text-foreground">{f.q}</p>\n' +
+  '                    <p className="mt-1 text-sm text-muted-foreground">{f.a}</p>\n' +
+  '                  </div>\n' +
+  '                ))}\n' +
+  '              </div>\n' +
+  '            </div>\n' +
+  '\n' +
+  '            <div className="mt-8 flex flex-wrap gap-3">';
+if (s.includes(oldBody)) {
+  s = s.replace(oldBody, newBody);
+  changed = true;
+  console.log("OK: rich content section added");
+} else {
+  console.log("SKIP: body pattern not found");
+}
+
+if (!changed) {
+  console.log("NO CHANGES APPLIED — patterns didn't match. Report this to the assistant.");
+  process.exit(1);
+}
+
+fs.writeFileSync(slugFile, s);
+fs.writeFileSync(productsFile, productsContent);
+console.log("DONE: products.ts + $slug.tsx updated. Run: bun run build (push only if BUILD OK).");
