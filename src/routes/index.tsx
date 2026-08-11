@@ -17,7 +17,7 @@ import { Counter } from "@/components/counter";
 import { products } from "@/lib/products";
 import { site, waLink } from "@/lib/site";
 import hero from "@/assets/new-hero.webp";
-import craftsmanship from "@/assets/craftsmanship.webp";
+import aboutMachine from "@/assets/about-machine.webp";
 import secondKulhad from "@/assets/second-kulhad-image.webp";
 
 export const Route = createFileRoute("/")({
@@ -269,7 +269,7 @@ function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
           <div className="relative overflow-hidden rounded-3xl shadow-warm">
             <img
-              src="/images/craftsmanship.webp"
+              src={aboutMachine}
               alt="Potter shaping a kulhad on the wheel"
               loading="lazy"
               width={1200}
