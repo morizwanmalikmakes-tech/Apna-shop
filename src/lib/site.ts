@@ -10,7 +10,7 @@ export const site = {
   email: "kulhadshop@gmail.com",
   address: "Kanth Road, Moradabad, Uttar Pradesh 244501",
   socials: {
-    instagram: "https://www.instagram.com/kulhad_moradabad_wale?igsh=MTFveGQ0MWFtODJ6dw==",
+    instagram: "https://www.instagram.com/kulhad_moradabad_wale",
   },
 };
 
