@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/site-layout";
-import craftsmanship from "@/assets/craftsmanship.webp";
+import aboutMachine from "@/assets/about-machine.webp";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -44,7 +44,7 @@ function AboutPage() {
       <section className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
         <div className="overflow-hidden rounded-3xl shadow-warm">
           <img
-            src={craftsmanship}
+            src={aboutMachine}
             alt="Master potter shaping clay on a wheel"
             loading="lazy"
             width={1200}
