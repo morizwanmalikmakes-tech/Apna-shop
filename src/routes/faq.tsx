@@ -41,13 +41,13 @@ const faqs = [
 export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Kulhad Factory" },
+      { title: "Kulhad FAQs — Price, MOQ & Delivery | Kulhad Factory" },
       {
         name: "description",
         content:
           "Answers to common questions about our clay kulhads, wholesale orders, shipping and care.",
       },
-      { property: "og:title", content: "FAQ — Kulhad Factory" },
+      { property: "og:title", content: "Kulhad FAQs — Price, MOQ & Delivery | Kulhad Factory" },
       {
         property: "og:description",
         content: "Everything you need to know about our clay kulhads.",
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/faq")({
       { property: "og:locale", content: "en_IN" },
       { property: "og:image:width", content: "1600" },
       { property: "og:image:height", content: "995" },
-      { name: "twitter:title", content: "FAQ — Kulhad Factory" },
+      { name: "twitter:title", content: "Kulhad FAQs — Price, MOQ & Delivery | Kulhad Factory" },
       {
         name: "twitter:description",
         content: "Everything you need to know about our clay kulhads.",

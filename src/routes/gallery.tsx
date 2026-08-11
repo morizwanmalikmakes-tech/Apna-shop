@@ -39,7 +39,7 @@ const items = [
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad" },
+      { title: "Kulhad Factory Gallery | Clay Kulhads & Kiln Photos" },
       {
         name: "description",
         content:
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/gallery")({
       },
       {
         property: "og:title",
-        content: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad",
+        content: "Kulhad Factory Gallery | Clay Kulhads & Kiln Photos",
       },
       {
         property: "og:description",
@@ -60,7 +60,7 @@ export const Route = createFileRoute("/gallery")({
       { property: "og:image:height", content: "995" },
       {
         name: "twitter:title",
-        content: "Haath se Bane Mitti ke Kulhad | Gallery | Kulhad Factory Moradabad",
+        content: "Kulhad Factory Gallery | Clay Kulhads & Kiln Photos",
       },
       {
         name: "twitter:description",

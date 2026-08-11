@@ -7,7 +7,7 @@ import { site, waLink } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Kulhad Factory" },
+      { title: "Contact Kulhad Factory Moradabad | WhatsApp Bulk Orders" },
       {
         name: "description",
         content:

@@ -21,7 +21,7 @@ export const Route = createFileRoute("/products")({
         { name: "twitter:title", content: "Products - Clay Kulhads by Kulhad Factory" },
         { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
         { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
-        { title: "Products — Clay Kulhads by Kulhad Factory" },
+        { title: "Clay Kulhad Price List — 60ml to 300ml | Kulhad Factory" },
         {
           name: "description",
           content: "Browse handcrafted clay kulhads from 60ml tea cups to 300ml lassi glasses.",

@@ -5,7 +5,7 @@ import aboutMachineVideo from "@/assets/about-machine-video.mp4";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Kulhad Factory" },
+      { title: "About Kulhad Factory | Clay Kulhad Manufacturer, Moradabad" },
       {
         name: "description",
         content:
