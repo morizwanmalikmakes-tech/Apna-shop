@@ -42,7 +42,7 @@ function AboutPage() {
         subtitle="Kumharon ka ek parivaar, jo mitti ke kulhad ke zariye chai ko uski asli jadon se jod raha hai — ek-ek kulhad ke saath."
       />
       <section className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
-        <div className="aspect-[4/3] overflow-hidden rounded-3xl shadow-warm">
+        <div className="aspect-[3/4] overflow-hidden rounded-3xl shadow-warm">
           <video
             src={aboutMachineVideo}
             autoPlay
