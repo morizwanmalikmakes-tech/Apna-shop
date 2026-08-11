@@ -137,6 +137,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           sameAs: ["https://www.instagram.com/kulhad_moradabad_wale"],
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: site.name,
+          url: "https://www.kulhad.shop",
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,
