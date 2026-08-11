@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/site-layout";
-import aboutMachine from "@/assets/about-machine.webp";
+import aboutMachineVideo from "@/assets/about-machine-video.mp4";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -43,10 +43,14 @@ function AboutPage() {
       />
       <section className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
         <div className="overflow-hidden rounded-3xl shadow-warm">
-          <img
-            src={aboutMachine}
-            alt="Master potter shaping clay on a wheel"
-            loading="lazy"
+          <video
+            src={aboutMachineVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label="Kulhad making process"
             width={1200}
             height={900}
             className="h-full w-full object-cover"
