@@ -4,23 +4,23 @@ import type {} from "@tanstack/react-start";
 const BASE_URL = "https://www.kulhad.shop";
 
 const paths = [
-  { path: "/", priority: "1.0", freq: "weekly" },
-  { path: "/products", priority: "0.9", freq: "weekly" },
-  { path: "/products/60ml-tea-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/products/70ml-tea-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/products/80ml-tea-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/products/90ml-tea-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/products/100ml-tea-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/products/200ml-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/products/250ml-lassi-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/products/300ml-lassi-kulhad", priority: "0.8", freq: "monthly" },
-  { path: "/wholesale", priority: "0.8", freq: "monthly" },
-  { path: "/about", priority: "0.7", freq: "monthly" },
-  { path: "/gallery", priority: "0.7", freq: "monthly" },
-  { path: "/contact", priority: "0.7", freq: "monthly" },
-  { path: "/faq", priority: "0.6", freq: "monthly" },
-  { path: "/privacy", priority: "0.3", freq: "yearly" },
-  { path: "/terms", priority: "0.3", freq: "yearly" },
+  { path: "/", priority: "1.0", freq: "weekly", lastmod: "2026-08-11" },
+  { path: "/products", priority: "0.9", freq: "weekly", lastmod: "2026-08-11" },
+  { path: "/products/60ml-tea-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/products/70ml-tea-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/products/80ml-tea-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/products/90ml-tea-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/products/100ml-tea-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/products/200ml-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/products/250ml-lassi-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/products/300ml-lassi-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
+  { path: "/wholesale", priority: "0.8", freq: "monthly", lastmod: "2026-08-07" },
+  { path: "/about", priority: "0.7", freq: "monthly", lastmod: "2026-08-11" },
+  { path: "/gallery", priority: "0.7", freq: "monthly", lastmod: "2026-08-11" },
+  { path: "/contact", priority: "0.7", freq: "monthly", lastmod: "2026-08-11" },
+  { path: "/faq", priority: "0.6", freq: "monthly", lastmod: "2026-08-11" },
+  { path: "/privacy", priority: "0.3", freq: "yearly", lastmod: "2026-08-07" },
+  { path: "/terms", priority: "0.3", freq: "yearly", lastmod: "2026-08-07" },
 ];
 
 export const Route = createFileRoute("/sitemap.xml")({
@@ -28,8 +28,8 @@ export const Route = createFileRoute("/sitemap.xml")({
     handlers: {
       GET: async () => {
         const urls = paths.map(
-          ({ path, priority, freq }) =>
-            `  <url>\n    <loc>${BASE_URL}${path}</loc>\n    <changefreq>${freq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`,
+          ({ path, priority, freq, lastmod }) =>
+            `  <url>\n    <loc>${BASE_URL}${path}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${freq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`,
         );
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
