@@ -20,7 +20,7 @@ export function ProductCard({ product }: { product: Product }) {
           height={800}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <span className="absolute left-3 top-3 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-secondary shadow-soft">
+        <span className="absolute left-3 top-3 rounded-full bg-background/90 px-3 py-1 text-xs font-semibold text-secondary dark:text-secondary-foreground shadow-soft">
           {product.category}
         </span>
       </div>
@@ -29,7 +29,7 @@ export function ProductCard({ product }: { product: Product }) {
           <h3 className="min-w-0 truncate font-display text-lg font-bold text-foreground">
             {product.name}
           </h3>
-          <span className="shrink-0 rounded-full bg-muted px-2.5 py-0.5 text-xs font-semibold text-secondary">
+          <span className="shrink-0 rounded-full bg-muted px-2.5 py-0.5 text-xs font-semibold text-secondary dark:text-secondary-foreground">
             {product.capacity}
           </span>
         </div>
