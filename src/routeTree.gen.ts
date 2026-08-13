@@ -14,7 +14,22 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as FaqRouteImport } from './routes/faq'
 import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as KulhadAmrohaRouteImport } from './routes/kulhad-amroha'
+import { Route as KulhadBareillyRouteImport } from './routes/kulhad-bareilly'
+import { Route as KulhadChandpurRouteImport } from './routes/kulhad-chandpur'
+import { Route as KulhadDhampurRouteImport } from './routes/kulhad-dhampur'
+import { Route as KulhadDhanoraRouteImport } from './routes/kulhad-dhanora'
+import { Route as KulhadGajraulaRouteImport } from './routes/kulhad-gajraula'
 import { Route as KulhadGuideRouteImport } from './routes/kulhad-guide'
+import { Route as KulhadJaspurRouteImport } from './routes/kulhad-jaspur'
+import { Route as KulhadJoyaRouteImport } from './routes/kulhad-joya'
+import { Route as KulhadMeerutRouteImport } from './routes/kulhad-meerut'
+import { Route as KulhadNoorpurRouteImport } from './routes/kulhad-noorpur'
+import { Route as KulhadRampurRouteImport } from './routes/kulhad-rampur'
+import { Route as KulhadSahaspurRouteImport } from './routes/kulhad-sahaspur'
+import { Route as KulhadSeoharaRouteImport } from './routes/kulhad-seohara'
+import { Route as KulhadTajpurRouteImport } from './routes/kulhad-tajpur'
+import { Route as KulhadThakurdwaraRouteImport } from './routes/kulhad-thakurdwara'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as ProductsRouteImport } from './routes/products'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
@@ -47,9 +62,84 @@ const GalleryRoute = GalleryRouteImport.update({
   path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KulhadAmrohaRoute = KulhadAmrohaRouteImport.update({
+  id: '/kulhad-amroha',
+  path: '/kulhad-amroha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadBareillyRoute = KulhadBareillyRouteImport.update({
+  id: '/kulhad-bareilly',
+  path: '/kulhad-bareilly',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadChandpurRoute = KulhadChandpurRouteImport.update({
+  id: '/kulhad-chandpur',
+  path: '/kulhad-chandpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadDhampurRoute = KulhadDhampurRouteImport.update({
+  id: '/kulhad-dhampur',
+  path: '/kulhad-dhampur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadDhanoraRoute = KulhadDhanoraRouteImport.update({
+  id: '/kulhad-dhanora',
+  path: '/kulhad-dhanora',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadGajraulaRoute = KulhadGajraulaRouteImport.update({
+  id: '/kulhad-gajraula',
+  path: '/kulhad-gajraula',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const KulhadGuideRoute = KulhadGuideRouteImport.update({
   id: '/kulhad-guide',
   path: '/kulhad-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadJaspurRoute = KulhadJaspurRouteImport.update({
+  id: '/kulhad-jaspur',
+  path: '/kulhad-jaspur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadJoyaRoute = KulhadJoyaRouteImport.update({
+  id: '/kulhad-joya',
+  path: '/kulhad-joya',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadMeerutRoute = KulhadMeerutRouteImport.update({
+  id: '/kulhad-meerut',
+  path: '/kulhad-meerut',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadNoorpurRoute = KulhadNoorpurRouteImport.update({
+  id: '/kulhad-noorpur',
+  path: '/kulhad-noorpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadRampurRoute = KulhadRampurRouteImport.update({
+  id: '/kulhad-rampur',
+  path: '/kulhad-rampur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadSahaspurRoute = KulhadSahaspurRouteImport.update({
+  id: '/kulhad-sahaspur',
+  path: '/kulhad-sahaspur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadSeoharaRoute = KulhadSeoharaRouteImport.update({
+  id: '/kulhad-seohara',
+  path: '/kulhad-seohara',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadTajpurRoute = KulhadTajpurRouteImport.update({
+  id: '/kulhad-tajpur',
+  path: '/kulhad-tajpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KulhadThakurdwaraRoute = KulhadThakurdwaraRouteImport.update({
+  id: '/kulhad-thakurdwara',
+  path: '/kulhad-thakurdwara',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -89,7 +179,22 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/gallery': typeof GalleryRoute
+  '/kulhad-amroha': typeof KulhadAmrohaRoute
+  '/kulhad-bareilly': typeof KulhadBareillyRoute
+  '/kulhad-chandpur': typeof KulhadChandpurRoute
+  '/kulhad-dhampur': typeof KulhadDhampurRoute
+  '/kulhad-dhanora': typeof KulhadDhanoraRoute
+  '/kulhad-gajraula': typeof KulhadGajraulaRoute
   '/kulhad-guide': typeof KulhadGuideRoute
+  '/kulhad-jaspur': typeof KulhadJaspurRoute
+  '/kulhad-joya': typeof KulhadJoyaRoute
+  '/kulhad-meerut': typeof KulhadMeerutRoute
+  '/kulhad-noorpur': typeof KulhadNoorpurRoute
+  '/kulhad-rampur': typeof KulhadRampurRoute
+  '/kulhad-sahaspur': typeof KulhadSahaspurRoute
+  '/kulhad-seohara': typeof KulhadSeoharaRoute
+  '/kulhad-tajpur': typeof KulhadTajpurRoute
+  '/kulhad-thakurdwara': typeof KulhadThakurdwaraRoute
   '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -103,7 +208,22 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/gallery': typeof GalleryRoute
+  '/kulhad-amroha': typeof KulhadAmrohaRoute
+  '/kulhad-bareilly': typeof KulhadBareillyRoute
+  '/kulhad-chandpur': typeof KulhadChandpurRoute
+  '/kulhad-dhampur': typeof KulhadDhampurRoute
+  '/kulhad-dhanora': typeof KulhadDhanoraRoute
+  '/kulhad-gajraula': typeof KulhadGajraulaRoute
   '/kulhad-guide': typeof KulhadGuideRoute
+  '/kulhad-jaspur': typeof KulhadJaspurRoute
+  '/kulhad-joya': typeof KulhadJoyaRoute
+  '/kulhad-meerut': typeof KulhadMeerutRoute
+  '/kulhad-noorpur': typeof KulhadNoorpurRoute
+  '/kulhad-rampur': typeof KulhadRampurRoute
+  '/kulhad-sahaspur': typeof KulhadSahaspurRoute
+  '/kulhad-seohara': typeof KulhadSeoharaRoute
+  '/kulhad-tajpur': typeof KulhadTajpurRoute
+  '/kulhad-thakurdwara': typeof KulhadThakurdwaraRoute
   '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -118,7 +238,22 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/faq': typeof FaqRoute
   '/gallery': typeof GalleryRoute
+  '/kulhad-amroha': typeof KulhadAmrohaRoute
+  '/kulhad-bareilly': typeof KulhadBareillyRoute
+  '/kulhad-chandpur': typeof KulhadChandpurRoute
+  '/kulhad-dhampur': typeof KulhadDhampurRoute
+  '/kulhad-dhanora': typeof KulhadDhanoraRoute
+  '/kulhad-gajraula': typeof KulhadGajraulaRoute
   '/kulhad-guide': typeof KulhadGuideRoute
+  '/kulhad-jaspur': typeof KulhadJaspurRoute
+  '/kulhad-joya': typeof KulhadJoyaRoute
+  '/kulhad-meerut': typeof KulhadMeerutRoute
+  '/kulhad-noorpur': typeof KulhadNoorpurRoute
+  '/kulhad-rampur': typeof KulhadRampurRoute
+  '/kulhad-sahaspur': typeof KulhadSahaspurRoute
+  '/kulhad-seohara': typeof KulhadSeoharaRoute
+  '/kulhad-tajpur': typeof KulhadTajpurRoute
+  '/kulhad-thakurdwara': typeof KulhadThakurdwaraRoute
   '/privacy': typeof PrivacyRoute
   '/products': typeof ProductsRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
@@ -134,7 +269,22 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/gallery'
+    | '/kulhad-amroha'
+    | '/kulhad-bareilly'
+    | '/kulhad-chandpur'
+    | '/kulhad-dhampur'
+    | '/kulhad-dhanora'
+    | '/kulhad-gajraula'
     | '/kulhad-guide'
+    | '/kulhad-jaspur'
+    | '/kulhad-joya'
+    | '/kulhad-meerut'
+    | '/kulhad-noorpur'
+    | '/kulhad-rampur'
+    | '/kulhad-sahaspur'
+    | '/kulhad-seohara'
+    | '/kulhad-tajpur'
+    | '/kulhad-thakurdwara'
     | '/privacy'
     | '/products'
     | '/sitemap.xml'
@@ -148,7 +298,22 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/gallery'
+    | '/kulhad-amroha'
+    | '/kulhad-bareilly'
+    | '/kulhad-chandpur'
+    | '/kulhad-dhampur'
+    | '/kulhad-dhanora'
+    | '/kulhad-gajraula'
     | '/kulhad-guide'
+    | '/kulhad-jaspur'
+    | '/kulhad-joya'
+    | '/kulhad-meerut'
+    | '/kulhad-noorpur'
+    | '/kulhad-rampur'
+    | '/kulhad-sahaspur'
+    | '/kulhad-seohara'
+    | '/kulhad-tajpur'
+    | '/kulhad-thakurdwara'
     | '/privacy'
     | '/products'
     | '/sitemap.xml'
@@ -162,7 +327,22 @@ export interface FileRouteTypes {
     | '/contact'
     | '/faq'
     | '/gallery'
+    | '/kulhad-amroha'
+    | '/kulhad-bareilly'
+    | '/kulhad-chandpur'
+    | '/kulhad-dhampur'
+    | '/kulhad-dhanora'
+    | '/kulhad-gajraula'
     | '/kulhad-guide'
+    | '/kulhad-jaspur'
+    | '/kulhad-joya'
+    | '/kulhad-meerut'
+    | '/kulhad-noorpur'
+    | '/kulhad-rampur'
+    | '/kulhad-sahaspur'
+    | '/kulhad-seohara'
+    | '/kulhad-tajpur'
+    | '/kulhad-thakurdwara'
     | '/privacy'
     | '/products'
     | '/sitemap.xml'
@@ -177,7 +357,22 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   FaqRoute: typeof FaqRoute
   GalleryRoute: typeof GalleryRoute
+  KulhadAmrohaRoute: typeof KulhadAmrohaRoute
+  KulhadBareillyRoute: typeof KulhadBareillyRoute
+  KulhadChandpurRoute: typeof KulhadChandpurRoute
+  KulhadDhampurRoute: typeof KulhadDhampurRoute
+  KulhadDhanoraRoute: typeof KulhadDhanoraRoute
+  KulhadGajraulaRoute: typeof KulhadGajraulaRoute
   KulhadGuideRoute: typeof KulhadGuideRoute
+  KulhadJaspurRoute: typeof KulhadJaspurRoute
+  KulhadJoyaRoute: typeof KulhadJoyaRoute
+  KulhadMeerutRoute: typeof KulhadMeerutRoute
+  KulhadNoorpurRoute: typeof KulhadNoorpurRoute
+  KulhadRampurRoute: typeof KulhadRampurRoute
+  KulhadSahaspurRoute: typeof KulhadSahaspurRoute
+  KulhadSeoharaRoute: typeof KulhadSeoharaRoute
+  KulhadTajpurRoute: typeof KulhadTajpurRoute
+  KulhadThakurdwaraRoute: typeof KulhadThakurdwaraRoute
   PrivacyRoute: typeof PrivacyRoute
   ProductsRoute: typeof ProductsRouteWithChildren
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
@@ -222,11 +417,116 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kulhad-amroha': {
+      id: '/kulhad-amroha'
+      path: '/kulhad-amroha'
+      fullPath: '/kulhad-amroha'
+      preLoaderRoute: typeof KulhadAmrohaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-bareilly': {
+      id: '/kulhad-bareilly'
+      path: '/kulhad-bareilly'
+      fullPath: '/kulhad-bareilly'
+      preLoaderRoute: typeof KulhadBareillyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-chandpur': {
+      id: '/kulhad-chandpur'
+      path: '/kulhad-chandpur'
+      fullPath: '/kulhad-chandpur'
+      preLoaderRoute: typeof KulhadChandpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-dhampur': {
+      id: '/kulhad-dhampur'
+      path: '/kulhad-dhampur'
+      fullPath: '/kulhad-dhampur'
+      preLoaderRoute: typeof KulhadDhampurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-dhanora': {
+      id: '/kulhad-dhanora'
+      path: '/kulhad-dhanora'
+      fullPath: '/kulhad-dhanora'
+      preLoaderRoute: typeof KulhadDhanoraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-gajraula': {
+      id: '/kulhad-gajraula'
+      path: '/kulhad-gajraula'
+      fullPath: '/kulhad-gajraula'
+      preLoaderRoute: typeof KulhadGajraulaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/kulhad-guide': {
       id: '/kulhad-guide'
       path: '/kulhad-guide'
       fullPath: '/kulhad-guide'
       preLoaderRoute: typeof KulhadGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-jaspur': {
+      id: '/kulhad-jaspur'
+      path: '/kulhad-jaspur'
+      fullPath: '/kulhad-jaspur'
+      preLoaderRoute: typeof KulhadJaspurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-joya': {
+      id: '/kulhad-joya'
+      path: '/kulhad-joya'
+      fullPath: '/kulhad-joya'
+      preLoaderRoute: typeof KulhadJoyaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-meerut': {
+      id: '/kulhad-meerut'
+      path: '/kulhad-meerut'
+      fullPath: '/kulhad-meerut'
+      preLoaderRoute: typeof KulhadMeerutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-noorpur': {
+      id: '/kulhad-noorpur'
+      path: '/kulhad-noorpur'
+      fullPath: '/kulhad-noorpur'
+      preLoaderRoute: typeof KulhadNoorpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-rampur': {
+      id: '/kulhad-rampur'
+      path: '/kulhad-rampur'
+      fullPath: '/kulhad-rampur'
+      preLoaderRoute: typeof KulhadRampurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-sahaspur': {
+      id: '/kulhad-sahaspur'
+      path: '/kulhad-sahaspur'
+      fullPath: '/kulhad-sahaspur'
+      preLoaderRoute: typeof KulhadSahaspurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-seohara': {
+      id: '/kulhad-seohara'
+      path: '/kulhad-seohara'
+      fullPath: '/kulhad-seohara'
+      preLoaderRoute: typeof KulhadSeoharaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-tajpur': {
+      id: '/kulhad-tajpur'
+      path: '/kulhad-tajpur'
+      fullPath: '/kulhad-tajpur'
+      preLoaderRoute: typeof KulhadTajpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kulhad-thakurdwara': {
+      id: '/kulhad-thakurdwara'
+      path: '/kulhad-thakurdwara'
+      fullPath: '/kulhad-thakurdwara'
+      preLoaderRoute: typeof KulhadThakurdwaraRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -292,7 +592,22 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   FaqRoute: FaqRoute,
   GalleryRoute: GalleryRoute,
+  KulhadAmrohaRoute: KulhadAmrohaRoute,
+  KulhadBareillyRoute: KulhadBareillyRoute,
+  KulhadChandpurRoute: KulhadChandpurRoute,
+  KulhadDhampurRoute: KulhadDhampurRoute,
+  KulhadDhanoraRoute: KulhadDhanoraRoute,
+  KulhadGajraulaRoute: KulhadGajraulaRoute,
   KulhadGuideRoute: KulhadGuideRoute,
+  KulhadJaspurRoute: KulhadJaspurRoute,
+  KulhadJoyaRoute: KulhadJoyaRoute,
+  KulhadMeerutRoute: KulhadMeerutRoute,
+  KulhadNoorpurRoute: KulhadNoorpurRoute,
+  KulhadRampurRoute: KulhadRampurRoute,
+  KulhadSahaspurRoute: KulhadSahaspurRoute,
+  KulhadSeoharaRoute: KulhadSeoharaRoute,
+  KulhadTajpurRoute: KulhadTajpurRoute,
+  KulhadThakurdwaraRoute: KulhadThakurdwaraRoute,
   PrivacyRoute: PrivacyRoute,
   ProductsRoute: ProductsRouteWithChildren,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
