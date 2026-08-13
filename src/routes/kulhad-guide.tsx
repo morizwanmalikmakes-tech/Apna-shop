@@ -77,9 +77,9 @@ function KulhadGuide() {
             </div>
           </div>
           <div className="rounded-2xl border border-border bg-card p-6">
-            <h2 className="font-display text-xl font-bold text-foreground">          <div className="rounded-2xl border border-border bg-card p-6">
+                      <div className="rounded-2xl border border-border bg-card p-6">
             <h2 className="font-display text-xl font-bold text-foreground">Kulhad delivery — hamare aas-paas ke areas</h2>
-            <p className="mt-3 text-muted-foreground">Hum Moradabad ke aas-paas ke kai shehron aur kasaubo me kulhad deliver karte hain. Agar aap inme se kisi area me hain, to kulhad online order karke kharid sakte hain — Amroha, Seohara, Sahaspur, Dhampur, Tajpur, Noorpur, Jaspur, Thakurdwara, Dhanora, Chandpur, Joya, Gajraula, Rampur, Meerut aur Bareilly. Chahe aapko kulhad buy Amroha me ho, kulhad Dhampur me, kulhad Thakurdwara me, kulhad Joya online, kulhad Gajraula, kulhad Rampur ya kulhad Meerut me — hum deliver karte hain. Call ya WhatsApp karke apne area ki delivery aur pricing jaan lein.</p>
+<p className="mt-3 text-muted-foreground">Hum Moradabad ke aas-paas ke kai shehron aur kasaubo me kulhad deliver karte hain. Agar aap inme se kisi area me hain, to kulhad online order karke kharid sakte hain — Amroha, Seohara, Sahaspur, Dhampur, Tajpur, Noorpur, Jaspur, Thakurdwara, Dhanora, Chandpur, Joya, Gajraula, Rampur, Meerut aur Bareilly. Chahe aapko kulhad buy Amroha me ho, kulhad Dhampur me, kulhad Thakurdwara me, kulhad Joya online, kulhad Gajraula, kulhad Rampur ya kulhad Meerut me — hum deliver karte hain. Call ya WhatsApp karke apne area ki delivery aur pricing jaan lein.</p>
             <div className="mt-4 grid gap-2 sm:grid-cols-2">
               <div className="rounded-xl bg-muted px-4 py-3 text-sm"><strong>Amroha</strong> — kulhad delivery</div>
               <div className="rounded-xl bg-muted px-4 py-3 text-sm"><strong>Seohara</strong> — kulhad delivery</div>
@@ -98,8 +98,10 @@ function KulhadGuide() {
               <div className="rounded-xl bg-muted px-4 py-3 text-sm"><strong>Bareilly</strong> — kulhad delivery</div>
             </div>
           </div>
+          </div>
 
-Kulhad kyon use karein? (5 fayde)</h2>
+          <div className="rounded-2xl border border-border bg-card p-6">
+            <h2 className="font-display text-xl font-bold text-foreground">Kulhad kyon use karein? (5 fayde)</h2>
             <ul className="mt-3 space-y-2 text-muted-foreground">
               <li>• 100% natural mitti — plastic aur paper cups se behtar</li>
               <li>• Food-safe, unglazed aur lead-free</li>
