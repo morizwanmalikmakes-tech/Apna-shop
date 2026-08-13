@@ -5,6 +5,7 @@ const BASE_URL = "https://www.kulhad.shop";
 
 const paths = [
   { path: "/", priority: "1.0", freq: "weekly", lastmod: "2026-08-11" },
+  { path: "/kulhad-guide", priority: "0.8", freq: "monthly", lastmod: "2026-08-14" },
   { path: "/products", priority: "0.9", freq: "weekly", lastmod: "2026-08-11" },
   { path: "/products/60ml-tea-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
   { path: "/products/70ml-tea-kulhad", priority: "0.8", freq: "monthly", lastmod: "2026-08-12" },
