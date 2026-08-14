@@ -170,3 +170,28 @@ html { scroll-behavior: smooth; }
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
+
+/* Soft tricolor gradient for the sticky header */
+.tricolor-header {
+  background-color: rgba(250, 247, 242, 0.94);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 179, 102, 0.22) 0%,
+    rgba(250, 247, 242, 0.94) 34%,
+    rgba(255, 255, 255, 0.96) 50%,
+    rgba(250, 247, 242, 0.94) 66%,
+    rgba(127, 190, 106, 0.22) 100%
+  );
+}
+
+.dark .tricolor-header {
+  background-color: rgba(26, 21, 18, 0.94);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 179, 102, 0.14) 0%,
+    rgba(26, 21, 18, 0.94) 38%,
+    rgba(26, 21, 18, 0.96) 50%,
+    rgba(26, 21, 18, 0.94) 62%,
+    rgba(127, 190, 106, 0.14) 100%
+  );
+}
