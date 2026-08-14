@@ -22,7 +22,7 @@ function TajpurPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Tajpur</h1>
-        <p className="mt-3 text-muted-foreground">Tajpur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Tajpur ke shaadi halls aur roadside cafes — bulk kulhad orders ki pakki aur time par delivery.</p>
+        <p className="mt-3 text-muted-foreground">Tajpur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Tajpur ke shaadi halls aur roadside cafes — bulk kulhad orders ki pakki aur time par delivery. Moradabad factory se approx 30 km — delivery 1-2 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Tajpur me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Tajpur me mitti ke kulhad wholesale — chai stalls, cafés aur dhabas ke liye. Kulhad Factory se 60ml-300ml kulhad order karein.</p>

@@ -22,7 +22,7 @@ function DhampurPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Dhampur</h1>
-        <p className="mt-3 text-muted-foreground">Dhampur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Dhampur ke sugar mills aur vyast market area — cafes aur caterers ke liye bharosemand wholesale kulhad supply.</p>
+        <p className="mt-3 text-muted-foreground">Dhampur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Dhampur ke sugar mills aur vyast market area — cafes aur caterers ke liye bharosemand wholesale kulhad supply. Moradabad factory se approx 35 km — delivery 2-3 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Dhampur me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Dhampur me kulhad wholesale — food-safe clay kulhads, factory-direct pricing. Kulhad Factory se bulk order karke time par delivery paayein.</p>

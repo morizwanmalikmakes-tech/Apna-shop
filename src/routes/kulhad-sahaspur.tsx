@@ -22,7 +22,7 @@ function SahaspurPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Sahaspur</h1>
-        <p className="mt-3 text-muted-foreground">Sahaspur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Sahaspur aur aas-paas — har size ka order, har baar dhyan se pack aur time par deliver.</p>
+        <p className="mt-3 text-muted-foreground">Sahaspur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Sahaspur aur aas-paas — har size ka order, har baar dhyan se pack aur time par deliver. Moradabad factory se approx 35 km — delivery 2-3 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Sahaspur me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Sahaspur me kulhad wholesale — eco-friendly, unglazed mitti ke kulhad chai aur lassi ke liye. Kulhad Factory se bulk order karein, time par delivery.</p>

@@ -22,7 +22,7 @@ function JaspurPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Jaspur</h1>
-        <p className="mt-3 text-muted-foreground">Jaspur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Jaspur ki chai shops aur lassi corners — wholesale kulhad par factory-direct rate, koi beech ka daam nahi.</p>
+        <p className="mt-3 text-muted-foreground">Jaspur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Jaspur ki chai shops aur lassi corners — wholesale kulhad par factory-direct rate, koi beech ka daam nahi. Moradabad factory se approx 60 km — delivery 2-3 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Jaspur me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Jaspur me kulhad wholesale delivery — chai ki dukano aur cafés ke liye. Kulhad Factory se factory-direct price par kulhad order karein.</p>

@@ -26,7 +26,7 @@ function AmrohaPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Amroha</h1>
-        <p className="mt-3 text-muted-foreground">Amroha (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Moradabad ke paas. Amroha ke aam ke orchards aur shandar mandi — yahan shaadi halls, tea stalls aur sweet shops, sabko bulk kulhad supply karte hain.</p>
+        <p className="mt-3 text-muted-foreground">Amroha (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Moradabad ke paas. Amroha ke aam ke orchards aur shandar mandi — yahan shaadi halls, tea stalls aur sweet shops, sabko bulk kulhad supply karte hain. Moradabad factory se approx 25 km — delivery 1-2 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Amroha me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">

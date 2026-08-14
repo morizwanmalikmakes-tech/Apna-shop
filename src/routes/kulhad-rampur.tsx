@@ -22,7 +22,7 @@ function RampurPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Rampur</h1>
-        <p className="mt-3 text-muted-foreground">Rampur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Rampur ki mashhoor khana tradition — restaurants aur caterers ke liye strong packing ke saath kulhad supply.</p>
+        <p className="mt-3 text-muted-foreground">Rampur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Rampur ki mashhoor khana tradition — restaurants aur caterers ke liye strong packing ke saath kulhad supply. Moradabad factory se approx 65 km — delivery 2-3 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Rampur me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Rampur me kulhad wholesale delivery — chai stalls, cafés aur hotels ke liye. Kulhad Factory se factory-direct order karein.</p>

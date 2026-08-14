@@ -22,7 +22,7 @@ function DhanoraPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Dhanora</h1>
-        <p className="mt-3 text-muted-foreground">Dhanora (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Dhanora aur aas-paas ke gaon — shaadi aur event ke orders dhyan se pack karke time par pahunchte hain.</p>
+        <p className="mt-3 text-muted-foreground">Dhanora (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Dhanora aur aas-paas ke gaon — shaadi aur event ke orders dhyan se pack karke time par pahunchte hain. Moradabad factory se approx 30 km — delivery 1-2 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Dhanora me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Dhanora me kulhad wholesale — mitti ke kulhad chai, coffee aur lassi ke liye. Kulhad Factory se bulk order karke delivery paayein.</p>
