@@ -171,50 +171,85 @@ html { scroll-behavior: smooth; }
   background-clip: padding-box, border-box;
 }
 
-/* Soft animated tricolor breeze for the sticky header */
+/* Soft horizontal tricolor flag bands with moving breeze */
 .tricolor-header {
-  background-color: rgba(250, 247, 242, 0.94);
-  background-image: linear-gradient(
-    105deg,
-    rgba(255, 179, 102, 0.24) 0%,
-    rgba(255, 179, 102, 0.16) 20%,
-    rgba(255, 255, 255, 0.96) 42%,
-    rgba(255, 255, 255, 0.96) 55%,
-    rgba(127, 190, 106, 0.16) 78%,
-    rgba(127, 190, 106, 0.24) 100%
-  );
-  background-size: 180% 100%;
-  animation: tricolor-breeze 7s ease-in-out infinite;
+  background-color: rgba(250, 247, 242, 0.96);
+  background-image:
+    linear-gradient(
+      110deg,
+      transparent 0%,
+      transparent 22%,
+      rgba(255, 255, 255, 0.12) 32%,
+      rgba(255, 255, 255, 0.34) 42%,
+      rgba(255, 255, 255, 0.12) 52%,
+      transparent 64%,
+      transparent 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 179, 102, 0.24) 0%,
+      rgba(255, 179, 102, 0.24) 33%,
+      rgba(255, 255, 255, 0.96) 33%,
+      rgba(255, 255, 255, 0.96) 66%,
+      rgba(127, 190, 106, 0.24) 66%,
+      rgba(127, 190, 106, 0.24) 100%
+    );
+  background-size:
+    220% 100%,
+    100% 100%;
+  background-position:
+    -120% 50%,
+    0 0;
+  animation: tricolor-horizontal-wave 7s ease-in-out infinite;
 }
 
 .dark .tricolor-header {
-  background-color: rgba(26, 21, 18, 0.94);
-  background-image: linear-gradient(
-    105deg,
-    rgba(255, 179, 102, 0.16) 0%,
-    rgba(255, 179, 102, 0.10) 20%,
-    rgba(26, 21, 18, 0.96) 42%,
-    rgba(26, 21, 18, 0.96) 55%,
-    rgba(127, 190, 106, 0.10) 78%,
-    rgba(127, 190, 106, 0.16) 100%
-  );
-  background-size: 180% 100%;
+  background-color: rgba(26, 21, 18, 0.96);
+  background-image:
+    linear-gradient(
+      110deg,
+      transparent 0%,
+      transparent 22%,
+      rgba(255, 255, 255, 0.04) 32%,
+      rgba(255, 255, 255, 0.12) 42%,
+      rgba(255, 255, 255, 0.04) 52%,
+      transparent 64%,
+      transparent 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 179, 102, 0.18) 0%,
+      rgba(255, 179, 102, 0.18) 33%,
+      rgba(36, 28, 23, 0.96) 33%,
+      rgba(36, 28, 23, 0.96) 66%,
+      rgba(127, 190, 106, 0.16) 66%,
+      rgba(127, 190, 106, 0.16) 100%
+    );
+  background-size:
+    220% 100%,
+    100% 100%;
 }
 
-@keyframes tricolor-breeze {
+@keyframes tricolor-horizontal-wave {
   0%,
   100% {
-    background-position: 0% 50%;
+    background-position:
+      -120% 50%,
+      0 0;
   }
 
   50% {
-    background-position: 100% 50%;
+    background-position:
+      120% 50%,
+      0 0;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .tricolor-header {
     animation: none;
-    background-position: 50% 50%;
+    background-position:
+      50% 50%,
+      0 0;
   }
 }
