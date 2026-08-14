@@ -129,7 +129,7 @@ function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/products"
-                className="inline-flex items-center gap-2 rounded-full tricolor px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full tricolor px-6 py-3 text-sm font-semibold text-foreground shadow-soft transition hover:scale-105"
               >
                 Shop Now <ArrowRight className="h-4 w-4" />
               </Link>
