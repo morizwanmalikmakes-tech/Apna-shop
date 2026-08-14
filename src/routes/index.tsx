@@ -267,7 +267,7 @@ function HomePage() {
       {/* CRAFT / ABOUT TEASER */}
       <section className="bg-secondary text-secondary-foreground">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
-          <div className="relative overflow-hidden rounded-3xl shadow-warm">
+          <div className="relative max-md:order-2 overflow-hidden rounded-3xl shadow-warm">
             <img
               src={aboutMachine}
               alt="Potter shaping a kulhad on the wheel"
@@ -277,7 +277,7 @@ function HomePage() {
               className="h-full w-full object-cover"
             />
           </div>
-          <div>
+          <div className="max-md:order-1">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-accent">
               The Craft
             </p>
