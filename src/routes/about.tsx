@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout, PageHero } from "@/components/site-layout";
-import aboutMachineVideo from "@/assets/about-machine-video.mp4";
+import aboutMachineVideo from "@/assets/new-machine-video.mp4";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
