@@ -38,7 +38,7 @@ export const Route = createFileRoute("/wholesale")({
 
 const perks = [
   "Har quantity par factory se seedhi aur behtar keemat",
-  "Minimum order 500 pieces se shuru",
+  "Wholesale MOQ: 60–100ml ke liye 500, 200–300ml ke liye 300 pieces",
   "Apni zarurat ke hisaab se size aur branding ki suvidha",
   "Tootne se bachane wali mazboot packing",
   "Poore Bharat me tracking ke saath delivery",

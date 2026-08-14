@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Minimum order quantity kya hai ?",
-    a: "Retail orders 10 pieces se shuru hote hain. Wholesale: har size ke liye 500 pieces se shuru hota hai. Custom sizes ke liye 2000+ pieces ki zarurat hoti hai.",
+    a: "Retail orders har size ke liye 100 pieces se shuru hote hain. Wholesale MOQ 60ml–100ml sizes ke liye 500 pieces aur 200ml–300ml sizes ke liye 300 pieces hai. Retail aur wholesale dono ke liye website par dikhaya current per-piece rate same hai. Custom sizes ke liye 2000+ pieces ki zarurat hoti hai.",
   },
   {
     q: "Kya aap poore Bharat me delivery karte hain ?",

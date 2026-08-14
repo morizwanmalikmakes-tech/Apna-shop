@@ -83,8 +83,10 @@ function TermsPage() {
               4. Minimum order quantity
             </h2>
             <p className="mt-3">
-              Retail, wholesale, custom branding aur export orders ke liye minimum quantity alag ho
-              sakti hai. Final minimum quantity quotation ke samay confirm ki jayegi.
+              Retail orders har size ke liye minimum 100 pieces se shuru hote hain. Wholesale
+              MOQ 60ml–100ml sizes ke liye 500 pieces aur 200ml–300ml sizes ke liye 300 pieces hai.
+              Custom branding aur export orders ki final minimum quantity quotation ke samay confirm
+              ki jayegi.
             </p>
           </section>
 

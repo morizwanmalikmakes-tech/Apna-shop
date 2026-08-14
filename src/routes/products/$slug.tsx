@@ -30,7 +30,7 @@ export const Route = createFileRoute("/products/$slug")({
         { title: `${product.name} | Kulhad Factory` },
         {
           name: "description",
-          content: `${product.name} — ${product.description} Price ${product.price} per piece (wholesale), MOQ ${product.moq}. Factory-direct clay kulhad from Kulhad Factory, Moradabad.`,
+          content: `${product.name} — ${product.description} Price ${product.price} per piece, retail minimum ${product.retailMin} pieces and wholesale MOQ ${product.wholesaleMoq} pieces. Factory-direct clay kulhad from Kulhad Factory, Moradabad.`,
         },
         { property: "og:type", content: "product" },
         { property: "og:title", content: `${product.name} | Kulhad Factory` },
@@ -138,7 +138,7 @@ function ProductDetailPage() {
     );
   }
 
-  const orderMessage = `Hi Kulhad Factory, I'd like to order 50 pcs of ${product.name}. Please share pricing and delivery.`;
+  const orderMessage = `Hi Kulhad Factory, I'd like to place a retail order for ${product.retailMin} pcs of ${product.name}. Please share pricing and delivery.`;
   const quoteMessage = `Hi Kulhad Factory, please send a quote for ${product.name}.`;
 
   return (
@@ -182,9 +182,11 @@ function ProductDetailPage() {
                 </dd>
               </div>
               <div className="rounded-2xl border border-border bg-card p-4">
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">MOQ</dt>
-                <dd className="mt-1 font-display text-lg font-bold text-primary">
-                  {product.moq}
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">
+                  Order quantities
+                </dt>
+                <dd className="mt-1 text-sm font-bold text-primary">
+                  Retail {product.retailMin}+ · Wholesale {product.wholesaleMoq}+
                 </dd>
               </div>
               <div className="rounded-2xl border border-border bg-card p-4">

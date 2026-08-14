@@ -49,7 +49,7 @@ function KulhadGuide() {
           </div>
           <div className="rounded-2xl border border-border bg-card p-6">
             <h2 className="font-display text-xl font-bold text-foreground">Kulhad ke sizes aur price (60ml se 300ml)</h2>
-            <p className="mt-3 text-muted-foreground">Kulhad Factory me 60ml se 300ml tak ke kulhad milte hain. Factory-direct wholesale price per piece:</p>
+            <p className="mt-3 text-muted-foreground">Kulhad Factory me 60ml se 300ml tak ke kulhad milte hain. Current factory-direct rate retail aur wholesale dono ke liye same hai:</p>
             <div className="mt-4 overflow-x-auto">
               <table className="w-full text-left text-sm">
                 <thead>

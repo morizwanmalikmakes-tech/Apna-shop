@@ -4,10 +4,20 @@ import type { Product } from "@/lib/products";
 import { waLink } from "@/lib/site";
 
 export function ProductCard({ product }: { product: Product }) {
-  const [qty, setQty] = useState(50);
+  const [qtyInput, setQtyInput] = useState(String(product.retailMin));
+  const parsedQty = Number(qtyInput);
+  const qty =
+    Number.isInteger(parsedQty) && parsedQty >= product.retailMin
+      ? parsedQty
+      : product.retailMin;
+  const orderType = qty >= product.wholesaleMoq ? "wholesale" : "retail";
 
-  const orderMsg = `Hi Kulhad Factory, I'd like to order ${qty} pcs of ${product.name}. Please share pricing and delivery.`;
-  const quoteMsg = `Hi Kulhad Factory, please send a quote for ${qty} pcs of ${product.name}.`;
+  const adjustQty = (amount: number) => {
+    setQtyInput(String(Math.max(product.retailMin, qty + amount)));
+  };
+
+  const orderMsg = `Hi Kulhad Factory, I'd like to place a ${orderType} order for ${qty} pcs of ${product.name}. Please share pricing and delivery.`;
+  const quoteMsg = `Hi Kulhad Factory, please send a ${orderType} quote for ${qty} pcs of ${product.name}.`;
 
   return (
     <article className="hover-lift group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
@@ -41,7 +51,12 @@ export function ProductCard({ product }: { product: Product }) {
           View product details →
         </a>
         {product.price && (
-          <div className="text-lg font-bold text-primary">{product.price} per piece</div>
+          <div>
+            <div className="text-lg font-bold text-primary">{product.price} per piece</div>
+            <p className="mt-0.5 text-xs text-muted-foreground">
+              Retail min {product.retailMin} pcs · Wholesale {product.wholesaleMoq}+ pcs
+            </p>
+          </div>
         )}
         <div className="mt-1 flex items-center gap-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -51,23 +66,31 @@ export function ProductCard({ product }: { product: Product }) {
             <button
               type="button"
               aria-label="Decrease quantity"
-              onClick={() => setQty((q) => Math.max(10, q - 10))}
+              onClick={() => adjustQty(-50)}
               className="grid h-8 w-8 place-items-center text-foreground hover:bg-muted"
             >
               <Minus className="h-3.5 w-3.5" />
             </button>
             <input
               type="number"
-              min={10}
-              step={10}
-              value={qty}
-              onChange={(e) => setQty(Math.max(10, Number(e.target.value) || 10))}
-              className="w-14 border-0 bg-transparent text-center text-sm font-semibold text-foreground outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none"
+              min={product.retailMin}
+              step={1}
+              inputMode="numeric"
+              value={qtyInput}
+              aria-label={`Quantity for ${product.name}`}
+              onChange={(e) => {
+                const value = e.target.value;
+                if (value === "" || /^\d+$/.test(value)) {
+                  setQtyInput(value);
+                }
+              }}
+              onBlur={() => setQtyInput(String(qty))}
+              className="w-20 border-0 bg-transparent text-center text-sm font-semibold text-foreground outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none"
             />
             <button
               type="button"
               aria-label="Increase quantity"
-              onClick={() => setQty((q) => q + 10)}
+              onClick={() => adjustQty(50)}
               className="grid h-8 w-8 place-items-center text-foreground hover:bg-muted"
             >
               <Plus className="h-3.5 w-3.5" />
