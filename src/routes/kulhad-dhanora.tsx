@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-dhanora")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Dhanora | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Dhanora — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Dhanora tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Dhanora | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Kulhad Price Dhanora — Bulk Order Supply | Kulhad Factory" },
+      { name: "description", content: "Dhanora me mitti ke kulhad chahiye? Shaadi aur events ke liye bulk order — wholesale price, tootne-se-bachane wali packing, time par delivery." },
+      { property: "og:title", content: "Kulhad Price Dhanora — Bulk Order Supply | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-dhanora" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

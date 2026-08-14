@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-chandpur")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Chandpur | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Chandpur — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Chandpur tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Chandpur | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Kulhad Wholesale Chandpur — Factory Rate | Kulhad Factory" },
+      { name: "description", content: "Chandpur me kulhad wholesale rate par chahiye? 60ml-300ml mitti ke kulhad, bulk order par factory price. Mazboot packing aur fast delivery. WhatsApp karein." },
+      { property: "og:title", content: "Kulhad Wholesale Chandpur — Factory Rate | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-chandpur" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

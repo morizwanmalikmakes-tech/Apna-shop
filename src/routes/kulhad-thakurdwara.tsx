@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-thakurdwara")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Thakurdwara | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Thakurdwara — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Thakurdwara tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Thakurdwara | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Thakurdwara Kulhad Supplier — Wholesale | Kulhad Factory" },
+      { name: "description", content: "Thakurdwara me mandir, mele, cafes ke liye mitti ke kulhad supplier. Wholesale rate par eco-friendly clay cups, fast delivery. WhatsApp quote." },
+      { property: "og:title", content: "Thakurdwara Kulhad Supplier — Wholesale | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-thakurdwara" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-gajraula")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Gajraula | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Gajraula — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Gajraula tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Gajraula | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Gajraula Kulhad Wholesale | Clay Cup Supplier | Kulhad Factory" },
+      { name: "description", content: "Gajraula industrial area ke cafes, canteens, dhabas ke liye clay cup supplier. Kulhad wholesale, factory-direct price, regular supply ka bharosa." },
+      { property: "og:title", content: "Gajraula Kulhad Wholesale | Clay Cup Supplier | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-gajraula" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

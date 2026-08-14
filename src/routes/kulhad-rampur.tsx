@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-rampur")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Rampur | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Rampur — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Rampur tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Rampur | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Rampur Kulhad Supplier — Bulk Price | Kulhad Factory" },
+      { name: "description", content: "Rampur me kulhad wholesale supplier — restaurants, caterers ke liye mitti ke kulhad. Strong packing, factory price, time par delivery. WhatsApp order." },
+      { property: "og:title", content: "Rampur Kulhad Supplier — Bulk Price | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-rampur" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

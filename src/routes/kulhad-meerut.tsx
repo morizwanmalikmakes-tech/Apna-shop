@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-meerut")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Meerut | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Meerut — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Meerut tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Meerut | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Kulhad Supplier Meerut — Clay Kulhad Price | Kulhad Factory" },
+      { name: "description", content: "Meerut me kulhad supplier — restaurants, cafes, chai tapri ke liye clay kulhad wholesale. Per-piece factory price, fast delivery. Quote lein." },
+      { property: "og:title", content: "Kulhad Supplier Meerut — Clay Kulhad Price | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-meerut" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

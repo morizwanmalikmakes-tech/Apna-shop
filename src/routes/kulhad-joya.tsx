@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-joya")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Joya | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Joya — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Joya tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Joya | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Joya Mitti Ke Kulhad | Wholesale Rate | Kulhad Factory" },
+      { name: "description", content: "Joya me mitti ke kulhad wholesale — haat, shaadi season, dukano ke liye bulk supply. Kam price, mazboot packing, time par delivery. WhatsApp karein." },
+      { property: "og:title", content: "Joya Mitti Ke Kulhad | Wholesale Rate | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-joya" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

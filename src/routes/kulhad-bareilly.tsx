@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-bareilly")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Bareilly | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Bareilly — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Bareilly tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Bareilly | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Mitti Ke Kulhad Bareilly | Wholesale Supplier | Kulhad Factory" },
+      { name: "description", content: "Bareilly me clay kulhad supplier — cafes, dhabas, caterers ke liye wholesale mitti ke kulhad. Per-piece price, mazboot packing, time par delivery. WhatsApp quote." },
+      { property: "og:title", content: "Mitti Ke Kulhad Bareilly | Wholesale Supplier | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-bareilly" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

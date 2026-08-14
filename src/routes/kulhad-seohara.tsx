@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-seohara")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Seohara | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Seohara — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Seohara tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Seohara | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Seohara Kulhad Price — Wholesale Supply | Kulhad Factory" },
+      { name: "description", content: "Seohara mandi traders aur tea stalls ke liye kulhad wholesale. Mitti ke kulhad factory price par, fresh stock, quick dispatch. WhatsApp par quote." },
+      { property: "og:title", content: "Seohara Kulhad Price — Wholesale Supply | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-seohara" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

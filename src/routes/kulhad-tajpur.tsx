@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-tajpur")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Tajpur | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Tajpur — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Tajpur tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Tajpur | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Tajpur Kulhad Bulk Order — Supplier | Kulhad Factory" },
+      { name: "description", content: "Tajpur me shaadi aur events ke liye kulhad bulk order — mitti ke kulhad wholesale price par. Time par delivery, tootne-se-bachane wali packing." },
+      { property: "og:title", content: "Tajpur Kulhad Bulk Order — Supplier | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-tajpur" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

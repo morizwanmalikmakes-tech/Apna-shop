@@ -5,11 +5,11 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-amroha")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Amroha | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Kulhad Supplier Amroha — Wholesale Price | Kulhad Factory" },
       {
         name: "description",
         content:
-          "Kulhad wholesale Amroha — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Amroha tak delivery. Order on WhatsApp.",
+          "Amroha me mitti ke kulhad supplier — 60ml-300ml, factory-direct price. Shaadi halls, chai stalls ke liye bulk order. Fast delivery, WhatsApp quote.",
       },
       { property: "og:title", content: "Kulhad Wholesale Amroha | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-amroha" },

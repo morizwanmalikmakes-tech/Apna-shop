@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-jaspur")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Jaspur | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Jaspur — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Jaspur tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Jaspur | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Kulhad Jaspur — Supplier & Delivery | Kulhad Factory" },
+      { name: "description", content: "Jaspur me kulhad supplier — chai aur lassi shops ke liye mitti ke kulhad wholesale rate par. Ghar baithe bulk order, fast delivery. WhatsApp quote." },
+      { property: "og:title", content: "Kulhad Jaspur — Supplier & Delivery | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-jaspur" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

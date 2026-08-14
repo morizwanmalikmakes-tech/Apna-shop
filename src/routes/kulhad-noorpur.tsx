@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-noorpur")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Noorpur | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Noorpur — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Noorpur tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Noorpur | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Noorpur Kulhad Wholesale | Factory Direct | Kulhad Factory" },
+      { name: "description", content: "Noorpur ki sweet shops aur dhabas ke liye mitti ke kulhad seedha factory se. Wholesale bulk price, eco-friendly clay cups, time par delivery." },
+      { property: "og:title", content: "Noorpur Kulhad Wholesale | Factory Direct | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-noorpur" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

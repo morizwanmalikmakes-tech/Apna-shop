@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-sahaspur")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Sahaspur | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Sahaspur — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Sahaspur tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Sahaspur | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Sahaspur Me Kulhad — Wholesale Supplier | Kulhad Factory" },
+      { name: "description", content: "Sahaspur me kulhad chahiye? Har size (60ml-300ml) mitti ke kulhad wholesale price par. Bulk order, fast dispatch, mazboot packing. WhatsApp karein." },
+      { property: "og:title", content: "Sahaspur Me Kulhad — Wholesale Supplier | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-sahaspur" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

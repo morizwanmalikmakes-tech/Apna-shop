@@ -5,9 +5,9 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/kulhad-dhampur")({
   head: () => ({
     meta: [
-      { title: "Kulhad Wholesale Dhampur | Clay Kulhad Supplier UP | Kulhad Factory" },
-      { name: "description", content: "Kulhad wholesale Dhampur — mitti ke kulhad 60ml-300ml factory-direct price par. Food-safe, unglazed, lead-free. Kulhad Factory Moradabad se Dhampur tak delivery. Order on WhatsApp." },
-      { property: "og:title", content: "Kulhad Wholesale Dhampur | Clay Kulhad Supplier UP | Kulhad Factory" },
+      { title: "Dhampur Kulhad Supplier | Mitti Ke Kulhad | Kulhad Factory" },
+      { name: "description", content: "Dhampur ke tea stalls, sweet shops, cafes ke liye kulhad supplier. Mitti ke kulhad wholesale, factory-direct price, 3-7 din me delivery. WhatsApp par order." },
+      { property: "og:title", content: "Dhampur Kulhad Supplier | Mitti Ke Kulhad | Kulhad Factory" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-dhampur" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
