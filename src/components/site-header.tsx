@@ -8,7 +8,7 @@ import { ThemeToggle } from "./theme-toggle";
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="tricolor-header sticky top-0 z-40 border-b border-border/60 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] lg:grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex min-w-0 items-center gap-3">
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full tricolor text-primary-foreground font-display text-lg font-bold shadow-soft">
