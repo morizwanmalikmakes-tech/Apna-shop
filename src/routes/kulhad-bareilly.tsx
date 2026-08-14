@@ -22,7 +22,7 @@ function BareillyPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Bareilly</h1>
-        <p className="mt-3 text-muted-foreground">Bareilly (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order.</p>
+        <p className="mt-3 text-muted-foreground">Bareilly (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Bareilly ke mashhoor bazaars aur cafe culture — restaurants, dhabas aur shaadi planners ke liye time par kulhad supply.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Bareilly me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Bareilly ke tea café owners aur dhabas Kulhad Factory se wholesale kulhad order karte hain. 60ml se 300ml tak sab sizes available.</p>

@@ -22,7 +22,7 @@ function SeoharaPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Seohara</h1>
-        <p className="mt-3 text-muted-foreground">Seohara (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order.</p>
+        <p className="mt-3 text-muted-foreground">Seohara (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Seohara ki mandi aur tea stalls — wholesale kulhad ka fresh stock aur quick dispatch.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Seohara me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Seohara ke dhabas aur chai dukano tak Kulhad Factory food-safe mitti ke kulhad wholesale price par deliver karta hai. 60ml se 300ml tak sab sizes available.</p>

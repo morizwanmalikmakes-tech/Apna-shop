@@ -22,7 +22,7 @@ function MeerutPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Meerut</h1>
-        <p className="mt-3 text-muted-foreground">Meerut (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order.</p>
+        <p className="mt-3 text-muted-foreground">Meerut (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Meerut — sports goods aur cafes ka shehar. Tapri se restaurant tak, kulhad supply time par.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Meerut me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Meerut ke cafés aur chai dukano tak Kulhad Factory kulhad deliver karta hai. Factory-direct pricing aur mazboot packing ke saath.</p>
