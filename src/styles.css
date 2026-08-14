@@ -170,3 +170,38 @@ html { scroll-behavior: smooth; }
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
+
+/* Temporary Tiranga accent theme — remove after 18 Aug 2026 */
+.tiranga-theme {
+  color-scheme: light;
+
+  --background: #FFFDF8;
+  --foreground: #252525;
+
+  --card: #FFFFFF;
+  --card-foreground: #252525;
+  --popover: #FFFFFF;
+  --popover-foreground: #252525;
+
+  --primary: #A64B00;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #075E54;
+  --secondary-foreground: #FFFFFF;
+
+  --muted: #F7EDE1;
+  --muted-foreground: #66594D;
+
+  --accent: #FFB366;
+  --accent-foreground: #1A1512;
+
+  --border: #E8D7C3;
+  --input: #E8D7C3;
+  --ring: #000080;
+
+  --clay: #FF9933;
+  --clay-dark: #A64B00;
+  --sand: #FFF1DF;
+  --cream: #FFF9F0;
+  --espresso: #252525;
+}
