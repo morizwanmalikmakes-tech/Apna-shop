@@ -22,7 +22,7 @@ function ChandpurPage() {
     <SiteLayout>
       <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
         <h1 className="font-display text-4xl font-bold text-foreground">Kulhad Wholesale Chandpur</h1>
-        <p className="mt-3 text-muted-foreground">Chandpur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Chandpur ki chai tapri se sweet shops tak — chhote aur bade dono orders ke liye mazboot packing aur fast delivery.</p>
+        <p className="mt-3 text-muted-foreground">Chandpur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Chandpur ki chai tapri se sweet shops tak — chhote aur bade dono orders ke liye mazboot packing aur fast delivery. Moradabad factory se approx 30 km — delivery 1-2 din me.</p>
         <div className="mt-8 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Chandpur me mitti ke kulhad — wholesale aur bulk</h2>
           <p className="mt-3 text-muted-foreground">Chandpur ke chai dukano tak Kulhad Factory kulhad deliver karta hai. Mazboot packing, time par delivery aur factory pricing.</p>
