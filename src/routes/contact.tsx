@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 import { SiteLayout, PageHero } from "@/components/site-layout";
-import { site, waLink } from "@/lib/site";
+import { site, waLink, FORM_ACCESS_KEY } from "@/lib/site";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -66,8 +66,9 @@ function ContactPage() {
   }, []);
 
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
     const get = (k: string) => String(f.get(k) ?? "").trim();
@@ -93,7 +94,37 @@ Email: ${email || "-"}
 City: ${city || "-"}
 Requirement: ${requirement || "-"}
 Message: ${message || "-"}`;
-    window.open(waLink(msg), "_blank");
+
+    setStatus("sending");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: FORM_ACCESS_KEY,
+          subject: `New enquiry from ${name}${city ? " - " + city : ""}`,
+          from_name: "kulhad.shop",
+          name,
+          phone,
+          email: email || "-",
+          city: city || "-",
+          requirement: requirement || "-",
+          message: message || "-",
+          botcheck: String(f.get("botcheck") ?? ""),
+        }),
+      });
+      setStatus(res.ok ? "sent" : "error");
+    } catch {
+      setStatus("error");
+    }
+
+    const a = document.createElement("a");
+    a.href = waLink(msg);
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   };
 
   const field =
@@ -189,6 +220,8 @@ Message: ${message || "-"}`;
             <div className="flex flex-col gap-1">
               <input
                 required
+                aria-label="Full name"
+                autoComplete="name"
                 maxLength={100}
                 name="name"
                 placeholder="Full name *"
@@ -197,12 +230,24 @@ Message: ${message || "-"}`;
               {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
             </div>
             <div className="flex flex-col gap-1">
-              <input required name="phone" placeholder="Phone / WhatsApp *" className={field} />
+              <input
+                required
+                aria-label="Phone or WhatsApp number"
+                type="tel"
+                inputMode="tel"
+                autoComplete="tel"
+                name="phone"
+                placeholder="Phone / WhatsApp *"
+                className={field}
+              />
               {errors.phone && <p className="text-xs text-destructive">{errors.phone}</p>}
             </div>
             <div className="flex flex-col gap-1">
               <input
                 type="email"
+                aria-label="Email"
+                inputMode="email"
+                autoComplete="email"
                 maxLength={255}
                 name="email"
                 placeholder="Email"
@@ -210,8 +255,15 @@ Message: ${message || "-"}`;
               />
               {errors.email && <p className="text-xs text-destructive">{errors.email}</p>}
             </div>
-            <input name="city" maxLength={100} placeholder="City" className={field} />
-            <select name="requirement" defaultValue="" className={`${field} sm:col-span-2`}>
+            <input
+              name="city"
+              aria-label="City"
+              autoComplete="address-level2"
+              maxLength={100}
+              placeholder="City"
+              className={field}
+            />
+            <select name="requirement" aria-label="Requirement" defaultValue="" className={`${field} sm:col-span-2`}>
               <option value="" disabled>
                 Requirement
               </option>
@@ -225,6 +277,7 @@ Message: ${message || "-"}`;
             <div className="flex flex-col gap-1 sm:col-span-2">
               <textarea
                 name="message"
+                aria-label="Your message"
                 rows={5}
                 maxLength={1000}
                 placeholder="Your message"
@@ -234,12 +287,33 @@ Message: ${message || "-"}`;
             </div>
           </div>
 
+          <input
+            type="checkbox"
+            name="botcheck"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            className="hidden"
+          />
+
           <button
             type="submit"
-            className="mt-6 w-full rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+            disabled={status === "sending"}
+            className="mt-6 w-full rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110 disabled:opacity-60"
           >
-            Send via WhatsApp
+            {status === "sending" ? "Sending..." : "Send via WhatsApp"}
           </button>
+
+          {status === "sent" && (
+            <p role="status" className="mt-3 text-center text-sm font-medium text-primary">
+              Enquiry mil gayi! Hum jaldi WhatsApp par jawab denge.
+            </p>
+          )}
+          {status === "error" && (
+            <p role="alert" className="mt-3 text-center text-sm font-medium text-destructive">
+              Enquiry save nahi hui. WhatsApp par bhej dein ya call karein.
+            </p>
+          )}
         </form>
       </section>
 

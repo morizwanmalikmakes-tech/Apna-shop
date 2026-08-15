@@ -49,7 +49,8 @@ function AboutPage() {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
+            poster="/images/craftsmanship-new.webp"
             aria-label="Kulhad making process"
             width={1200}
             height={900}

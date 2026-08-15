@@ -14,6 +14,9 @@ export const site = {
   },
 };
 
+// Web3Forms access key. Get a free one at https://web3forms.com
+export const FORM_ACCESS_KEY = "a8e90a98-5d59-40d4-a425-b0a426a911dd";
+
 export const waLink = (message: string) =>
   `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`;
 

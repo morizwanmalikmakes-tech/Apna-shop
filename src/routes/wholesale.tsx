@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { SiteLayout, PageHero } from "@/components/site-layout";
-import { site, waLink } from "@/lib/site";
+import { site, waLink, FORM_ACCESS_KEY } from "@/lib/site";
 
 export const Route = createFileRoute("/wholesale")({
   head: () => ({
@@ -47,10 +47,11 @@ const perks = [
 
 function WholesaleForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const field =
     "rounded-lg border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary";
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
     const get = (k: string) => String(f.get(k) ?? "").trim();
@@ -71,34 +72,76 @@ function WholesaleForm() {
     if (Object.keys(errs).length) return;
 
     const msg = `Wholesale enquiry:\nName: ${name}\nBusiness: ${business}\nSize/Qty: ${qty}\nCity: ${city}\nNotes: ${notes || "-"}`;
-    window.open(waLink(msg), "_blank");
+
+    setStatus("sending");
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: FORM_ACCESS_KEY,
+          subject: `Wholesale enquiry from ${business} - ${city}`,
+          from_name: "kulhad.shop",
+          name,
+          business,
+          qty,
+          city,
+          notes: notes || "-",
+          botcheck: String(f.get("botcheck") ?? ""),
+        }),
+      });
+      setStatus(res.ok ? "sent" : "error");
+    } catch {
+      setStatus("error");
+    }
+
+    const a = document.createElement("a");
+    a.href = waLink(msg);
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
   };
 
   return (
     <form onSubmit={onSubmit} className="mt-6 grid gap-4">
       <div className="flex flex-col gap-1">
-        <input name="name" placeholder="Your name" className={field} />
+        <input name="name" aria-label="Your name" autoComplete="name" placeholder="Your name" className={field} />
         {errors.name && <p className="text-xs text-destructive">{errors.name}</p>}
       </div>
       <div className="flex flex-col gap-1">
-        <input name="business" placeholder="Business / brand" className={field} />
+        <input name="business" aria-label="Business or brand" autoComplete="organization" placeholder="Business / brand" className={field} />
         {errors.business && <p className="text-xs text-destructive">{errors.business}</p>}
       </div>
       <div className="flex flex-col gap-1">
-        <input name="qty" placeholder="Size and quantity (e.g. 80ml × 2000)" className={field} />
+        <input name="qty" aria-label="Size and quantity" placeholder="Size and quantity (e.g. 80ml × 2000)" className={field} />
         {errors.qty && <p className="text-xs text-destructive">{errors.qty}</p>}
       </div>
       <div className="flex flex-col gap-1">
-        <input name="city" placeholder="City / state" className={field} />
+        <input name="city" aria-label="City or state" autoComplete="address-level2" placeholder="City / state" className={field} />
         {errors.city && <p className="text-xs text-destructive">{errors.city}</p>}
       </div>
-      <textarea name="notes" rows={3} placeholder="Any special requirements?" className={field} />
+      <textarea name="notes" aria-label="Any special requirements" rows={3} placeholder="Any special requirements?" className={field} />
+      <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
       <button
         type="submit"
-        className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110"
+        disabled={status === "sending"}
+        className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110 disabled:opacity-60"
       >
-        Send on WhatsApp
+        {status === "sending" ? "Sending..." : "Send on WhatsApp"}
       </button>
+
+      {status === "sent" && (
+        <p role="status" className="text-sm font-medium text-primary">
+          Enquiry mil gayi! Hum ek working day me jawab denge.
+        </p>
+      )}
+      {status === "error" && (
+        <p role="alert" className="text-sm font-medium text-destructive">
+          Enquiry save nahi hui. WhatsApp par bhej dein ya call karein.
+        </p>
+      )}
       <p className="text-xs text-muted-foreground">
         Or call{" "}
         <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="font-semibold text-primary">
