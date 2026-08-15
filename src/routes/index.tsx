@@ -129,7 +129,8 @@ function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/products"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition hover:scale-105 hover:brightness-110"
+                style={{ background: "linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)" }}
+                className="inline-flex items-center gap-2 rounded-full border border-[#333333] px-6 py-3 text-sm font-semibold text-[#333333] shadow-soft transition hover:scale-105 hover:brightness-105"
               >
                 Shop Now <ArrowRight className="h-4 w-4" />
               </Link>
