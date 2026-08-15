@@ -102,6 +102,24 @@ export function CityPage({ city }: { city: City }) {
         </div>
       </section>
 
+      {city.details && city.details.length > 0 && (
+        <section className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
+          <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
+            {c} me kulhad supply — puri jaankari
+          </h2>
+          <div className="mt-8 space-y-8">
+            {city.details.map((d) => (
+              <div key={d.heading}>
+                <h3 className="font-display text-lg font-bold text-foreground sm:text-xl">
+                  {d.heading}
+                </h3>
+                <p className="mt-2 text-muted-foreground">{d.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
           {c} ke aas-paas hum yahan bhi supply karte hain

@@ -8,6 +8,8 @@ export type City = {
   intro: string;
   sub: string;
   nearby: NearbyArea[];
+  /** Optional city-specific long-form content (unique per city). */
+  details?: { heading: string; body: string }[];
 };
 
 export const cities: City[] = [
@@ -19,6 +21,28 @@ export const cities: City[] = [
     intro: "Amroha (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Moradabad ke paas. Amroha ke aam ke orchards aur shandar mandi — yahan shaadi halls, tea stalls aur sweet shops, sabko bulk kulhad supply karte hain. Moradabad factory se approx 25 km — delivery 1-2 din me.",
     sub: "Kulhad Factory se Amroha tak kulhad delivery time par pahunchta hai, mazboot packing ke saath. Amroha ke chai stalls, cafés aur dhabas ko factory-direct wholesale price par food-safe, unglazed aur lead-free mitti ke kulhad milte hain. Hum 60ml se 300ml tak ke kulhad deliver karte hain — chai, coffee aur lassi ke liye.",
     nearby: [{ name: "Dhanaura", to: "/kulhad-dhanora" }, { name: "Gajraula", to: "/kulhad-gajraula" }, { name: "Kashipur", to: "/kulhad-kashipur" }, { name: "Hasanpur", to: "/products" }],
+    details: [
+      {
+        heading: "Amroha me hamare customers kaun hain?",
+        body: "Amroha (Uttar Pradesh) me hamari mitti ke kulhad ki supply mainly chai stalls, sweet shops, dhabas, cafés, caterers aur mandi traders ko hoti hai. Amroha ke main bazaar aur aas-paas ke areas me hamari regular supply jaati hai — is waqt lagbhag 50+ regular customers hain jo har mahine order karte hain. Normal dino me bhi demand bani rehti hai, lekin shaadi-vivah, festivals aur aam ke season me kulhad ki demand kaafi badh jaati hai, isliye hum us waqt pehle se extra stock taiyaar rakhte hain.",
+      },
+      {
+        heading: "Amroha me delivery kaise hoti hai?",
+        body: "Amroha Moradabad factory se lagbhag 25 km hai. Delivery ke liye hum mainly apni gaadi ya local transport ka istemal karte hain, isliye Amroha aur aas-paas ke areas me aam taur par 1-2 din me maal pahunch jaata hai. Delivery charge order ki quantity aur distance ke hisaab se tay hota hai — bade aur wholesale orders par delivery free bhi rakhi ja sakti hai. Nearby areas me availability ke hisaab se same-day delivery bhi possible hai.",
+      },
+      {
+        heading: "Amroha me kaun sa kulhad size zyada chalta hai?",
+        body: "Amroha me 80ml aur 100ml kulhad sabse zyada bikne wale sizes hain. Chai stalls aur sweet shops me 80ml se 100ml tak ka istemal sabse zyada hota hai, jabki 250ml lassi kulhad thande drinks aur lassi ke liye liya jaata hai. Shaadiyon me 100ml size sabse popular rehta hai, kyunki chai aur doosre beverages ke liye ye convenient bhi hai aur economical bhi padta hai.",
+      },
+      {
+        heading: "Amroha ke ek regular customer ka anubhav",
+        body: "Hamare ek regular customer pichhle 1 saal se Amroha me humse kulhad le rahe hain. Unka ek order 4,500 pieces ka raha hai, aur ab tak ka unka sabse bada order 6,700 pieces ka gaya hai. Unhe hamare kulhad ki quality aur time par supply pasand aati hai — isi wajah se wo har bulk requirement ke liye seedha humse hi contact karte hain.",
+      },
+      {
+        heading: "Amroha me order aur payment kaise karein?",
+        body: "Order dene ke liye customer WhatsApp ya call ke through humse contact kar sakte hain. Bulk orders par payment terms quantity aur order ke hisaab se decide hote hain. Minimum order quantity customer ki requirement ke according rakhi jaati hai. Order details confirm hone ke baad aam taur par usi din order confirmation de diya jaata hai, taaki dispatch me deri na ho.",
+      },
+    ],
   },
   {
     slug: "kulhad-bareilly",
