@@ -31,6 +31,7 @@ export const Route = createFileRoute("/contact")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
+          "@id": "https://www.kulhad.shop/#business",
           name: site.name,
           url: "https://www.kulhad.shop",
           telephone: site.phone,

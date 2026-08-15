@@ -3,13 +3,19 @@ import { X } from "lucide-react";
 
 const DISMISS_KEY = "kulhad-independence-banner-dismissed-2026";
 
+function isIndependenceWindow() {
+  // Show only 13-16 August (IST). Auto-hides the rest of the year.
+  const nowIst = new Date(Date.now() + (330 + new Date().getTimezoneOffset()) * 60000);
+  return nowIst.getMonth() === 7 && nowIst.getDate() >= 13 && nowIst.getDate() <= 16;
+}
+
 export function IndependenceBanner() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem(DISMISS_KEY) === "1") {
-      setVisible(false);
-    }
+    if (!isIndependenceWindow()) return;
+    if (sessionStorage.getItem(DISMISS_KEY) === "1") return;
+    setVisible(true);
   }, []);
 
   const closeBanner = () => {

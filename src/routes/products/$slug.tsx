@@ -27,13 +27,13 @@ export const Route = createFileRoute("/products/$slug")({
 
     return {
       meta: [
-        { title: `${product.name} | Kulhad Factory` },
+        { title: `${product.name} — ${product.price}/pc Wholesale | Kulhad Factory` },
         {
           name: "description",
-          content: `${product.name} — ${product.description} Price ${product.price} per piece, retail minimum ${product.retailMin} pieces and wholesale MOQ ${product.wholesaleMoq} pieces. Factory-direct clay kulhad from Kulhad Factory, Moradabad.`,
+          content: `${product.name} at ${product.price}/piece — ${product.description}`.slice(0, 155),
         },
         { property: "og:type", content: "product" },
-        { property: "og:title", content: `${product.name} | Kulhad Factory` },
+        { property: "og:title", content: `${product.name} — ${product.price}/pc Wholesale | Kulhad Factory` },
         {
           property: "og:description",
           content: product.description,
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/products/$slug")({
         { property: "og:image", content: imageUrl },
         { property: "og:image:alt", content: `${product.name} handcrafted clay kulhad` },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: `${product.name} | Kulhad Factory` },
+        { name: "twitter:title", content: `${product.name} — ${product.price}/pc Wholesale | Kulhad Factory` },
         { name: "twitter:description", content: product.description },
         { name: "twitter:image", content: imageUrl },
       ],
