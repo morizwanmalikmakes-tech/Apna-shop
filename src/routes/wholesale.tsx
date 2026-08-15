@@ -59,6 +59,7 @@ function WholesaleForm() {
     const business = get("business");
     const qty = get("qty");
     const city = get("city");
+    const email = get("email");
     const notes = get("notes");
 
     const errs: Record<string, string> = {};
@@ -67,11 +68,12 @@ function WholesaleForm() {
     if (!business || business.length < 2) errs.business = "Business naam daalo.";
     if (!qty || qty.length < 3) errs.qty = "Size aur quantity batao (e.g. 80ml × 2000).";
     if (!city || city.length < 2) errs.city = "City / state daalo.";
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) errs.email = "Invalid email address.";
 
     setErrors(errs);
     if (Object.keys(errs).length) return;
 
-    const msg = `Wholesale enquiry:\nName: ${name}\nBusiness: ${business}\nSize/Qty: ${qty}\nCity: ${city}\nNotes: ${notes || "-"}`;
+    const msg = `Wholesale enquiry:\nName: ${name}\nBusiness: ${business}\nSize/Qty: ${qty}\nCity: ${city}\nEmail: ${email || "-"}\nNotes: ${notes || "-"}`;
 
     setStatus("sending");
     try {
@@ -82,8 +84,10 @@ function WholesaleForm() {
           access_key: FORM_ACCESS_KEY,
           subject: `Wholesale enquiry from ${business} - ${city}`,
           from_name: "kulhad.shop",
+          replyto: email || undefined,
           name,
           business,
+          email: email || "-",
           qty,
           city,
           notes: notes || "-",
@@ -121,6 +125,19 @@ function WholesaleForm() {
       <div className="flex flex-col gap-1">
         <input name="city" aria-label="City or state" autoComplete="address-level2" placeholder="City / state" className={field} />
         {errors.city && <p className="text-xs text-destructive">{errors.city}</p>}
+      </div>
+      <div className="flex flex-col gap-1">
+        <input
+          name="email"
+          type="email"
+          inputMode="email"
+          aria-label="Email (optional)"
+          autoComplete="email"
+          maxLength={255}
+          placeholder="Email (optional)"
+          className={field}
+        />
+        {errors.email && <p className="text-xs text-destructive">{errors.email}</p>}
       </div>
       <textarea name="notes" aria-label="Any special requirements" rows={3} placeholder="Any special requirements?" className={field} />
       <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />

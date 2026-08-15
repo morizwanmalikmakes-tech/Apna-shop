@@ -104,6 +104,7 @@ Message: ${message || "-"}`;
           access_key: FORM_ACCESS_KEY,
           subject: `New enquiry from ${name}${city ? " - " + city : ""}`,
           from_name: "kulhad.shop",
+          replyto: email || undefined,
           name,
           phone,
           email: email || "-",
