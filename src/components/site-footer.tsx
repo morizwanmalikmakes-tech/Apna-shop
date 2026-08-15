@@ -1,11 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, Phone, MapPin } from "lucide-react";
-import { nav, site, waLink } from "@/lib/site";
+import { nav, site, waLink, deliveryAreas } from "@/lib/site";
 
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border/60 bg-secondary text-secondary-foreground">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-5 lg:px-8">
         <div>
           <div className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-full bg-primary font-display text-lg font-bold text-primary-foreground">
@@ -59,6 +59,26 @@ export function SiteFooter() {
                 className="text-secondary-foreground/85 transition hover:text-primary"
               >
                 Terms & Conditions
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-secondary-foreground/70">
+            Delivery Areas
+          </h4>
+          <ul className="mt-4 grid grid-cols-2 gap-x-3 gap-y-2 text-sm">
+            {deliveryAreas.map((x) => (
+              <li key={x.to}>
+                <Link to={x.to} className="text-secondary-foreground/85 transition hover:text-primary">
+                  {x.label}
+                </Link>
+              </li>
+            ))}
+            <li className="col-span-2">
+              <Link to="/kulhad-guide" className="font-semibold text-secondary-foreground/85 transition hover:text-primary">
+                Kulhad Guide →
               </Link>
             </li>
           </ul>

@@ -26,3 +26,21 @@ export const nav = [
   { to: "/faq", label: "FAQ" },
   { to: "/contact", label: "Contact" },
 ] as const;
+
+export const deliveryAreas = [
+  { to: "/kulhad-amroha", label: "Amroha" },
+  { to: "/kulhad-bareilly", label: "Bareilly" },
+  { to: "/kulhad-chandpur", label: "Chandpur" },
+  { to: "/kulhad-dhampur", label: "Dhampur" },
+  { to: "/kulhad-dhanora", label: "Dhanora" },
+  { to: "/kulhad-gajraula", label: "Gajraula" },
+  { to: "/kulhad-jaspur", label: "Jaspur" },
+  { to: "/kulhad-joya", label: "Joya" },
+  { to: "/kulhad-meerut", label: "Meerut" },
+  { to: "/kulhad-noorpur", label: "Noorpur" },
+  { to: "/kulhad-rampur", label: "Rampur" },
+  { to: "/kulhad-sahaspur", label: "Sahaspur" },
+  { to: "/kulhad-seohara", label: "Seohara" },
+  { to: "/kulhad-tajpur", label: "Tajpur" },
+  { to: "/kulhad-thakurdwara", label: "Thakurdwara" },
+] as const;

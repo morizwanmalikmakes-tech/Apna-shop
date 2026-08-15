@@ -52,8 +52,8 @@ function ChandpurPage() {
         <div className="mt-6 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Aas-paas ke areas — Chandpur</h2>
           <div className="mt-3 flex flex-wrap gap-2">
-            {["Bijnor","Dhampur","Noorpur"].map((n) => (
-              <Link key={n} to="/products" className="rounded-full bg-muted px-4 py-2 text-sm font-semibold text-foreground">{n}</Link>
+            {[{ n: "Bijnor", to: "/products" }, { n: "Dhampur", to: "/kulhad-dhampur" }, { n: "Noorpur", to: "/kulhad-noorpur" }].map((c) => (
+              <Link key={c.n} to={c.to} className="rounded-full bg-muted px-4 py-2 text-sm font-semibold text-foreground">{c.n}</Link>
             ))}
           </div>
         </div>

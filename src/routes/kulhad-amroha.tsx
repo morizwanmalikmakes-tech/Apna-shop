@@ -58,8 +58,8 @@ function AmrohaPage() {
         <div className="mt-6 rounded-2xl border border-border bg-card p-6">
           <h2 className="font-display text-xl font-bold text-foreground">Aas-paas ke areas — Amroha</h2>
           <div className="mt-3 flex flex-wrap gap-2">
-            {["Dhanaura","Gajraula","Joya","Hasanpur"].map((n) => (
-              <Link key={n} to="/products" className="rounded-full bg-muted px-4 py-2 text-sm font-semibold text-foreground">{n}</Link>
+            {[{ n: "Dhanaura", to: "/kulhad-dhanora" }, { n: "Gajraula", to: "/kulhad-gajraula" }, { n: "Joya", to: "/kulhad-joya" }, { n: "Hasanpur", to: "/products" }].map((c) => (
+              <Link key={c.n} to={c.to} className="rounded-full bg-muted px-4 py-2 text-sm font-semibold text-foreground">{c.n}</Link>
             ))}
           </div>
         </div>
