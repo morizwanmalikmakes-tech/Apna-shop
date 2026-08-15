@@ -118,9 +118,9 @@ function HomePage() {
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" /> {site.name}
             </span>
-            <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
+            <h1 style={{ backgroundImage: "linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", textShadow: "0 1px 2px rgba(0, 0, 0, 0.35)" }} className="mt-5 bg-clip-text font-display text-4xl font-bold leading-[1.05] text-transparent sm:text-5xl md:text-6xl">
               Pure Clay Kulhad Manufacturer{" "}
-              <span className="text-primary">&amp; Wholesale Supplier in Moradabad</span>
+              <span>&amp; Wholesale Supplier in Moradabad</span>
             </h1>
             <p className="mt-5 max-w-lg text-base text-muted-foreground sm:text-lg">
               Paryavaran ke liye behtar, food-safe, haath se banaye gaye mitti ke kulhad — chai,
