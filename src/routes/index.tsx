@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Leaf,
@@ -74,38 +75,69 @@ const features = [
 
 const testimonials = [
   {
-    name: "Rohit Sharma",
-    role: "Café owner, Moradabad",
+    name: "Javed Ali",
+    role: "Amroha",
+    rating: 5,
     quote:
-      "Kulhad Factory ke kulhad ki quality aur finishing bahut acchi hai — hamare customers ko pasand aate hain, isliye hum baar-baar order karte hain.",
+      "Maine Amroha se order kiya tha, 100 pcs receive ho gaye. Call service bhi acchi hai, 24 hours me reply mil jata hai. Thank you Kulhad Factory.",
+    quoteEn:
+      "I ordered from Amroha and received 100 pcs. The call service is good too — you get a reply within 24 hours. Thank you Kulhad Factory.",
   },
   {
-    name: "Priya Verma",
-    role: "Wedding planner, Bijnor",
+    name: "Adnan Malik",
+    role: "Verified buyer",
+    rating: 4,
     quote:
-      "Shaadi ke liye humne 3000 pieces order kiye. Perfect finishing, time par delivery aur transit me bilkul zero breakage.",
+      "Thank you sir, aapki delivery time par hui aur quality bhi ekdam badhiya hai. Maine first time order kiya, kaafi acchi service mili.",
+    quoteEn:
+      "Thank you sir, your delivery was on time and the quality is excellent. I ordered for the first time and got really good service.",
   },
   {
-    name: "Anil Gupta",
-    role: "Exporter, Amroha",
+    name: "Bansh Kumar",
+    role: "Verified buyer",
+    rating: 4,
     quote:
-      "Har mahine ek jaisi quality milti hai. Kulhad Factory ab hamara bharosemand kulhad supplier ban chuka hai.",
+      "Thank you bhai, aapke kulhad bade hi mast hain. Maine 500 pcs 70ml kulhad order kiye the — packing kaafi behtareen thi aur price bhi accha hai. Main apne aur bhaiyon ko bhi bolunga ki kulhad Moradabad se hi buy karein.",
+    quoteEn:
+      "Thank you bhai, your kulhads are really great. I ordered 500 pcs of 70ml kulhad — the packing was excellent and the price is good too. I will tell my friends to buy kulhads from Moradabad only.",
   },
   {
-    name: "Harpreet Singh",
-    role: "Restaurant owner, Lucknow",
+    name: "Rishabh Prajapati",
+    role: "Verified buyer",
+    rating: 5,
     quote:
-      "5000 kulhad ka order time par mila. Packing mazboot thi, quality consistent thi aur har piece ka finish bahut accha tha. Agla order bhi Kulhad Factory se hi karenge.",
+      "Bhai kulhad bahut hi accha, packing ke saath. Na hi koi kulhad toota hua mila. Thank you bhai, meri taraf se 5 star. Next time Kulhad Factory se hi order karunga.",
+    quoteEn:
+      "Bhai, the kulhads are very good and so is the packing. Not a single kulhad arrived broken. Thank you — 5 stars from my side. Next time I will order from Kulhad Factory again.",
   },
   {
-    name: "Mohammed Danish",
-    role: "Tea café owner, Bareilly",
+    name: "Arpit Vishwakarma",
+    role: "Bulk order",
+    rating: 5,
     quote:
-      "Humein kulhad ki quality, reasonable pricing aur delivery support bahut pasand aaya. Customers ko bhi mitti ke kulhad ka experience accha laga, isliye ab hum regular order karte hain.",
+      "Kulhad Factory se bulk order kiya tha. Packing ekdum mazboot thi, har kulhad sahi salamat pahuncha. Quality consistent hai aur price bhi reasonable. Ab regular order karenge. 5 star!",
+    quoteEn:
+      "I placed a bulk order with Kulhad Factory. The packing was very strong and every kulhad arrived safely. Quality is consistent and the price is reasonable. We will order regularly now. 5 stars!",
+  },
+  {
+    name: "Upendar Yadav",
+    role: "Cafe owner",
+    rating: 4,
+    quote:
+      "Humne apne cafe ke liye wholesale order kiya — 2000 pieces. Sab ek jaisi quality, zero breakage aur time par delivery. Next time bhi Kulhad Factory se hi order karunga. Best kulhad supplier in Moradabad.",
+    quoteEn:
+      "We placed a wholesale order for our cafe — 2000 pieces. All the same quality, zero breakage and on-time delivery. I will order from Kulhad Factory next time too. Best kulhad supplier in Moradabad.",
   },
 ];
 
+const reviewStats = {
+  count: 6,
+  average: 4.5,
+  gbpUrl: "https://maps.app.goo.gl/1Qmxsdu1WxPPww3C8",
+};
+
 function HomePage() {
+  const [reviewLang, setReviewLang] = useState<"hi" | "en">("hi");
   return (
     <SiteLayout>
       {/* HERO */}
@@ -315,6 +347,53 @@ function HomePage() {
             Quality, strong packing aur timely delivery ke baare mein hamare customers kya kehte
             hain, dekhiye.
           </p>
+
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
+            <div className="flex items-center gap-2">
+              <span className="flex items-center gap-0.5" aria-hidden="true">
+                {Array.from({ length: 5 }).map((_, j) => (
+                  <Star
+                    key={j}
+                    className="h-5 w-5"
+                    style={
+                      j < Math.round(reviewStats.average)
+                        ? { color: "#F5A623", fill: "#F5A623" }
+                        : { color: "#D8D2C6", fill: "#D8D2C6" }
+                    }
+                  />
+                ))}
+              </span>
+              <span className="font-display text-lg font-bold text-foreground">
+                {reviewStats.average}
+              </span>
+              <span className="text-sm text-muted-foreground">
+                / 5 &middot; {reviewStats.count} Google reviews
+              </span>
+            </div>
+
+            <div role="group" aria-label="Review language" className="inline-flex overflow-hidden rounded-full border border-border">
+              <button
+                type="button"
+                onClick={() => setReviewLang("hi")}
+                aria-pressed={reviewLang === "hi"}
+                className={`px-4 py-1.5 text-xs font-semibold transition ${
+                  reviewLang === "hi" ? "bg-primary text-primary-foreground" : "bg-card text-foreground hover:bg-muted"
+                }`}
+              >
+                Hinglish
+              </button>
+              <button
+                type="button"
+                onClick={() => setReviewLang("en")}
+                aria-pressed={reviewLang === "en"}
+                className={`px-4 py-1.5 text-xs font-semibold transition ${
+                  reviewLang === "en" ? "bg-primary text-primary-foreground" : "bg-card text-foreground hover:bg-muted"
+                }`}
+              >
+                English
+              </button>
+            </div>
+          </div>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
@@ -323,19 +402,42 @@ function HomePage() {
               className="hover-lift animate-fade-up rounded-2xl border border-border bg-card p-6 shadow-soft"
               style={{ animationDelay: `${i * 120}ms` }}
             >
-              <div className="flex items-center gap-1 text-primary">
+              <div className="flex items-center gap-1" aria-label={`${t.rating} out of 5 stars`}>
                 {Array.from({ length: 5 }).map((_, j) => (
-                  <Star key={j} className="h-4 w-4 fill-current" />
+                  <Star
+                    key={j}
+                    aria-hidden="true"
+                    className="h-4 w-4"
+                    style={
+                      j < t.rating
+                        ? { color: "#F5A623", fill: "#F5A623" }
+                        : { color: "#D8D2C6", fill: "#D8D2C6" }
+                    }
+                  />
                 ))}
               </div>
               <Quote className="mt-3 h-6 w-6 text-primary/60" />
-              <blockquote className="mt-2 text-sm text-foreground">"{t.quote}"</blockquote>
+              <blockquote className="mt-2 text-sm text-foreground">
+                &ldquo;{reviewLang === "en" ? t.quoteEn : t.quote}&rdquo;
+              </blockquote>
               <figcaption className="mt-5">
                 <p className="font-display text-base font-bold text-foreground">{t.name}</p>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">{t.role}</p>
               </figcaption>
             </figure>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href={reviewStats.gbpUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:border-primary hover:text-primary"
+          >
+            <Star className="h-4 w-4" style={{ color: "#F5A623", fill: "#F5A623" }} aria-hidden="true" />
+            Google par saare reviews dekhein
+          </a>
         </div>
       </section>
 

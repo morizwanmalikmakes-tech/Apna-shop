@@ -122,7 +122,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           email: site.email,
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Moradabad",
+            streetAddress: "Kanth Road, Kasampur",
             addressLocality: "Moradabad",
             addressRegion: "Uttar Pradesh",
             postalCode: "244501",
@@ -135,7 +135,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           },
           openingHours: "Mo-Sa 09:00-18:00",
           priceRange: "₹₹",
-          sameAs: ["https://www.instagram.com/kulhad_moradabad_wale"],
+          hasMap: "https://maps.app.goo.gl/1Qmxsdu1WxPPww3C8",
+          sameAs: [
+            "https://www.instagram.com/kulhad_moradabad_wale",
+            "https://maps.app.goo.gl/1Qmxsdu1WxPPww3C8",
+          ],
         }),
       },
       {
