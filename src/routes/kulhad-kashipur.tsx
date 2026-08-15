@@ -3,9 +3,9 @@ import { CityPage } from "@/components/city-page";
 import { getCity } from "@/lib/cities";
 import { cityHead } from "@/lib/city-head";
 
-const city = getCity("kulhad-seohara")!;
+const city = getCity("kulhad-kashipur")!;
 
-export const Route = createFileRoute("/kulhad-seohara")({
+export const Route = createFileRoute("/kulhad-kashipur")({
   head: () => cityHead(city),
   component: () => <CityPage city={city} />,
 });

@@ -1,20 +1,87 @@
 {
   "redirects": [
-    { "source": "/privacy-policy", "destination": "/privacy", "permanent": true },
-    { "source": "/terms-and-conditions", "destination": "/terms", "permanent": true },
-    { "source": "/pages/contact", "destination": "/contact", "permanent": true },
-    { "source": "/pages/privacy-policy", "destination": "/privacy", "permanent": true },
-    { "source": "/pages/terms-of-service", "destination": "/terms", "permanent": true },
-    { "source": "/pages/shipping-policy", "destination": "/terms", "permanent": true },
-    { "source": "/pages/refund-policy", "destination": "/terms", "permanent": true }
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/pages/contact",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/pages/privacy-policy",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/pages/terms-of-service",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/pages/shipping-policy",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/pages/refund-policy",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/kulhad-sahaspur",
+      "destination": "/kulhad-sambhal",
+      "permanent": true
+    },
+    {
+      "source": "/kulhad-chandpur",
+      "destination": "/kulhad-rudrapur",
+      "permanent": true
+    },
+    {
+      "source": "/kulhad-seohara",
+      "destination": "/kulhad-nagina",
+      "permanent": true
+    },
+    {
+      "source": "/kulhad-tajpur",
+      "destination": "/kulhad-hapur",
+      "permanent": true
+    },
+    {
+      "source": "/kulhad-dhampur",
+      "destination": "/kulhad-budaun",
+      "permanent": true
+    },
+    {
+      "source": "/kulhad-joya",
+      "destination": "/kulhad-kashipur",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]
