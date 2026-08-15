@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { IndependenceBanner } from "./independence-banner";
 import { SiteHeader } from "./site-header";
 import { SiteFooter } from "./site-footer";
 import { WhatsAppFloat } from "./whatsapp-float";
@@ -7,6 +8,7 @@ import { BackToTop } from "./back-to-top";
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-screen flex-col bg-background">
+      <IndependenceBanner />
       <SiteHeader />
       <main className="flex-1">{children}</main>
       <SiteFooter />
