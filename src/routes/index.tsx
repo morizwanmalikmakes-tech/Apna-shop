@@ -76,7 +76,7 @@ const features = [
 const testimonials = [
   {
     name: "Javed Ali",
-    role: "Amroha",
+    role: "Amroha, UP",
     rating: 5,
     quote:
       "Maine Amroha se order kiya tha, 100 pcs receive ho gaye. Call service bhi acchi hai, 24 hours me reply mil jata hai. Thank you Kulhad Factory.",
@@ -85,7 +85,7 @@ const testimonials = [
   },
   {
     name: "Adnan Malik",
-    role: "Verified buyer",
+    role: "Haryana",
     rating: 4,
     quote:
       "Thank you sir, aapki delivery time par hui aur quality bhi ekdam badhiya hai. Maine first time order kiya, kaafi acchi service mili.",
@@ -94,7 +94,7 @@ const testimonials = [
   },
   {
     name: "Bansh Kumar",
-    role: "Verified buyer",
+    role: "Bijnor, UP",
     rating: 4,
     quote:
       "Thank you bhai, aapke kulhad bade hi mast hain. Maine 500 pcs 70ml kulhad order kiye the — packing kaafi behtareen thi aur price bhi accha hai. Main apne aur bhaiyon ko bhi bolunga ki kulhad Moradabad se hi buy karein.",
@@ -103,7 +103,7 @@ const testimonials = [
   },
   {
     name: "Rishabh Prajapati",
-    role: "Verified buyer",
+    role: "Prayagraj, UP",
     rating: 5,
     quote:
       "Bhai kulhad bahut hi accha, packing ke saath. Na hi koi kulhad toota hua mila. Thank you bhai, meri taraf se 5 star. Next time Kulhad Factory se hi order karunga.",
@@ -112,7 +112,7 @@ const testimonials = [
   },
   {
     name: "Arpit Vishwakarma",
-    role: "Bulk order",
+    role: "Pratapgarh, UP — Bulk order",
     rating: 5,
     quote:
       "Kulhad Factory se bulk order kiya tha. Packing ekdum mazboot thi, har kulhad sahi salamat pahuncha. Quality consistent hai aur price bhi reasonable. Ab regular order karenge. 5 star!",
@@ -121,7 +121,7 @@ const testimonials = [
   },
   {
     name: "Upendar Yadav",
-    role: "Cafe owner",
+    role: "Kanpur, UP — Cafe owner",
     rating: 4,
     quote:
       "Humne apne cafe ke liye wholesale order kiya — 2000 pieces. Sab ek jaisi quality, zero breakage aur time par delivery. Next time bhi Kulhad Factory se hi order karunga. Best kulhad supplier in Moradabad.",
