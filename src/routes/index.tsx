@@ -260,7 +260,7 @@ function HomePage() {
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.slice(0, 4).map((p) => (
-            <ProductCard key={p.slug} product={p} />
+            <ProductCard key={p.slug} product={p} tricolorRequest />
           ))}
         </div>
       </section>
@@ -293,7 +293,8 @@ function HomePage() {
             </p>
             <Link
               to="/about"
-              className="mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110"
+              style={{ background: "linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)" }}
+              className="mt-6 inline-flex rounded-full border border-[#333333] px-6 py-3 text-sm font-semibold text-[#333333] hover:brightness-105"
             >
               Our story
             </Link>
