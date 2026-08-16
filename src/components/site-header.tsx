@@ -31,7 +31,7 @@ export function SiteHeader() {
               key={item.to}
               to={item.to}
               className="rounded-full px-4 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-muted hover:text-foreground"
-              activeProps={{ className: "bg-secondary/10 text-secondary" }}
+              activeProps={{ className: "bg-secondary/10 text-secondary dark:bg-primary/20 dark:text-primary" }}
               activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}
@@ -40,14 +40,14 @@ export function SiteHeader() {
           <Link
             to="/privacy"
             className="rounded-full px-4 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-muted hover:text-foreground"
-            activeProps={{ className: "bg-secondary/10 text-secondary" }}
+            activeProps={{ className: "bg-secondary/10 text-secondary dark:bg-primary/20 dark:text-primary" }}
           >
             Privacy
           </Link>
           <Link
             to="/terms"
             className="rounded-full px-4 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-muted hover:text-foreground"
-            activeProps={{ className: "bg-secondary/10 text-secondary" }}
+            activeProps={{ className: "bg-secondary/10 text-secondary dark:bg-primary/20 dark:text-primary" }}
           >
             Terms
           </Link>
