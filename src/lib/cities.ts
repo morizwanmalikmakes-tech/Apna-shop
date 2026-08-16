@@ -92,6 +92,28 @@ export const cities: City[] = [
     intro: "Budaun (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Budaun ke purane bazaar, mithai ki dukaanein aur caterers ke liye bharosemand wholesale kulhad supply. Moradabad factory se approx 90 km — delivery 2-3 din me.",
     sub: "Budaun me kulhad wholesale — food-safe clay kulhads, factory-direct pricing. Kulhad Factory se bulk order karke time par delivery paayein.",
     nearby: [{ name: "Nagina", to: "/kulhad-nagina" }, { name: "Noorpur", to: "/kulhad-noorpur" }, { name: "Bijnor", to: "/products" }],
+    details: [
+      {
+        heading: "Budaun me hamare customers kaun hain?",
+        body: "Budaun ke purane bazaar ki mithai ki dukaanein, chai stalls, cafés, dhabas aur caterers hamare regular customers hain. Ujhani Bazaar side ke commercial areas bhi isi route par padte hain. Budaun ke customers ke saath hamara kaafi accha rishta bana hua hai aur yahan se orders aate rehte hain. Shaadi aur catering season me badi quantity ki demand khaas taur par badh jaati hai.",
+      },
+      {
+        heading: "Budaun me delivery kaise hoti hai?",
+        body: "Budaun hamari Moradabad factory se lagbhag 90 km hai. Yahan tak hum transport ke zariye maal bhejte hain aur bade order me apni gaadi bhi laga dete hain. Shaadi jaise time-bound orders me hum delivery time ka khaas dhyan rakhte hain. Delivery charge per piece ke hisaab se liya jaata hai. Doori zyada hone ki wajah se Budaun ke orders me crate packing par extra dhyan diya jaata hai.",
+      },
+      {
+        heading: "Budaun me kaun sa kulhad size zyada chalta hai?",
+        body: "Budaun me shaadi aur bade functions ke liye 300ml kulhad ki demand rehti hai — badi serving ke liye ye sabse suitable hai. Mithai ki dukaanon me 250ml lassi kulhad chalta hai, aur rozana chai ke liye 70ml aur 100ml practical hain. Hamare paas 60ml se 300ml tak poore 8 sizes hamesha stock me rehte hain.",
+      },
+      {
+        heading: "Budaun ke customers ka anubhav",
+        body: "Budaun se humein regular orders milte rehte hain. Ek shaadi ke liye 300ml ke 1,000 pieces ka order aaya tha, jo time par pahuncha diya gaya tha. Budaun ke customers ke saath hamara kaafi accha business rishta hai, aur wahi bharosa har naye order me kaam aata hai. Chhota ho ya bada, har order me quality aur packing same rehti hai.",
+      },
+      {
+        heading: "Budaun se order kaise karein?",
+        body: "Budaun ke customers WhatsApp, call, email ya website form se order bhej sakte hain. Payment online aur offline dono tarike se ho jaati hai. Shaadi ya event ke orders me delivery date pehle se confirm kar li jaati hai. Size aur quantity batate hi hum rate aur delivery date bhej dete hain.",
+      },
+    ],
   },
   {
     slug: "kulhad-dhanora",
@@ -172,6 +194,28 @@ export const cities: City[] = [
     intro: "Kashipur (Uttarakhand) — mitti ke kulhad wholesale aur bulk order. Kashipur ke industrial area, chai shops aur lassi corners tak bulk kulhad orders ki time par delivery. Moradabad factory se approx 80 km — delivery 2-3 din me.",
     sub: "Kashipur me kulhad online — mitti ke kulhad wholesale price par. Kulhad Factory se order karein, chai aur lassi ke liye perfect, factory-direct rate.",
     nearby: [{ name: "Amroha", to: "/kulhad-amroha" }, { name: "Dhanaura", to: "/kulhad-dhanora" }, { name: "Gajraula", to: "/kulhad-gajraula" }],
+    details: [
+      {
+        heading: "Kashipur me hamare customers kaun hain?",
+        body: "Kashipur ke commercial area ke chai stalls, cafés, sweet shops aur dhabas hamare customers hain, aur industrial side ke food outlets bhi order karte hain. Kashipur aur Rudrapur dono ek hi route par padte hain, isliye kai baar hum dono jagah ka order ek saath deliver kar dete hain. Aaj kal yahan ke log kaafi orders kar rahe hain aur hamara customer base yahan lagataar badh raha hai.",
+      },
+      {
+        heading: "Kashipur me delivery kaise hoti hai?",
+        body: "Kashipur hamari Moradabad factory se lagbhag 80 km hai aur Uttarakhand me padta hai. Delivery 3 se 4 din me ho jaati hai. Kyunki Rudrapur bhi isi route par aage padta hai, hum kai baar dono sheher ka maal ek hi trip me bhej dete hain — isse delivery cost bhi kam padti hai aur time bhi bachta hai. Charge quantity aur route ke hisaab se tay hota hai.",
+      },
+      {
+        heading: "Kashipur me kaun sa kulhad size zyada chalta hai?",
+        body: "Kashipur me 200ml aur 250ml kulhad sabse zyada jaate hain — dono lassi ke liye istemal hote hain, jo yahan kaafi chalti hai. Chai ke liye customers 70ml lete hain. Cafés aur sweet shops apni serving ke hisaab se ye teeno sizes mix karke mangwate hain. Sabhi 8 sizes — 60ml se 300ml tak — hamesha available rehte hain.",
+      },
+      {
+        heading: "Kashipur ke customers ka anubhav",
+        body: "Kashipur me hamare kaafi customers hain aur aaj kal yahan se orders lagataar aa rahe hain. Hamari koshish yahi rehti hai ki yahan bharosa aur mazboot ho — isliye har order me quality aur packing par poora dhyan diya jaata hai. Rudrapur ke saath combined delivery ki wajah se yahan ke customers ko maal jaldi aur kam kharche me mil jaata hai.",
+      },
+      {
+        heading: "Kashipur me order kaise karein?",
+        body: "Kashipur ke customers WhatsApp, call, email ya website form se order kar sakte hain. Payment advance, online aur offline — sab chalta hai, lekin yahan zyadatar payment cash me hoti hai. Bade orders me advance payment li ja sakti hai. Quantity, size aur delivery details clear hote hi final confirmation de diya jaata hai.",
+      },
+    ],
   },
   {
     slug: "kulhad-meerut",
@@ -190,6 +234,28 @@ export const cities: City[] = [
     intro: "Noorpur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Noorpur ki sweet shops aur dhabas — eco-friendly kulhad, wholesale par factory-direct price. Moradabad factory se approx 40 km — delivery 2-3 din me.",
     sub: "Noorpur me kulhad wholesale — 100% natural mitti, lead-free aur biodegradable. Kulhad Factory se bulk order karke delivery paayein.",
     nearby: [{ name: "Budaun", to: "/kulhad-budaun" }, { name: "Nagina", to: "/kulhad-nagina" }, { name: "Bijnor", to: "/products" }],
+    details: [
+      {
+        heading: "Noorpur me hamare customers kaun hain?",
+        body: "Noorpur Bijnor district ka nagar palika area hai aur hamari factory ke kaafi paas padta hai. Yahan ke local market ke chai stalls, mithai ki dukaanein, snacks outlets aur dhabe hamare regular customers hain. Noorpur ke customers ke saath hamara lagbhag 1 saal purana rishta hai. Kai customers advance payment tak de dete hain, aur delivery ke baad review bhi dete hain — yahi bharosa hamari sabse badi taakat hai.",
+      },
+      {
+        heading: "Noorpur me delivery kaise hoti hai?",
+        body: "Noorpur hamari Moradabad factory se sirf 40 km hai, isliye ye hamare sabse paas wale areas me se ek hai. Yahan hum apni hi gaadi se maal bhejte hain aur delivery sirf 2 din me ho jaati hai. Doori kam hone ki wajah se transport ka kharcha bhi kam padta hai, aur chhote orders me bhi delivery aasaan rehti hai. Charge quantity ke hisaab se pehle hi bata diya jaata hai.",
+      },
+      {
+        heading: "Noorpur me kaun sa kulhad size zyada chalta hai?",
+        body: "Noorpur me 250ml aur 90ml kulhad ki demand sabse zyada hai. 250ml lassi aur bade beverages ke liye jaata hai, jabki 90ml rozana chai ke liye convenient rehta hai. Mithai ki dukaanein aur cafés apni serving ke hisaab se dono sizes lete hain. Hamare paas 60ml se 300ml tak sabhi 8 sizes stock me rehte hain.",
+      },
+      {
+        heading: "Noorpur ke customers ka anubhav",
+        body: "Noorpur se lagbhag 6 mahine pehle humein 2,100 pieces ka ek bada order mila tha, aur 250ml aur 90ml ka 1,350 pieces ka doosra order bhi gaya tha. Dono orders me quality bahut acchi rahi aur customers ne baad me positive review bhi diya. Yahan ke customers 1 saal se hamare saath jude hue hain aur kai baar advance payment bhi de dete hain.",
+      },
+      {
+        heading: "Noorpur me order kaise karein?",
+        body: "Noorpur ke customers WhatsApp, call, email ya website form se order kar sakte hain. Payment online aur offline dono me hoti hai — kai customers advance payment bhi karte hain. Kyunki area paas hai, delivery ki date hum jaldi confirm kar dete hain. Size aur quantity batate hi rate bhej diya jaata hai.",
+      },
+    ],
   },
   {
     slug: "kulhad-rampur",
@@ -239,6 +305,28 @@ export const cities: City[] = [
     intro: "Nagina (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Nagina ke mashhoor bazaar aur tea stalls — wholesale kulhad ka fresh stock aur quick dispatch. Moradabad factory se approx 55 km — delivery 2-3 din me.",
     sub: "Nagina ke dhabas aur chai dukano tak Kulhad Factory food-safe mitti ke kulhad wholesale price par deliver karta hai. 60ml se 300ml tak sab sizes available.",
     nearby: [{ name: "Bijnor", to: "/products" }, { name: "Budaun", to: "/kulhad-budaun" }, { name: "Noorpur", to: "/kulhad-noorpur" }],
+    details: [
+      {
+        heading: "Nagina me hamare customers kaun hain?",
+        body: "Nagina me hamare kaafi customers hain — chai stalls, sweet shops, cafés, dhabas, caterers aur local food businesses ko yahan kulhad supply kiye jaate hain. Nagina Bazaar, Baradari aur Ganna Samiti Chauraha ke aas-paas ke business areas me demand rehti hai. Nagina ke saath Seohara aur aas-paas ke areas me bhi hamari supply jaati hai. Shaadi aur catering season me bulk requirement kaafi badh jaati hai.",
+      },
+      {
+        heading: "Nagina me delivery kaise hoti hai?",
+        body: "Nagina me delivery aam taur par 2 din me ho jaati hai. Supply hamari apni gaadi se bheji jaati hai, aur zarurat padne par customer apni gaadi bhej kar bhi maal utha sakta hai. Delivery charge kulhad ki quantity ke hisaab se tay hota hai. Seohara jaise nearby areas me bhi hum apni gaadi se hi delivery manage karte hain.",
+      },
+      {
+        heading: "Nagina me kaun sa kulhad size zyada chalta hai?",
+        body: "Nagina me 60ml, 80ml, 200ml aur 250ml kulhad ki demand acchi hai. Chai ke liye 60ml aur 80ml sizes sabse popular hain, jabki 200ml aur 250ml lassi aur bade beverages ke liye liye jaate hain. Bulk orders me bhi customers high-quality kulhad hi maangte hain, isliye har size ki finishing aur mazbooti par dhyan diya jaata hai.",
+      },
+      {
+        heading: "Nagina ke customers ka anubhav",
+        body: "Nagina se humein kaafi orders mil chuke hain. Ek baar 250ml ke 1,400 pieces ka order seedha WhatsApp par aaya tha, aur 500 pieces ke chhote orders bhi regular milte rehte hain. Nagina ke customers ke saath hamara purana business connection hai aur quality aur supply ko lekar seedha communication banaa rehta hai.",
+      },
+      {
+        heading: "Nagina me order kaise karein?",
+        body: "Nagina ke customers WhatsApp, call, email ya website form se order kar sakte hain. Payment yahan zyadatar cash me hoti hai, aur online payment ka option bhi available hai. Quantity aur size confirm hone ke baad payment aur delivery ki details customer ke saath finalize kar li jaati hain.",
+      },
+    ],
   },
   {
     slug: "kulhad-hapur",
@@ -248,6 +336,28 @@ export const cities: City[] = [
     intro: "Hapur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Hapur ke shaadi halls, roadside cafes aur highway dhabas — bulk kulhad orders ki pakki aur time par delivery. Moradabad factory se approx 120 km — delivery 3-4 din me.",
     sub: "Hapur me mitti ke kulhad wholesale — chai stalls, cafés aur dhabas ke liye. Kulhad Factory se 60ml-300ml kulhad order karein, factory-direct rate par.",
     nearby: [{ name: "Moradabad", to: "/kulhad-guide" }, { name: "Budaun", to: "/kulhad-budaun" }, { name: "Bijnor", to: "/products" }],
+    details: [
+      {
+        heading: "Hapur me hamare customers kaun hain?",
+        body: "Hapur ke chai stalls, sweet shops, cafés, highway dhabas aur catering businesses hamare customers hain. Ganga Expressway ke aas-paas ka developing corridor is area ko aur important banata hai. Hapur hamare liye abhi naya area hai — yahan se abhi tak 2 orders aaye hain, lekin dono customers purane aur bharosemand hain aur unka feedback bhi regular milta rehta hai.",
+      },
+      {
+        heading: "Hapur me delivery kaise hoti hai?",
+        body: "Hapur hamari factory se lagbhag 120 km door hai — hamare delivery areas me sabse door. Itni doori par hum mainly transport ka istemal karte hain aur delivery 3 se 7 din me ho jaati hai. Delivery charge minimum quantity ke hisaab se tay hota hai. Lambi doori ki wajah se Hapur ke orders me packing sabse mazboot crates me ki jaati hai, taaki poore raste kulhad surakshit rahein.",
+      },
+      {
+        heading: "Hapur me kaun sa kulhad size zyada chalta hai?",
+        body: "Hapur me 200ml aur 80ml kulhad sabse zyada jaate hain. 200ml khaas taur par lassi ke liye istemal hota hai, jo yahan kaafi popular hai. 80ml rozana chai serving ke liye liya jaata hai. Highway dhabas aur cafés inhi dono sizes ko pasand karte hain. Iske alawa 60ml se 300ml tak sabhi 8 sizes available hain.",
+      },
+      {
+        heading: "Hapur ke customers ka anubhav",
+        body: "Hapur se abhi tak humein 2 orders mile hain — ek 400 pieces ka aur doosra 1,700 pieces ka. Dono orders 200ml aur 80ml ke the, jo zyadatar lassi aur chai ke liye use hue. Customers ne delivery ke baad kaafi accha review diya. Yahan ke customer purane hain aur unka feedback hamesha aata rehta hai, jo hamare liye bahut keemti hai.",
+      },
+      {
+        heading: "Hapur se order kaise karein?",
+        body: "Hapur se order WhatsApp, call, email ya website form ke through bheja ja sakta hai. Yahan ke zyadatar customer online payment karna pasand karte hain, aur offline ka option bhi khula hai. Doori zyada hone ki wajah se bulk orders me advance payment li ja sakti hai. Size, quantity aur delivery location confirm hote hi hum transport aur delivery date bata dete hain.",
+      },
+    ],
   },
   {
     slug: "kulhad-thakurdwara",
@@ -257,6 +367,28 @@ export const cities: City[] = [
     intro: "Thakurdwara (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Thakurdwara ke mandir, mele aur cafes — sabke liye eco-friendly kulhad supply. Moradabad factory se approx 50 km — delivery 2-3 din me.",
     sub: "Thakurdwara ke business owners Kulhad Factory se kulhad wholesale lete hain. 100% natural mitti, food-safe aur eco-friendly.",
     nearby: [{ name: "Moradabad", to: "/kulhad-guide" }, { name: "Bilari", to: "/products" }, { name: "Kashipur", to: "/products" }],
+    details: [
+      {
+        heading: "Thakurdwara me hamare customers kaun hain?",
+        body: "Thakurdwara Moradabad district ka hi block hai, isliye ye hamare apne zile ka area hai. Yahan ke chai stalls, sweet shops, dhabas aur caterers hamare customers hain. Dilari side ke customers bhi isi route par aa jaate hain. Hum yahan pichhle 6 mahine se kaam kar rahe hain aur yahan ke log bahut acche hain — orders regular aate rehte hain aur baat-cheet hamesha seedhi aur saaf rehti hai.",
+      },
+      {
+        heading: "Thakurdwara me delivery kaise hoti hai?",
+        body: "Thakurdwara hamari factory se lagbhag 50 km hai aur Moradabad district ke andar hi padta hai, isliye delivery 24 se 72 ghante me ho jaati hai. Hum apni gaadi se maal bhejte hain, aur kaafi customers apni khud ki gaadi bhej kar bhi order utha le jaate hain — ye tarika dono ke liye kaafi useful rehta hai aur time bachta hai. Dilari route par bhi isi gaadi se maal chala jaata hai.",
+      },
+      {
+        heading: "Thakurdwara me kaun sa kulhad size zyada chalta hai?",
+        body: "Thakurdwara me 60ml aur 90ml kulhad ki demand sabse zyada hai — dono hi rozana chai serving ke liye perfect rehte hain. Kabhi-kabhi 250ml ke orders bhi aate hain, jo lassi aur bade beverages ke liye liye jaate hain. Sweet shops apni requirement ke hisaab se 100ml ya 200ml bhi lete hain. Sabhi 8 sizes hamesha stock me rehte hain.",
+      },
+      {
+        heading: "Thakurdwara ke customers ka anubhav",
+        body: "Thakurdwara me hum pichhle 6 mahine se supply kar rahe hain. Yahan se abhi tak 600 pieces ka order aaya hai aur 500 pieces ka bhi ek order gaya tha. Orders bhale hi abhi chhote hain, par regular aate rehte hain aur yahan ke customers ke saath baat-cheet bahut acchi rehti hai. Kai customers apni gaadi bhej kar khud maal le jaate hain, jisse delivery aur bhi jaldi ho jaati hai.",
+      },
+      {
+        heading: "Thakurdwara me order kaise karein?",
+        body: "Order WhatsApp, call, email ya website form se place kiya ja sakta hai. Payment online aur offline dono chalti hai. Agar customer apni gaadi bhejna chahe to wo bhi bilkul theek hai — maal factory se hi utha sakte hain. Quantity aur delivery details final hone ke baad confirmation de diya jaata hai.",
+      },
+    ],
   },
 ];
 
