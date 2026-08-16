@@ -61,6 +61,28 @@ export const cities: City[] = [
     intro: "Rudrapur (Uttarakhand) — mitti ke kulhad wholesale aur bulk order. Rudrapur ke industrial area, canteens aur highway dhabas ke liye regular kulhad supply. Moradabad factory se approx 100 km — delivery 3-4 din me.",
     sub: "Rudrapur ke cafés, canteens aur chai dukano tak Kulhad Factory kulhad deliver karta hai. Mazboot packing, time par delivery aur factory pricing.",
     nearby: [{ name: "Bijnor", to: "/products" }, { name: "Budaun", to: "/kulhad-budaun" }, { name: "Noorpur", to: "/kulhad-noorpur" }],
+    details: [
+      {
+        heading: "Rudrapur me hamare customers kaun hain?",
+        body: "Rudrapur me hamari supply chai stalls, sweet shops, cafés, dhabas, caterers, factory canteens aur local food businesses tak jaati hai. Khaas taur par Kashipur Road, Kichha Road aur SIDCUL ke aas-paas ke business areas me kulhad ki demand milti hai. Rudrapur ke industrial environment ki wajah se canteens aur worker-focused food outlets bhi hamare liye important customers hain. Yahan regular business demand ke saath shaadi aur festival season me bulk orders badh jaate hain.",
+      },
+      {
+        heading: "Rudrapur me delivery kaise hoti hai?",
+        body: "Rudrapur hamari Moradabad factory se lagbhag 100 km door hai, phir bhi hum delivery ko apni gaadi aur transport — dono options se manage karte hain. Normal bulk orders quantity aur location ke hisaab se aam taur par 3-5 din me pahuncha diye jaate hain. Urgent requirement ho to transport ya shipping ka option bhi rakha ja sakta hai. Delivery charge order ki quantity aur method ke according tay hota hai.",
+      },
+      {
+        heading: "Rudrapur me kaun sa kulhad size suitable hai?",
+        body: "Rudrapur me 90ml aur 200ml kulhad sabse suitable rehte hain. 90ml kulhad chai stalls aur factory canteens ke liye convenient hai, jabki 200ml cafés, dhabas aur events me beverages ke liye accha option hai. Shaadi ya catering orders me 200ml size zyada practical rehta hai, kyunki isme chai aur doosre beverages acchi serving ke saath diye ja sakte hain. Iske alawa 60ml se 300ml tak sabhi sizes available hain.",
+      },
+      {
+        heading: "Rudrapur ke naye customers ke liye",
+        body: "Rudrapur hamare liye ek naya supply area hai aur hum yahan ke chai stalls, canteens aur food businesses ka swagat karte hain. Hamari Moradabad factory se har mahine lakhon kulhad dispatch hote hain, aur hum 5,000+ pieces tak ke bulk orders aaraam se handle karte hain. Rudrapur ke pehle order me bhi wahi cheezein milti hain jo hamare purane customers ko milti hain — consistent quality, mazboot crate packing aur tay samay par delivery.",
+      },
+      {
+        heading: "Rudrapur me order kaise karein?",
+        body: "Rudrapur ke customers website form, WhatsApp, call ya email ke through enquiry aur order kar sakte hain. Payment online ya offline — dono options ke according discuss ki ja sakti hai. Bade wholesale orders me advance payment ki requirement ho sakti hai. Order ki quantity, size aur delivery location confirm hone ke baad order process kiya jaata hai.",
+      },
+    ],
   },
   {
     slug: "kulhad-budaun",
