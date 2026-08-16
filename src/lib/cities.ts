@@ -186,6 +186,28 @@ export const cities: City[] = [
     intro: "Sambhal (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Sambhal ke bazaar, chai stalls aur sweet shops ke liye har size ka kulhad. Moradabad factory se approx 40 km — delivery 1-2 din me.",
     sub: "Sambhal me kulhad wholesale — eco-friendly, unglazed mitti ke kulhad chai aur lassi ke liye. Kulhad Factory se bulk order karein, time par delivery aur factory-direct rate.",
     nearby: [{ name: "Bijnor", to: "/products" }, { name: "Budaun", to: "/kulhad-budaun" }, { name: "Noorpur", to: "/kulhad-noorpur" }],
+    details: [
+      {
+        heading: "Sambhal me hamare customers kaun hain?",
+        body: "Sambhal me hamare 10+ regular customers hain. Yahan chai stalls, sweet shops, cafés, dhabas, caterers aur kai tarah ke local businesses ko mitti ke kulhad supply kiye jaate hain. Sambhal me kulhad ki demand khaas taur par chai aur beverage businesses me rehti hai. Shaadi-vivah aur festivals ke season me bulk orders ki demand aur badh jaati hai, isliye us waqt hum pehle se stock taiyaar rakhte hain.",
+      },
+      {
+        heading: "Sambhal me delivery kaise hoti hai?",
+        body: "Sambhal me delivery ke liye hamari apni gaadi ka istemal hota hai. Normal delivery aam taur par 3-6 din me ho jaati hai. Delivery charges order ki quantity ke hisaab se decide hote hain — pehle order me 300 pieces tak delivery charges bilkul free hain. Agar customer ko zyada jaldi maal chahiye to shipping ka option bhi available rehta hai.",
+      },
+      {
+        heading: "Sambhal me kaun sa kulhad size zyada chalta hai?",
+        body: "Sambhal me 60ml aur 200ml kulhad ki demand sabse zyada hai. Chai wale mainly 60ml kulhad lete hain, jabki sweet shops aur cafés me 80ml, 200ml aur 250ml sizes ki demand milti hai. Shaadi aur events ke liye 200ml kulhad kaafi suitable rehta hai aur wahan iska istemal sabse zyada hota hai.",
+      },
+      {
+        heading: "Sambhal ke customers ka anubhav",
+        body: "Sambhal me hamare kaafi purane customers hain. Ek baar ek customer ne 2,500 pieces ka order diya tha, jisme kulhad ki quality bahut acchi rahi aur customer ne delivery ke baad positive feedback bhi diya. Aise regular customers ke saath lambe samay se business relationship bana hua hai, jo hamare liye bahut important hai.",
+      },
+      {
+        heading: "Sambhal me order kaise karein?",
+        body: "Sambhal ke customers website, WhatsApp, call ya email ke through order kar sakte hain. Payment online aur offline dono tarike se ki ja sakti hai. Bade orders par advance payment li ja sakti hai. Customer ki requirement ke hisaab se order jaldi se jaldi confirm karne ki koshish ki jaati hai.",
+      },
+    ],
   },
   {
     slug: "kulhad-nagina",
