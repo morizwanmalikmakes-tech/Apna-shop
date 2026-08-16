@@ -160,13 +160,3 @@
 
 html { scroll-behavior: smooth; }
 
-/* ==== Independence Day tricolor (15 Aug) ==== */
-.tricolor {
-  background: linear-gradient(180deg, #FFB366 0%, #FFB366 33%, #FFFFFF 33%, #FFFFFF 66%, #7FBE6A 66%, #7FBE6A 100%);
-}
-.tricolor-border {
-  border: 3px solid transparent;
-  background-image: linear-gradient(#0000, #0000), linear-gradient(180deg, #FF9933, #FFFFFF, #138808);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-}

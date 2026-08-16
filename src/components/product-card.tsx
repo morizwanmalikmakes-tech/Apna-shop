@@ -3,7 +3,7 @@ import { Minus, Plus } from "lucide-react";
 import type { Product } from "@/lib/products";
 import { waLink } from "@/lib/site";
 
-export function ProductCard({ product, tricolorRequest = false }: { product: Product; tricolorRequest?: boolean }) {
+export function ProductCard({ product }: { product: Product }) {
   const [qtyInput, setQtyInput] = useState(String(product.retailMin));
   const parsedQty = Number(qtyInput);
   const qty =
@@ -103,7 +103,6 @@ export function ProductCard({ product, tricolorRequest = false }: { product: Pro
             href={waLink(quoteMsg)}
             target="_blank"
             rel="noopener noreferrer"
-            style={tricolorRequest ? { background: "linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)", color: "#333333", borderColor: "#333333" } : undefined}
             className="inline-flex items-center justify-center rounded-full border border-primary bg-transparent px-3 py-2 text-xs font-semibold text-primary transition hover:brightness-105"
           >
             Request Quote

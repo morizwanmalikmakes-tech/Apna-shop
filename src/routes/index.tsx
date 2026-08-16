@@ -150,7 +150,7 @@ function HomePage() {
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               <span className="h-1.5 w-1.5 rounded-full bg-primary" /> {site.name}
             </span>
-            <h1 style={{ backgroundImage: "linear-gradient(180deg, #FF9933 0%, #FFF4E0 50%, #138808 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text", color: "transparent" }} className="mt-5 bg-clip-text font-display text-4xl font-bold leading-[1.05] text-transparent sm:text-5xl md:text-6xl">
+            <h1 className="mt-5 font-display text-4xl font-bold leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
               Pure Clay Kulhad Manufacturer{" "}
               <span>&amp; Wholesale Supplier in Moradabad</span>
             </h1>
@@ -161,8 +161,7 @@ function HomePage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/products"
-                style={{ background: "linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)" }}
-                className="inline-flex items-center gap-2 rounded-full border border-[#333333] px-6 py-3 text-sm font-semibold text-[#333333] shadow-soft transition hover:scale-105 hover:brightness-105"
+                                className="inline-flex items-center gap-2 rounded-full border border-[#333333] px-6 py-3 text-sm font-semibold text-[#333333] shadow-soft transition hover:scale-105 hover:brightness-105"
               >
                 Shop Now <ArrowRight className="h-4 w-4" />
               </Link>
@@ -292,7 +291,7 @@ function HomePage() {
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.slice(0, 4).map((p) => (
-            <ProductCard key={p.slug} product={p} tricolorRequest />
+            <ProductCard key={p.slug} product={p} />
           ))}
         </div>
       </section>
@@ -325,8 +324,7 @@ function HomePage() {
             </p>
             <Link
               to="/about"
-              style={{ background: "linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)" }}
-              className="mt-6 inline-flex rounded-full border border-[#333333] px-6 py-3 text-sm font-semibold text-[#333333] hover:brightness-105"
+              className="mt-6 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110"
             >
               Our story
             </Link>
