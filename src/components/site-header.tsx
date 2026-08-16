@@ -42,14 +42,14 @@ export function SiteHeader() {
             className="rounded-full px-4 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-muted hover:text-foreground"
             activeProps={{ className: "bg-secondary/10 text-secondary" }}
           >
-            Privacy Policy
+            Privacy
           </Link>
           <Link
             to="/terms"
             className="rounded-full px-4 py-2 text-sm font-medium text-foreground/75 transition-colors hover:bg-muted hover:text-foreground"
             activeProps={{ className: "bg-secondary/10 text-secondary" }}
           >
-            Terms & Conditions
+            Terms
           </Link>
         </nav>
 
