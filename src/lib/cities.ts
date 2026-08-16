@@ -52,6 +52,28 @@ export const cities: City[] = [
     intro: "Bareilly (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Bareilly ke mashhoor bazaars aur cafe culture — restaurants, dhabas aur shaadi planners ke liye time par kulhad supply. Moradabad factory se approx 110 km — delivery 3-4 din me.",
     sub: "Bareilly ke tea café owners aur dhabas Kulhad Factory se wholesale kulhad order karte hain. 60ml se 300ml tak sab sizes available.",
     nearby: [{ name: "Shahjahanpur", to: "/products" }, { name: "Pilibhit", to: "/products" }, { name: "Rampur", to: "/kulhad-rampur" }],
+    details: [
+      {
+        heading: "Bareilly me hum kise supply karte hain?",
+        body: "Bareilly ke chai stalls, mithai ki dukaanein, cafés, dhabas aur caterers hamare liye main target customers hain. Bada Bazaar, Shahamatganj aur Shyamganj jaise busy commercial areas me chai aur food businesses ki bheed hamesha rehti hai — yahi hamare liye sabse bade potential customers hain. Bareilly abhi hamare liye naya area hai aur hum yahan pehle regular customers ki talash me hain.",
+      },
+      {
+        heading: "Bareilly tak delivery kaise hogi?",
+        body: "Bareilly hamari Moradabad factory se lagbhag 110 km hai. Order ki quantity ke hisaab se hum apni gaadi ya transport chunte hain, aur aam taur par 3 din me maal pahuncha dete hain. Delivery charge quantity aur route par tay hota hai. Bareilly jaise bade sheher ke bulk orders me packing aur transport ki details hum dispatch se pehle customer ke saath confirm kar lete hain.",
+      },
+      {
+        heading: "Bareilly ke liye kaun sa size behtar?",
+        body: "Bareilly me 100ml aur 200ml kulhad sabse acche options hain. 100ml rozana chai aur regular beverage serving ke liye convenient rehta hai, jabki 200ml cafés, lassi aur catering orders me kaam aata hai. Shaadi ya event me customer apni serving ke hisaab se 200ml ya 250ml chunte hain. Hamare paas 60ml se 300ml tak poore 8 sizes stock me rehte hain.",
+      },
+      {
+        heading: "Bareilly ka pehla order — kya milega",
+        body: "Bareilly se abhi tak koi order record nahi hua hai, isliye hum yahan koi banawati customer story nahi likh rahe. Jo sach hai wo ye hai — hamari Moradabad factory se har mahine lakhon kulhad dispatch hote hain aur 5,000+ pieces tak ke bulk orders hum aaraam se handle karte hain. Bareilly ke pehle order me bhi wahi 1000°C par pakaya hua food-safe kulhad aur wahi crate packing milegi.",
+      },
+      {
+        heading: "Bareilly se order kaise karein?",
+        body: "Bareilly ke customers WhatsApp, call, email ya website form se order kar sakte hain. Payment online aur offline dono tarike se ho jaati hai. Bade orders me advance payment li ja sakti hai. Size, quantity aur delivery details batate hi hum rate aur delivery date bhej dete hain.",
+      },
+    ],
   },
   {
     slug: "kulhad-rudrapur",
@@ -185,6 +207,28 @@ export const cities: City[] = [
     intro: "Jaspur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Jaspur ki chai shops aur lassi corners — wholesale kulhad par factory-direct rate, koi beech ka daam nahi. Moradabad factory se approx 60 km — delivery 2-3 din me.",
     sub: "Jaspur me kulhad wholesale delivery — chai ki dukano aur cafés ke liye. Kulhad Factory se factory-direct price par kulhad order karein.",
     nearby: [{ name: "Kashipur", to: "/products" }, { name: "Thakurdwara", to: "/kulhad-thakurdwara" }, { name: "Moradabad", to: "/kulhad-guide" }],
+    details: [
+      {
+        heading: "Jaspur me hamare potential customers",
+        body: "Jaspur ki chai ki dukaanein, sweet shops, cafés, dhabas aur local food outlets kulhad ke natural customers hain. Jaspur Bazaar aur Kashipur Road side ke commercial businesses hamare liye khaas taur par important hain. Jaspur Uttarakhand me hai aur hamare Kashipur-Rudrapur route par hi padta hai, isliye yahan delivery hamare liye mushkil nahi hai. Abhi yahan hamara koi regular customer nahi bana hai.",
+      },
+      {
+        heading: "Jaspur me delivery — Uttarakhand route par",
+        body: "Jaspur hamari factory se lagbhag 60 km hai aur ye hamare Uttarakhand route ka pehla padav hai. Normal orders hum apni gaadi se bhej dete hain aur bulk quantity transport se jaati hai — delivery 1-2 din me ho jaati hai. Kyunki Kashipur aur Rudrapur bhi isi raste par aage padte hain, kai baar ek hi trip me teeno jagah ka maal chala jaata hai.",
+      },
+      {
+        heading: "Jaspur ke liye size ka chunav",
+        body: "Jaspur me 70ml aur 250ml kulhad do alag-alag zarurat pura karte hain. 70ml chai ke liye convenient rehta hai, jabki 250ml lassi aur bade beverages ke liye suitable hai. Catering aur shaadi orders me 200ml se 250ml tak ke size serving ke hisaab se chune jaate hain. Sabhi 8 sizes — 60ml se 300ml tak — hamesha stock me rehte hain.",
+      },
+      {
+        heading: "Jaspur ka pehla order kaise shuru karein",
+        body: "Jaspur se abhi tak koi order nahi aaya hai, isliye hum yahan koi jhoothi customer story nahi bana rahe. Lekin ek baat hamare paksh me hai — Jaspur hamare Uttarakhand route par sabse pehle padta hai, sirf 60 km. Naye customer ke liye trial order lena yahan sabse aasaan hai. Quality dekh kar phir bulk supply shuru ki ja sakti hai.",
+      },
+      {
+        heading: "Jaspur se order kaise karein?",
+        body: "Jaspur se order WhatsApp, call, email ya website form ke through diya ja sakta hai. Online aur offline dono payment options khule hain. Bulk order me advance payment quantity ke hisaab se tay hoti hai. Size, quantity aur delivery details final hote hi confirmation de diya jaata hai.",
+      },
+    ],
   },
   {
     slug: "kulhad-kashipur",
@@ -225,6 +269,28 @@ export const cities: City[] = [
     intro: "Meerut (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Meerut — sports goods aur cafes ka shehar. Tapri se restaurant tak, kulhad supply time par.",
     sub: "Meerut ke cafés aur chai dukano tak Kulhad Factory kulhad deliver karta hai. Factory-direct pricing aur mazboot packing ke saath. Moradabad factory se approx 70 km — delivery 2-3 din me.",
     nearby: [{ name: "Modipuram", to: "/products" }, { name: "Roorkee", to: "/products" }, { name: "Muzaffarnagar", to: "/products" }],
+    details: [
+      {
+        heading: "Meerut me kaun se businesses target hain?",
+        body: "Meerut ek bada commercial aur industrial market hai, isliye yahan chai stalls, cafés, sweet shops, dhabas, caterers aur factory canteens hamare liye important customer segments hain. Partapur, Mohkampur aur Delhi Road jaise industrial-commercial areas me food outlets aur worker canteens me roz sainkadon chai ki cups chalti hain. Meerut abhi hamare liye naya market hai aur hum yahan shuruat karna chahte hain.",
+      },
+      {
+        heading: "Meerut me delivery ki planning",
+        body: "Meerut hamare delivery areas me comparatively door padta hai. Route aur order quantity ke hisaab se hum delivery 3 din ke aas-paas plan karte hain. Bulk shipment ke liye transport sabse convenient rehta hai, jabki urgent requirement me apni gaadi ka option bhi customer se discuss kiya jaata hai. Delivery charge quantity aur transport method par tay hota hai.",
+      },
+      {
+        heading: "Meerut ke liye kaun sa size?",
+        body: "Meerut me 90ml aur 300ml do alag zaruraton ko cover karte hain. 90ml chai stalls aur factory canteens ke liye suitable hai — jahan tez-tez chai chalti hai. 300ml lassi aur badi beverage serving ke liye useful rehta hai. Shaadi aur catering me 200ml se 300ml tak ke size menu ke hisaab se chune jaate hain. Poore 8 sizes stock me rehte hain.",
+      },
+      {
+        heading: "Meerut ke naye customers ke liye",
+        body: "Meerut ka koi order record ya customer feedback abhi hamare paas nahi hai, isliye hum yahan artificial testimonial nahi de rahe. Jo sach hai — door market me bulk supply ke liye quantity, packing aur transport ki planning pehle karni padti hai, aur ye kaam hum roz karte hain. Hamari factory se har mahine lakhon kulhad nikalte hain aur 5,000+ pieces ka order handle karna hamare liye aam baat hai.",
+      },
+      {
+        heading: "Meerut me order kaise karein?",
+        body: "Meerut ke customers WhatsApp, call, email ya website form se enquiry bhej sakte hain. Payment online aur offline dono options me discuss ki ja sakti hai. Bade wholesale orders me advance payment li ja sakti hai. Size, quantity, packing aur delivery details clear hote hi final confirmation de diya jaata hai.",
+      },
+    ],
   },
   {
     slug: "kulhad-noorpur",
@@ -265,6 +331,28 @@ export const cities: City[] = [
     intro: "Rampur (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Rampur ki mashhoor khana tradition — restaurants aur caterers ke liye strong packing ke saath kulhad supply. Moradabad factory se approx 65 km — delivery 2-3 din me.",
     sub: "Rampur me kulhad wholesale delivery — chai stalls, cafés aur hotels ke liye. Kulhad Factory se factory-direct order karein.",
     nearby: [{ name: "Bareilly", to: "/kulhad-bareilly" }, { name: "Moradabad", to: "/kulhad-guide" }, { name: "Bilaspur", to: "/products" }],
+    details: [
+      {
+        heading: "Rampur me hamare potential customers",
+        body: "Rampur ke chai stalls, sweet shops, cafés, dhabas, caterers aur local food businesses kulhad ke seedhe customers hain. Bada Bazaar, Rajdwara aur Meston Ganj jaise commercial areas me chai aur food outlets ki achhi bheed rehti hai. Rampur apni khane-peene ki purani tradition ke liye jaana jaata hai, isliye yahan mitti ke kulhad wali chai ka scope kaafi accha hai. Abhi yahan hamara koi regular customer nahi hai.",
+      },
+      {
+        heading: "Rampur me delivery kaise hogi?",
+        body: "Rampur hamari factory se lagbhag 65 km hai, isliye ye hamare liye kaafi manageable route hai. Normal orders hum apni gaadi se bhej dete hain aur badi quantity transport se jaati hai — delivery aam taur par 2 din me ho jaati hai. Delivery charge kulhad ki quantity aur route ke hisaab se tay hota hai aur order confirm karte waqt hi bata diya jaata hai.",
+      },
+      {
+        heading: "Rampur ke liye kaun sa size lein?",
+        body: "Rampur me 60ml aur 100ml kulhad sabse useful options hain. 60ml chai stalls ke liye convenient hai — cutting chai ke liye perfect. 100ml cafés aur sweet shops me thodi badi chai ya beverage serving ke liye suitable rehta hai. Shaadi aur catering orders me 200ml ya 250ml bhi requirement ke hisaab se liya jaata hai. Sabhi 8 sizes available hain.",
+      },
+      {
+        heading: "Rampur me shuruat kaise karein",
+        body: "Rampur se abhi tak koi order record nahi hua hai, aur hum yahan koi banawati number ya testimonial nahi laga rahe. Sach ye hai ki 65 km ka ye route hamare liye aasaan hai aur 2 din me maal pahuncha dete hain. Naye customer ko wahi food-safe kulhad, wahi mazboot crate packing aur wahi factory rate milega jo hamare purane customers ko milta hai.",
+      },
+      {
+        heading: "Rampur se order kaise karein?",
+        body: "Rampur ke customers WhatsApp, call, email ya website form ke through order kar sakte hain. Payment online aur offline dono options me possible hai. Bade orders me advance payment ki requirement ho sakti hai. Order size, quantity aur delivery location confirm hone ke baad dispatch process shuru kar diya jaata hai.",
+      },
+    ],
   },
   {
     slug: "kulhad-sambhal",
