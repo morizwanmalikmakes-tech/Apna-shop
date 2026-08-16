@@ -110,6 +110,28 @@ export const cities: City[] = [
     intro: "Gajraula (Uttar Pradesh) — mitti ke kulhad wholesale aur bulk order. Gajraula ka industrial area aur highway dhabas — dono ke liye regular kulhad supply ka bharosa. Moradabad factory se approx 45 km — delivery 2-3 din me.",
     sub: "Gajraula ke business owners Kulhad Factory se wholesale kulhad lete hain. Food-safe, unglazed mitti ke kulhad chai aur lassi ke liye.",
     nearby: [{ name: "Amroha", to: "/kulhad-amroha" }, { name: "Dhanaura", to: "/kulhad-dhanora" }, { name: "Hasanpur", to: "/products" }],
+    details: [
+      {
+        heading: "Gajraula me hamare customers kaun hain?",
+        body: "Gajraula me hamare kaafi purane aur regular customers hain. Yahan hum mainly chai wale, sweet shops, cafés, dhabas, caterers aur doosre local businesses ko mitti ke kulhad supply karte hain. Gajraula ke Chopla area me bhi hamari regular kulhad delivery jaati hai, jahan chai aur beverage businesses ke liye demand lagataar bani rehti hai.",
+      },
+      {
+        heading: "Gajraula me delivery kaise hoti hai?",
+        body: "Gajraula aur aas-paas ke areas me kulhad delivery ke liye hum apni gaadi ke saath local transport ka bhi istemal karte hain. Order ki quantity aur destination ke hisaab se delivery aam taur par 3-4 din me pahuncha di jaati hai. Is tarah chhote aur bulk dono orders ko manage karna aasaan ho jaata hai, aur packing bhi mazboot crates me hoti hai.",
+      },
+      {
+        heading: "Gajraula me kaun sa kulhad size zyada chalta hai?",
+        body: "Gajraula me 70ml aur 90ml kulhad ki demand sabse zyada hai. Ye dono sizes khaas taur par chai ke liye popular hain. Chai stalls aur local beverage businesses ke liye ye size convenient rehta hai, isliye Gajraula ki total supply me inka hissa kaafi accha rehta hai. Iske alawa 60ml se 300ml tak sabhi sizes available hain.",
+      },
+      {
+        heading: "Gajraula ke customers ka anubhav",
+        body: "Gajraula ke saath hamara bahut purana business rishta hai. Yahan ke kai customers lambe samay se humse kulhad le rahe hain, aur isi bharose ki wajah se Gajraula hamari supply ke important areas me se ek bana hua hai. Yahan se chai ke liye 70ml aur 90ml kulhad ki regular demand milti rehti hai, jise hum har mahine time par pura karte hain.",
+      },
+      {
+        heading: "Gajraula me order kaise karein?",
+        body: "Gajraula ke customers WhatsApp, email ya website par form bhar kar order bhej sakte hain. Order me required size aur quantity batane ke baad details confirm ki jaati hain. Payment ki suvidha online aur offline dono available hai, jisse customer apni convenience ke according payment kar sakte hain.",
+      },
+    ],
   },
   {
     slug: "kulhad-jaspur",
