@@ -1,0 +1,4 @@
+Contact: mailto:kulhadshop@gmail.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, hi
+Canonical: https://www.kulhad.shop/.well-known/security.txt

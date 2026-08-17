@@ -1,0 +1,15 @@
+{
+  "name": "Kulhad Factory - Moradabad",
+  "short_name": "Kulhad Factory",
+  "description": "Clay kulhad manufacturer & wholesale supplier in Moradabad, Uttar Pradesh.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFF4E0",
+  "theme_color": "#8B5A2B",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/kulhad-logo.webp", "sizes": "512x512", "type": "image/webp", "purpose": "any" }
+  ]
+}
