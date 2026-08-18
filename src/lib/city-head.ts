@@ -79,7 +79,7 @@ export function cityHead(city: City) {
               "@type": "Product",
               name: `${p.name} — ${c}`,
               description: p.description,
-              image: `${BASE}${p.image}`,
+              image: `${BASE}/images/products/${p.slug}.webp`,
               sku: `${p.slug}-${city.slug}`,
               brand: { "@type": "Brand", name: "Kulhad Factory" },
               offers: {

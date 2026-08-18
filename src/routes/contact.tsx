@@ -49,8 +49,8 @@ export const Route = createFileRoute("/contact")({
           },
           geo: {
             "@type": "GeoCoordinates",
-            latitude: "28.8386",
-            longitude: "78.7733",
+            latitude: "29.0769223",
+            longitude: "78.6384599",
           },
           hasMap: "https://maps.app.goo.gl/1Qmxsdu1WxPPww3C8",
           sameAs: [

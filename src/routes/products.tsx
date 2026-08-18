@@ -43,7 +43,7 @@ export const Route = createFileRoute("/products")({
                     "@type": "Product",
                     name: p.name,
                     description: p.description,
-                    image: `https://www.kulhad.shop${p.image}`,
+                    image: `https://www.kulhad.shop/images/products/${p.slug}.webp`,
                     sku: p.slug,
                     brand: { "@type": "Brand", name: "Kulhad Factory" },
                     offers: {

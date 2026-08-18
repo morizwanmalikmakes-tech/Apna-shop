@@ -21,9 +21,7 @@ export const Route = createFileRoute("/products/$slug")({
     }
 
     const productUrl = `${BASE_URL}/products/${product.slug}`;
-    const imageUrl = product.image.startsWith("http")
-      ? product.image
-      : `${BASE_URL}${product.image}`;
+    const imageUrl = `${BASE_URL}/images/products/${product.slug}.webp`;
 
     return {
       meta: [

@@ -205,7 +205,7 @@ function HomePage() {
             <div className="relative overflow-hidden rounded-3xl shadow-warm">
               <img
                 src={hero}
-                alt="Steaming masala chai in handcrafted clay kulhads"
+                alt="Steaming masala chai in handcrafted clay kulhads" fetchPriority="high"
                 width={1600}
                 height={1000}
                 className="h-full w-full object-cover"
@@ -216,7 +216,7 @@ function HomePage() {
             <div className="mt-6 overflow-hidden rounded-3xl shadow-warm">
               <img
                 src={secondKulhad}
-                alt="Handcrafted clay kulhads ready for use"
+                alt="Handcrafted clay kulhads ready for use" loading="lazy"
                 width={1600}
                 height={1000}
                 className="h-full w-full object-cover"
