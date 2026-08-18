@@ -71,6 +71,7 @@ function ContactPage() {
 
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [waMsg, setWaMsg] = useState("");
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -99,6 +100,7 @@ City: ${city || "-"}
 Requirement: ${requirement || "-"}
 Message: ${message || "-"}`;
 
+    setWaMsg(msg);
     setStatus("sending");
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -123,13 +125,6 @@ Message: ${message || "-"}`;
       setStatus("error");
     }
 
-    const a = document.createElement("a");
-    a.href = waLink(msg);
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
   };
 
   const field =
@@ -306,18 +301,38 @@ Message: ${message || "-"}`;
             disabled={status === "sending"}
             className="mt-6 w-full rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110 disabled:opacity-60"
           >
-            {status === "sending" ? "Sending..." : "Send via WhatsApp"}
+            {status === "sending" ? "Sending..." : "Send Enquiry"}
           </button>
 
           {status === "sent" && (
-            <p role="status" className="mt-3 text-center text-sm font-medium text-primary">
-              Enquiry mil gayi! Hum jaldi WhatsApp par jawab denge.
-            </p>
+            <div role="status" className="mt-3 text-center">
+              <p className="text-sm font-medium text-primary">
+                Enquiry mil gayi! Hum jaldi jawab denge.
+              </p>
+              <a
+                href={waLink(waMsg)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center justify-center rounded-full bg-[#25D366] px-5 py-2.5 text-xs font-semibold text-white hover:brightness-110"
+              >
+                Jaldi hai? WhatsApp par bhi bhej dein
+              </a>
+            </div>
           )}
           {status === "error" && (
-            <p role="alert" className="mt-3 text-center text-sm font-medium text-destructive">
-              Enquiry save nahi hui. WhatsApp par bhej dein ya call karein.
-            </p>
+            <div role="alert" className="mt-3 text-center">
+              <p className="text-sm font-medium text-destructive">
+                Enquiry save nahi hui. WhatsApp par bhej dein ya call karein.
+              </p>
+              <a
+                href={waLink(waMsg)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center justify-center rounded-full bg-[#25D366] px-5 py-2.5 text-xs font-semibold text-white hover:brightness-110"
+              >
+                WhatsApp par bhejein
+              </a>
+            </div>
           )}
         </form>
       </section>

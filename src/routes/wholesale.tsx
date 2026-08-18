@@ -48,6 +48,7 @@ const perks = [
 function WholesaleForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [waMsg, setWaMsg] = useState("");
   const field =
     "rounded-lg border border-input bg-background px-4 py-3 text-sm outline-none focus:border-primary";
 
@@ -75,6 +76,7 @@ function WholesaleForm() {
 
     const msg = `Wholesale enquiry:\nName: ${name}\nBusiness: ${business}\nSize/Qty: ${qty}\nCity: ${city}\nEmail: ${email || "-"}\nNotes: ${notes || "-"}`;
 
+    setWaMsg(msg);
     setStatus("sending");
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
@@ -99,13 +101,6 @@ function WholesaleForm() {
       setStatus("error");
     }
 
-    const a = document.createElement("a");
-    a.href = waLink(msg);
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
   };
 
   return (
@@ -146,18 +141,38 @@ function WholesaleForm() {
         disabled={status === "sending"}
         className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:brightness-110 disabled:opacity-60"
       >
-        {status === "sending" ? "Sending..." : "Send on WhatsApp"}
+        {status === "sending" ? "Sending..." : "Send Enquiry"}
       </button>
 
       {status === "sent" && (
-        <p role="status" className="text-sm font-medium text-primary">
-          Enquiry mil gayi! Hum ek working day me jawab denge.
-        </p>
+        <div role="status">
+          <p className="text-sm font-medium text-primary">
+            Enquiry mil gayi! Hum ek working day me jawab denge.
+          </p>
+          <a
+            href={waLink(waMsg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center justify-center rounded-full bg-[#25D366] px-5 py-2.5 text-xs font-semibold text-white hover:brightness-110"
+          >
+            Jaldi hai? WhatsApp par bhi bhej dein
+          </a>
+        </div>
       )}
       {status === "error" && (
-        <p role="alert" className="text-sm font-medium text-destructive">
-          Enquiry save nahi hui. WhatsApp par bhej dein ya call karein.
-        </p>
+        <div role="alert">
+          <p className="text-sm font-medium text-destructive">
+            Enquiry save nahi hui. WhatsApp par bhej dein ya call karein.
+          </p>
+          <a
+            href={waLink(waMsg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center justify-center rounded-full bg-[#25D366] px-5 py-2.5 text-xs font-semibold text-white hover:brightness-110"
+          >
+            WhatsApp par bhejein
+          </a>
+        </div>
       )}
       <p className="text-xs text-muted-foreground">
         Or call{" "}
