@@ -24,7 +24,7 @@ export const Route = createFileRoute("/products")({
         { title: "Clay Kulhad Price List — 60ml to 300ml | Kulhad Factory" },
         {
           name: "description",
-          content: "Browse handcrafted clay kulhads from 60ml tea cups to 300ml lassi glasses.",
+          content: "60ml se 300ml tak clay kulhad price list — tea, coffee, lassi. Factory-direct rate ₹1.10/pc se. Moradabad se poore India delivery.",
         },
       ],
       scripts: isProductDetail

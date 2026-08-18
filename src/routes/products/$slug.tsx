@@ -102,6 +102,7 @@ export const Route = createFileRoute("/products/$slug")({
               priceCurrency: "INR",
               price: product.price.replace(/[^\d.]/g, ""),
               availability: "https://schema.org/InStock",
+              priceValidUntil: "2027-12-31",
               seller: {
                 "@type": "Organization",
                 name: site.name,

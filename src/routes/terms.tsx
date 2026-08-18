@@ -7,7 +7,7 @@ export const Route = createFileRoute("/terms")({
       { title: "Terms & Conditions — Kulhad Factory" },
       {
         name: "description",
-        content: "Read the Terms and Conditions for purchasing clay kulhads from Kulhad Factory.",
+        content: "Kulhad Factory se order karne ki Terms — pricing, payment, delivery, breakage policy aur cancellation ki puri jankari. Order se pehle padh lein.",
       },
       {
         property: "og:title",

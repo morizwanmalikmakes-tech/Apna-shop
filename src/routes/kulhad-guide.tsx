@@ -4,13 +4,15 @@ import { SiteLayout, PageHero } from "@/components/site-layout";
 export const Route = createFileRoute("/kulhad-guide")({
   head: () => ({
     meta: [
-      { title: "Kulhad, Kullad, Kulad, Kuld — Clay Kulhad Guide & Wholesale India | Kulhad Factory" },
+      { title: "Kulhad Guide — Sizes, Price & Wholesale India | Kulhad Factory" },
       {
         name: "description",
         content:
-          "Kulhad, kullad, kulad, kuolhadd, kulads, kuld, kulha, kulahd — mitti ke kulhad ka complete guide. Sizes, price, wholesale India. Buy from Kulhad Factory, Moradabad (Uttar Pradesh).",
+          "Mitti ke kulhad ka complete guide — kulhad, kullad ya kulad. Sizes 60ml-300ml, price ₹1.10 se, wholesale India. Kulhad Factory Moradabad se order karein.",
       },
-      { property: "og:title", content: "Kulhad, Kullad, Kulad, Kuld — Clay Kulhad Guide India" },
+      { property: "og:title", content: "Kulhad Guide — Sizes, Price & Wholesale India" },
+      { property: "og:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
+      { name: "twitter:image", content: "https://www.kulhad.shop/images/home-kulhads.webp" },
       { property: "og:url", content: "https://www.kulhad.shop/kulhad-guide" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },

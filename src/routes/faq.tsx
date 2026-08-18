@@ -45,7 +45,7 @@ export const Route = createFileRoute("/faq")({
       {
         name: "description",
         content:
-          "Answers to common questions about our clay kulhads, wholesale orders, shipping and care.",
+          "Kulhad price, MOQ, delivery, custom branding aur care — sab sawalon ke jawab. Retail 100 pcs se, wholesale 300-500 MOQ. Poore India me delivery.",
       },
       { property: "og:title", content: "Kulhad FAQs — Price, MOQ & Delivery | Kulhad Factory" },
       {
