@@ -99,6 +99,8 @@
   --border: rgba(255,255,255,0.12);
   --input: rgba(255,255,255,0.15);
   --ring: #C96A2B;
+  --destructive: #F87171;
+  --destructive-foreground: #1A1512;
   --clay: #E28248;
   --clay-dark: #C96A2B;
   --sand: #2A2119;
