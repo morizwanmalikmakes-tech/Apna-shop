@@ -328,7 +328,7 @@ Message: ${message || "-"}`;
             Factory map location
           </h2>
           <p className="mt-1 text-sm text-muted-foreground">
-            Business address: Kanth Road, Moradabad, Uttar Pradesh 244501. Factory map location: Kasampur, Uttar Pradesh 246745.
+            Business address: Kanth Road, Moradabad, Uttar Pradesh 244501. Factory map location: Kasampur, Uttar Pradesh 244501.
           </p>
         </div>
         <div className="overflow-hidden rounded-3xl border border-border shadow-soft">
