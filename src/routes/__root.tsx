@@ -130,7 +130,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             latitude: "29.0769223",
             longitude: "78.6384599",
           },
-          openingHours: "Mo-Sa 09:00-18:00",
+          openingHours: "Mo-Su 00:00-23:59",
           priceRange: "₹₹",
           hasMap: "https://maps.app.goo.gl/1Qmxsdu1WxPPww3C8",
           sameAs: [
